@@ -22,7 +22,7 @@ body {
 
   section{
     position: sticky;
-    height: 100vh;
+    /* min-height: 100vh; */
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -32,33 +32,57 @@ body {
     background-color: rgb(158, 168, 255);
     padding-top: 250px;
     text-align: center;
+    height: 100vh;
   }
   .introOpacity{
+    background-color: #20c72b42;
+    position: relative;
+    padding-top: 250px;
 
+    /* text-align: center; */
+    /* width: 100hv; */
   }
   .intro1{
     background-color: rgb(131, 135, 166);
-    width: 100hv;
+    /* width: 100hv; */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 841px;
   }
   .intro2{
     background-color: rgb(95, 103, 174);
-    width: 100hv;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    max-width: 493px;
   }
-  .intro3{
+  /* arrow */
+  .intro-arrow{
     background-color: rgba(45, 50, 94, 0.339);
-    padding-top: 180px;
+    padding-top: 200px;
     /* text-align: center; */
-
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 3%;
+    max-width: 39px;
   }
   
   .one{
-    background-color: #c7202b;
+    background-color: #c7202b40;
     height: 150vh;
   }
   
   .two{
-    background-color: #749f58;
-    height: 100vh;
+    background-color: #749f582b;
+    height: 400vh;
   }
   
   .three{
@@ -66,13 +90,17 @@ body {
   }
   
   .four{
-    background-color: #7dccea;
+    background-color: #7dcbea55;
+    height: 600vh;
+
   }
   .container{
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     height: 95vh;
     padding: 0rem calc((100vw - 1300) / 2); */
+    overflow: hidden;
+  
   }
 
   *::-webkit-scrollbar,
@@ -99,11 +127,12 @@ html::-webkit-scrollbar-thumb{
 
 .horizon-box{
   background-color: rgba(201, 11, 11, 0.401);
-  padding-top: 400px;
+  margin-top: 400px;
   /* text-align: center; */
   position: relative;
   overflow: hidden;
-  padding-top: 800px;
+  /* padding-top: 800px; */
+  height: 100vh;
 
 }
 .h-data{
@@ -112,9 +141,11 @@ html::-webkit-scrollbar-thumb{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  width:573px; 
-  height: 279px;
+  
+  /* width: 35%; */
+  height: 25%;
+  max-width:573px; 
+  /* max-height: 279px; */
   
   /* padding-top: 500px; */
   /* margin:0 auto; */
@@ -127,8 +158,9 @@ html::-webkit-scrollbar-thumb{
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width:840px; 
-  height: 279px;
+  height: 25%;
+  max-width:840px; 
+  /* max-height: 279px; */
 }
 .h-ai{
   background-color: #c7202b42;
@@ -140,4 +172,230 @@ html::-webkit-scrollbar-thumb{
   width:229px; 
   height: 279px;
 }
+/* section222222-----------------------------------------------------------------------2222222 */
+/* intro */
+.section2-intro-g{
+  background-color: #20c72b42;
+  position: relative;
+  text-align: center;
+  /* height: 80hv; */
+  /* width: 40%; */
+  height: 680px;
 
+}
+
+.section2-intro-arrow{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 3%;
+max-width: 39px;
+  
+}
+.section2-intro{
+  background-color: #20c72b42;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+max-width: 462px;
+}
+
+/* group 1 ----------------------------*/
+.section2-img1{
+  object-position: left;
+  object-fit: cover;
+  width: 100%;
+}
+
+.section2-text-g{
+  /* background-color: #c7202b42; */
+
+  object-position: left;
+  width: 40%;
+  margin-left: 10%;
+  /* margin-top: 668px; */
+  margin-top: 33%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+.section2-text1{
+  width: 60%;
+
+}
+.section2-text11{
+  width: 85%;
+  margin-top: 5%;
+}
+
+/* group 2 ----------------------------*/
+.section2-img2{
+  object-position: right;
+  object-fit: cover;
+  width: 80%;
+
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.section2-text2-g{
+  background-color: #c7202b42;
+
+  object-position: right;
+  width: 35%;
+  margin-right: 10%;
+  /* margin-top: 100vh; */
+  /* margin-top: 33%; */
+  /* position:relative; */
+  position: absolute;
+  top: 38%;
+  right: 0;
+  /* transform: translate(0, 0); */
+}
+.section2-text2{
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+
+  width: 95%;
+
+}
+.section2-text21{
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+
+  width: 100%;
+  margin-top: 5%;
+}
+
+/* group 3 -----------------------------------------------------------------------2222222 */
+/* intro */
+.section3-intro-g{
+  background-color: #20c72b42;
+  position: relative;
+  text-align: center;
+  /* height: 80hv; */
+  /* width: 40%; */
+  height: 100vh;
+
+}
+
+.section3-intro-arrow{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 3.5%;
+max-width: 68px;
+  
+}
+.section3-intro{
+  background-color: #20c72b42;
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+/* max-width: 900px; */
+}
+
+/* section 3333333333-----video-------------------------------------------------------------333333 */
+/* video--------1--------- */
+.video-1-g{
+  background-color: #a2299642;
+  text-align: center;
+
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#video-1{
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  width: 80%;
+}
+.video-1-img-g{
+  /* background-color: #ff0000; */
+  /* text-align: center; */
+  width: 80%;
+  /* opacity: 50%; */
+
+}
+.video-1-img{
+  background-color: #000000;
+
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  padding-top: 100px;
+  padding-left: 100px;
+
+  transform: translate(-50%, -50%);
+}
+.video-1-img-arrow{
+  width: 5%;
+  position: absolute;
+  top: 60%;
+  right: 20%;
+  transform: translate(-50%, -50%);
+}
+
+/* video--------2--------- */
+.video-2-g{
+  /* background-color: #ff0000;
+  padding: 10px; */
+  /* opacity: 50%; */
+
+
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+#video-2{
+  background-color: #ff0000;
+  /* padding: 10px; */
+
+  position: absolute;
+  top: 0;
+  right: -23%;
+  transform: translate(-50%, -50%);
+  width: 53%;
+  
+  /* opacity: 50%; */
+
+}
+.video-2-text{
+  background-color: #000000;
+  position: absolute;
+  top: 80%;
+  left: 38%;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  transform: translate(-50%, -50%);
+  width: 24%;
+
+  /* opacity: 50%; */
+
+}
+
+#video-3{
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  width: 80%;
+}

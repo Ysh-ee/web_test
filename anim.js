@@ -13,9 +13,9 @@ gsap.registerPlugin(ScrollTrigger);
 // intro 1 그라데이션 --------------------------------------------------------------------------------
 const introAnim = gsap.from(".introOpacity", { opacity: 0, paused: true });
 const ST = ScrollTrigger.create({
-  trigger: "body",
-  start: 0,
-  end: "center 120%",
+  trigger: ".intro",
+  start: "top top",
+  end: "70% top",
 //   markers:true,   //@@@
   animation: introAnim, 
   pin: ".intro", 
@@ -29,7 +29,7 @@ const ST = ScrollTrigger.create({
 gsap.from(".intro2",{
     scrollTrigger:{
         trigger:".intro2",
-        start:"top 50%",
+        start:"bottom 50%",
         end:"top 30%",
         scrub:1,
         // markers:true   //@@@
@@ -40,17 +40,17 @@ gsap.from(".intro2",{
 });
 
 //intro3 arrow
-gsap.from(".intro3",{
+gsap.from(".intro-arrow",{
     scrollTrigger:{
-        trigger:".intro2",
+        trigger:".intro",
         start:"top top",
-        end:"top top",
+        end:"20% top",
         scrub:1,
         // markers:true  //@@@
     },
     y:100,
     ease:"none",
-    duration: 5
+    duration: 3
 });
 
 //horizontal ------------------------------------------------------------------------------------------
@@ -61,12 +61,12 @@ const aicome = gsap.from(".h-ai", { opacity: 0, paused: true });
 const aigo = gsap.to(".h-ai", { opacity: 0, paused: true });
 
 const ST2 = ScrollTrigger.create({
-    trigger: "horizon-box",
-    start: "1231px top",
-    end: "bottom bottom",
+    trigger: ".horizon-box",
+    start: "top top",
+    end: "+=2500",
     // markers:true,    //@@@
     // animation: dataleft, 
-    pin: ".two", 
+    pin: ".horizon-box", 
     scrub: true     
   });
 
@@ -74,9 +74,9 @@ const ST2 = ScrollTrigger.create({
 gsap.from(".h-data",{
     scrollTrigger:{
         trigger:".two",
-        start:"40% bottom",
-        end:"50% bottom",
-        scrub:1,
+        start:"10% bottom",
+        end:"15% bottom",
+        scrub:2,
         // markers:true    //@@@
     },
     y:500,
@@ -87,8 +87,8 @@ gsap.from(".h-data",{
 gsap.to(".h-data",{
     scrollTrigger:{
         trigger:".two",
-        start:"540px 550",
-        end:"640px 550",
+        start:"20% 550",
+        end:"25% 550",
         scrub:1,
         // markers:true   //@@@
     },
@@ -99,8 +99,8 @@ gsap.to(".h-data",{
 //transparent data go
 const DataGoes = ScrollTrigger.create({
     trigger: ".two",
-    start: "540px 550",
-    end: "640px 550",
+    start: "20% 550",
+    end: "25% 550",
     // markers:true,    //@@@
     animation: datago, 
     scrub: true     
@@ -111,21 +111,21 @@ const DataGoes = ScrollTrigger.create({
   gsap.from(".h-network",{
     scrollTrigger:{
         trigger:".two",
-        start:"540px 550",
-        end:"640px 550",
+        start:"20% 550",
+        end:"25% 550",
         scrub:1,
         // markers:true   //@@@
     },
     x:1000,
     ease:"none",
-    // duration: 1
+    duration: 1
 });
 //transparent net comes
   const NetComes = ScrollTrigger.create({
     trigger: ".two",
-    start: "540px 550",
-    end: "640px 550",
-    markers:true,    //@@@
+    start: "20% 550",
+    end: "25% 550",
+    // markers:true,    //@@@
     animation: netcome, 
     scrub: true     
   });
@@ -134,8 +134,8 @@ const DataGoes = ScrollTrigger.create({
 //   gsap.to(".h-network",{
 //     scrollTrigger:{
 //         trigger:".two",
-//         start:"540px 550",
-//         end:"640px 550",
+//         start: "20% 550",
+//         end: "25% 550",
 //         scrub:1,
 //         markers:true   //@@@
 //     },
@@ -143,5 +143,140 @@ const DataGoes = ScrollTrigger.create({
 //     ease:"none",
 //     // duration: 1
 // });
+// -------------------------video--------------------------------------------------
+const video1_end = gsap.from(".video-1-img-g", { opacity: 0, paused: true });
+//video 1 end anim 
+const video1_anim = ScrollTrigger.create({
+    trigger: ".video-1-g",
+    start: "top top",
+    end: "20% top",
+    // markers:true,   //@@@
+    animation: video1_end, 
+    scrub: true     
+  });
+  //video 1 to video 2 Pin
+  const videoPin = ScrollTrigger.create({
+    trigger: ".video-1-g",
+    start: "top top",
+    end: "20% top",
+    // markers:true,   //@@@
+    animation: "", 
+    pin: ".video-1-g",
+    scrub: true     
+  });
+//오른쪽 화살표 애니 <
+gsap.to(".video-1-img-arrow",{
+    scrollTrigger:{
+        trigger:".video-1-g",
+        start:"5% top",
+        end:"10% top",
+        scrub:1,
+        // markers:true   //@@@??--?
+    },
+    x:-30,
+    ease:"none",
+    duration: 1
+});
+  //비디오 띄움
+const video2_show = gsap.from(".video-2-g", { opacity: 0, paused: true });
 
+  //video 2 Pin???
+  const videoPin2 = ScrollTrigger.create({
+    trigger: ".video-1-g",
+    start: "13% top",
+    end: "20% top",
+    // markers:true,   //@@@-------??
+    animation: video2_show, 
+    pin: ".video-1-g",
+    scrub: true     
+  });
+//----------------video1 play----------------
+const video_1 = document.querySelector("#video-1");
+
+let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".video-1-g",
+      start: "25% top",
+      end: "80% top",
+      scrub: true,
+    //   pin: ".video-1-g",
+    //   markers: true,    //@@@
+    //   onEnter: () => video.play(),
+    }
+  });
+  //----------------video2 play----------------
+const video_2 = document.querySelector("#video-2");
+
+let tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#video-2",
+      start: "80% 500",
+      end: "120% 500",
+      scrub: true,
+    //   pin: "#video-2",
+    //   markers: true,    //@@@
+    //   onEnter: () => video.play(),
+    }
+  });
+//   //비디오 띄움
+// const video2_show = gsap.from(".video-2-g", { opacity: 0, paused: true });
+
+  
+
+
+  video_1.onloadedmetadata = function () {
+    tl.to(video_1, { currentTime: video_1.duration });
+  };
+  video_2.onloadedmetadata = function () {
+    tl2.to(video_2, { currentTime: video_2.duration });
+  };
+  function isTouchDevice() {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  }
+  if (isTouchDevice()) {
+    video_1.play();
+    video_1.pause();
+  }
+//----------------video1 img
+
+
+
+
+
+// video_1.pause();
+// video_1.currentTime = 0;
+
+// gsap.fromTo(video_1,{currentTime: 3 * i}, {
+//     scrollTrigger:{
+//         trigger:"video-1",
+//         scrub: 2,
+//         start:"top bottom",
+//         end: "bottom bottom",
+//         pin: true,
+//         markers:true,    //@@@
+//         onEnter: () => video.play(),
+//     },
+//     currentTime: 3 * (i+1),
+//     duration:1,
+//     ease: "none",
+// });
+
+// gsap.fromTo(video_1,{currentTime: 3 * i}, {
+//     scrollTrigger.create({
+//         trigger:"video-1",
+//         scrub: 2,
+//         start:"top bottom",
+//         end: "bottom bottom",
+//         pin: true,
+//         markers:true,    //@@@
+//         onEnter: () => video.play(),
+//     }),
+//     currentTime: 3 * (i+1),
+//     duration:1,
+//     ease: "none",
+// });
 
