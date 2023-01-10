@@ -143,7 +143,7 @@ const DataGoes = ScrollTrigger.create({
 //     ease:"none",
 //     // duration: 1
 // });
-// -------------------------video--------------------------------------------------
+// -------------------------video-----------------------------------video----------------------------------------------
 const video1_end = gsap.from(".video-1-img-g", { opacity: 0, paused: true });
 //video 1 end anim 
 const video1_anim = ScrollTrigger.create({
@@ -210,7 +210,7 @@ const video_1 = document.querySelector("#video-1");
 let tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".video-1-g",
-      start: "10% top",
+      start: "10% bottom",
       end: "100% top",
       scrub: true,
     //   pin: ".video-1-g",
@@ -317,3 +317,24 @@ gsap.from("#video-3",{
   ease:"none",
   duration: 1
 });
+
+
+// const video_1 = document.querySelector("#video-1");
+
+// let tl1 = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".video-1-g",
+//       start: "10% bottom",
+//       end: "100% top",
+//       scrub: true,
+//     //   pin: ".video-1-g",
+//       markers: true,    //@@@
+//       // onEnter: () => video.play(),
+//     }
+//   });
+
+//   video_1.onloadedmetadata = function () {
+//         tl1.to(video_1, { currentTime: video_1.duration });
+//       };
+
+
