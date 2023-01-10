@@ -160,7 +160,7 @@ const video1_hide = gsap.to(".video-1", { opacity: 0, paused: true });
   const videoPin = ScrollTrigger.create({
     trigger: ".video-1-g",
     start: "top top",
-    end: "20% top",
+    end: "30% top",
     // markers:true,   //@@@
     animation: video1_hide, 
     pin: ".video-1-g",
@@ -170,12 +170,12 @@ const video1_hide = gsap.to(".video-1", { opacity: 0, paused: true });
 gsap.to(".video-1-img-arrow",{
     scrollTrigger:{
         trigger:".video-1-g",
-        start:"5% top",
+        start:"top top",
         end:"10% top",
         scrub:1,
         // markers:true   //@@@??--?
     },
-    x:-30,
+    x:-50,
     ease:"none",
     duration: 1
 });
@@ -196,7 +196,7 @@ const video1_hide2 = gsap.to(".video-1-img-g", { opacity: 0, paused: true });
   const videoPin2 = ScrollTrigger.create({
     trigger: ".video-1-g",
     start: "10% top",
-    end: "150% top",
+    end: "230% top", //-------------------------was 150
     // markers:true,   //@@@-------??
     animation:video1_hide2,
     pin: ".video-1-g",
@@ -211,11 +211,12 @@ let tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".video-1-g",
       start: "10% bottom",
-      end: "100% top",
+      end: "100% center",
       scrub: true,
     //   pin: ".video-1-g",
-    //   markers: true,    //@@@
+      // markers: true,    //@@@
       // onEnter: () => video.play(),
+      // duration:500
     }
   });
   //----------------video2 play----------------
@@ -224,8 +225,8 @@ const video_2 = document.querySelector("#video-2");
 let tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: "#video-2",
-      start: "110% 500",
-      end: "200% 300",
+      start: "150% 500",
+      end: "250% 300",
       scrub: true,
       // pin: "#video-2",
       // markers: true,    //@@@
@@ -238,28 +239,28 @@ let tl2 = gsap.timeline({
 let tl3 = gsap.timeline({
     scrollTrigger: {
       trigger: "#video-2",
-      start: "50% 300",
-      end: "200% 300",
+      start: "200% top",
+      end: "350% top",
       scrub: true,
       // pin: "#video-2",
-      // markers: true,    //@@@
+      markers: true,    //@@@
     //   onEnter: () => video.play(),
     }
   });
   //----------------video4 play----------------
-  const video_4 = document.querySelector("#video-4");
+//   const video_4 = document.querySelector("#video-4");
 
-let tl4 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".video-4-g",
-      start: "top top",
-      end: "top top",
-      scrub: true,
-      // pin: "#video-2",
-      // markers: true,    //@@@
-    //   onEnter: () => video.play(),
-    }
-  });
+// let tl4 = gsap.timeline({
+//     scrollTrigger: {
+//       trigger: ".video-4-g",
+//       start: "top top",
+//       end: "top top",
+//       scrub: true,
+//       // pin: "#video-2",
+//       // markers: true,    //@@@
+//     //   onEnter: () => video.play(),
+//     }
+//   });
 
 
   video_1.onloadedmetadata = function () {
@@ -268,16 +269,16 @@ let tl4 = gsap.timeline({
   video_2.onloadedmetadata = function () {
     tl2.to(video_2, { currentTime: video_2.duration });
   };
-  // video_3.onloadedmetadata = function () {
-  //   tl3.to(video_3, { currentTime: video_3.duration });
-  // };
+  video_3.onloadedmetadata = function () {
+    tl3.to(video_3, { currentTime: video_3.duration });
+  };
   // video_4.onloadedmetadata = function () {
   //   tl4.to(video_4, { currentTime: video_4.duration });
   // };
-  video_3.onloadedmetadata = function () {
-    tl3.to(video_3, { currentTime: video_3.duration })
-    .to(video_4, { currentTime: video_4.duration });
-  };
+  // video_3.onloadedmetadata = function () {
+  //   tl3.to(video_3, { currentTime: video_3.duration })
+  //   .to(video_4, { currentTime: video_4.duration });
+  // };
   function isTouchDevice() {
     return (
       "ontouchstart" in window ||
@@ -295,8 +296,8 @@ let tl4 = gsap.timeline({
 gsap.to("#video-2",{
   scrollTrigger:{
       trigger:"#video-2",
-      start:"110% 300",
-      end:"130% 100",
+      start:"200% 300",
+      end:"300% 100",
       scrub:1,
       // markers:true    //@@@
   },
@@ -308,8 +309,8 @@ gsap.to("#video-2",{
 gsap.from("#video-3",{
   scrollTrigger:{
       trigger:"#video-2",
-      start:"110% 300",
-      end:"130% 100",
+      start:"200% 300",
+      end:"300% 100",
       scrub:1,
       // markers:true    //@@@
   },
