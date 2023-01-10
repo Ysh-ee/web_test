@@ -192,11 +192,20 @@ const video1_hide2 = gsap.to(".video-1-img-g", { opacity: 0, paused: true });
     animation: video2_show,
     scrub: true     
   });
+  //hide hide img1
+  const video1imghide_anim = ScrollTrigger.create({
+    trigger: ".video-1-g",
+    start: "10% top",
+    end: "20% top",
+    // markers:true,   //@@@
+    animation: video1_hide2,
+    scrub: true     
+  });
   //video 2video 2Pin Pin
   const videoPin2 = ScrollTrigger.create({
     trigger: ".video-1-g",
     start: "10% top",
-    end: "230% top", //-------------------------was 150
+    end: "530% top", //-------------------------was 150  230
     // markers:true,   //@@@-------??
     animation:video1_hide2,
     pin: ".video-1-g",
@@ -248,19 +257,19 @@ let tl3 = gsap.timeline({
     }
   });
   //----------------video4 play----------------
-//   const video_4 = document.querySelector("#video-4");
+  const video_4 = document.querySelector("#video-4");
 
-// let tl4 = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".video-4-g",
-//       start: "top top",
-//       end: "top top",
-//       scrub: true,
-//       // pin: "#video-2",
-//       // markers: true,    //@@@
-//     //   onEnter: () => video.play(),
-//     }
-//   });
+let tl4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#video-2",
+      start: "580% top",
+      end: "750% 20%",
+      scrub: true,
+      // pin: "#video-2",
+      // markers: true,    //@@@
+    //   onEnter: () => video.play(),
+    }
+  });
 
 
   video_1.onloadedmetadata = function () {
@@ -272,9 +281,9 @@ let tl3 = gsap.timeline({
   video_3.onloadedmetadata = function () {
     tl3.to(video_3, { currentTime: video_3.duration });
   };
-  // video_4.onloadedmetadata = function () {
-  //   tl4.to(video_4, { currentTime: video_4.duration });
-  // };
+  video_4.onloadedmetadata = function () {
+    tl4.to(video_4, { currentTime: video_4.duration });
+  };
   // video_3.onloadedmetadata = function () {
   //   tl3.to(video_3, { currentTime: video_3.duration })
   //   .to(video_4, { currentTime: video_4.duration });
@@ -319,23 +328,30 @@ gsap.from("#video-3",{
   duration: 1
 });
 
-
-// const video_1 = document.querySelector("#video-1");
-
-// let tl1 = gsap.timeline({
-//     scrollTrigger: {
-//       trigger: ".video-1-g",
-//       start: "10% bottom",
-//       end: "100% top",
-//       scrub: true,
-//     //   pin: ".video-1-g",
-//       markers: true,    //@@@
-//       // onEnter: () => video.play(),
-//     }
-//   });
-
-//   video_1.onloadedmetadata = function () {
-//         tl1.to(video_1, { currentTime: video_1.duration });
-//       };
-
+//video 4 show up
+gsap.from(".video-4-g",{
+  scrollTrigger:{
+      trigger:"#video-2",
+      start:"500% center",
+      end:"550% center",
+      scrub:1,
+      // markers:true    //@@@
+  },
+  y:1000,
+  ease:"none",
+  duration: 1
+});
+//video 3 goes up
+gsap.to(".video-2-g",{
+  scrollTrigger:{
+      trigger:"#video-2",
+      start:"500% center",
+      end:"550% center",
+      scrub:1,
+      // markers:true    //@@@
+  },
+  y:-1000,
+  ease:"none",
+  duration: 1
+});
 
