@@ -243,7 +243,7 @@ let tl3 = gsap.timeline({
       end: "350% top",
       scrub: true,
       // pin: "#video-2",
-      markers: true,    //@@@
+      // markers: true,    //@@@
     //   onEnter: () => video.play(),
     }
   });
