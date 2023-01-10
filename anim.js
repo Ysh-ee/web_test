@@ -63,7 +63,7 @@ const aigo = gsap.to(".h-ai", { opacity: 0, paused: true });
 const ST2 = ScrollTrigger.create({
     trigger: ".horizon-box",
     start: "top top",
-    end: "+=2500",
+    end: "+=2000",
     // markers:true,    //@@@
     // animation: dataleft, 
     pin: ".horizon-box", 
@@ -134,8 +134,8 @@ const DataGoes = ScrollTrigger.create({
 //   gsap.to(".h-network",{
 //     scrollTrigger:{
 //         trigger:".two",
-//         start: "20% 550",
-//         end: "25% 550",
+//         start: "20% 500",
+//         end: "25% 500",
 //         scrub:1,
 //         markers:true   //@@@
 //     },
@@ -155,12 +155,14 @@ const video1_anim = ScrollTrigger.create({
     scrub: true     
   });
   //video 1 to video 2 Pin
+const video1_hide = gsap.to(".video-1", { opacity: 0, paused: true });
+
   const videoPin = ScrollTrigger.create({
     trigger: ".video-1-g",
     start: "top top",
     end: "20% top",
     // markers:true,   //@@@
-    animation: "", 
+    animation: video1_hide, 
     pin: ".video-1-g",
     scrub: true     
   });
@@ -179,29 +181,41 @@ gsap.to(".video-1-img-arrow",{
 });
   //비디오 띄움
 const video2_show = gsap.from(".video-2-g", { opacity: 0, paused: true });
+const video1_hide2 = gsap.to(".video-1-img-g", { opacity: 0, paused: true });
 
-  //video 2 Pin???
-  const videoPin2 = ScrollTrigger.create({
+  //video 2 transparent???
+  const video2show_anim = ScrollTrigger.create({
     trigger: ".video-1-g",
-    start: "13% top",
+    start: "10% top",
     end: "20% top",
     // markers:true,   //@@@-------??
-    animation: video2_show, 
-    pin: ".video-1-g",
+    animation: video2_show,
     scrub: true     
+  });
+  //video 2video 2Pin Pin
+  const videoPin2 = ScrollTrigger.create({
+    trigger: ".video-1-g",
+    start: "10% top",
+    end: "150% top",
+    // markers:true,   //@@@-------??
+    animation:video1_hide2,
+    pin: ".video-1-g",
+    scrub: true ,
+    duration: 1
+
   });
 //----------------video1 play----------------
 const video_1 = document.querySelector("#video-1");
 
-let tl = gsap.timeline({
+let tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".video-1-g",
-      start: "25% top",
-      end: "80% top",
+      start: "10% top",
+      end: "100% top",
       scrub: true,
     //   pin: ".video-1-g",
     //   markers: true,    //@@@
-    //   onEnter: () => video.play(),
+      // onEnter: () => video.play(),
     }
   });
   //----------------video2 play----------------
@@ -210,25 +224,59 @@ const video_2 = document.querySelector("#video-2");
 let tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: "#video-2",
-      start: "80% 500",
-      end: "120% 500",
+      start: "110% 500",
+      end: "200% 300",
       scrub: true,
-    //   pin: "#video-2",
-    //   markers: true,    //@@@
+      // pin: "#video-2",
+      // markers: true,    //@@@
     //   onEnter: () => video.play(),
     }
   });
-//   //비디오 띄움
-// const video2_show = gsap.from(".video-2-g", { opacity: 0, paused: true });
+//----------------video3 play----------------
+  const video_3 = document.querySelector("#video-3");
 
-  
+let tl3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#video-2",
+      start: "50% 300",
+      end: "200% 300",
+      scrub: true,
+      // pin: "#video-2",
+      // markers: true,    //@@@
+    //   onEnter: () => video.play(),
+    }
+  });
+  //----------------video4 play----------------
+  const video_4 = document.querySelector("#video-4");
+
+let tl4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".video-4-g",
+      start: "top top",
+      end: "top top",
+      scrub: true,
+      // pin: "#video-2",
+      // markers: true,    //@@@
+    //   onEnter: () => video.play(),
+    }
+  });
 
 
   video_1.onloadedmetadata = function () {
-    tl.to(video_1, { currentTime: video_1.duration });
+    tl1.to(video_1, { currentTime: video_1.duration });
   };
   video_2.onloadedmetadata = function () {
     tl2.to(video_2, { currentTime: video_2.duration });
+  };
+  // video_3.onloadedmetadata = function () {
+  //   tl3.to(video_3, { currentTime: video_3.duration });
+  // };
+  // video_4.onloadedmetadata = function () {
+  //   tl4.to(video_4, { currentTime: video_4.duration });
+  // };
+  video_3.onloadedmetadata = function () {
+    tl3.to(video_3, { currentTime: video_3.duration })
+    .to(video_4, { currentTime: video_4.duration });
   };
   function isTouchDevice() {
     return (
@@ -243,40 +291,29 @@ let tl2 = gsap.timeline({
   }
 //----------------video1 img
 
-
-
-
-
-// video_1.pause();
-// video_1.currentTime = 0;
-
-// gsap.fromTo(video_1,{currentTime: 3 * i}, {
-//     scrollTrigger:{
-//         trigger:"video-1",
-//         scrub: 2,
-//         start:"top bottom",
-//         end: "bottom bottom",
-//         pin: true,
-//         markers:true,    //@@@
-//         onEnter: () => video.play(),
-//     },
-//     currentTime: 3 * (i+1),
-//     duration:1,
-//     ease: "none",
-// });
-
-// gsap.fromTo(video_1,{currentTime: 3 * i}, {
-//     scrollTrigger.create({
-//         trigger:"video-1",
-//         scrub: 2,
-//         start:"top bottom",
-//         end: "bottom bottom",
-//         pin: true,
-//         markers:true,    //@@@
-//         onEnter: () => video.play(),
-//     }),
-//     currentTime: 3 * (i+1),
-//     duration:1,
-//     ease: "none",
-// });
-
+//video 2 upuuppup
+gsap.to("#video-2",{
+  scrollTrigger:{
+      trigger:"#video-2",
+      start:"110% 300",
+      end:"130% 100",
+      scrub:1,
+      // markers:true    //@@@
+  },
+  y:-1000,
+  ease:"none",
+  duration: 1
+});
+//video 3 follow up
+gsap.from("#video-3",{
+  scrollTrigger:{
+      trigger:"#video-2",
+      start:"110% 300",
+      end:"130% 100",
+      scrub:1,
+      // markers:true    //@@@
+  },
+  y:1000,
+  ease:"none",
+  duration: 1
+});
