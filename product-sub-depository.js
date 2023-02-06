@@ -10,6 +10,20 @@ gsap.registerPlugin(ScrollTrigger);
 //   });
 // });
 
+// gsap.from(".artic-img",{
+//   scrollTrigger:{
+//       trigger:".wrapper",
+//       start:"top center",
+//       end:"50% center",
+//       scrub:2,
+//       markers:true    //@@@
+//   },
+//   x:500,
+//   // ease:"none",
+//   // duration: 1
+// });
+
+
 gsap.from(".wrapper",{
     scrollTrigger:{
         trigger:".wrapper",
