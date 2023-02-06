@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 //   });
 // });
 
+//--------------------sec part anim--------------------
 // gsap.from(".artic-img",{
 //   scrollTrigger:{
 //       trigger:".wrapper",
