@@ -98,6 +98,8 @@ html{
 body {
     /* background-color: white; */
     font-family: Pretendard;
+    overflow-x: hidden;
+
 }
 .container{
     height: 100vh;
@@ -251,6 +253,7 @@ body {
 .wrapper {
     position: relative;
     margin-left: 7.8vw;
+    width: 92.2vw;
     padding-top: 12.8vh;
     /* background: #7f7f7f; */
 
