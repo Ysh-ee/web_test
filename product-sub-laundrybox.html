@@ -236,16 +236,16 @@
             </div>
         </div>
     </div>
-    <div class="container" style="position: relative;">
-        <div class="scroll-change-title">
+    <div class="scroll-change-group">
+        <block class="container first scroll-change">
+            <div class="scroll-change-title">
             빠르고 안전하게 내 손 안에
-            <div class="scroll-change-title-2">
-                간편한 수령 방법
+                <div class="scroll-change-title-2">
+                    간편한 수령 방법
+                </div>
             </div>
-        </div>
-        <div class="scroll-change-group">
             <div class="scroll-change-r">
-                <img class="scroll-change-img" src="img/product_sub_1.png" alt="">
+                <img class="scroll-change-img-1" src="img/product_sub_1.png" alt="">
             </div>
             <div class="scroll-change-r scroll-change-textgroup">
                 <div class="icon-group">
@@ -269,7 +269,72 @@
                     휴대폰 번호 입력, BOX 선택 절차 불필요
                 </div>
             </div>
-        </div>
+        </block>
+        <block class="container scroll-change">
+            <div class="scroll-change-title">
+                빠르고 안전하게 내 손 안에
+                <div class="scroll-change-title-2">
+                    간편한 수령 방법
+                </div>
+            </div>
+            <div class="scroll-change-r">
+                <img class="scroll-change-img-2" src="img/product_sub_2.png" alt="">
+            </div>
+            <div class="scroll-change-r scroll-change-textgroup">
+                <div class="icon-group">
+                    <div class="scroll-change-icon">
+                        <img class="scroll-change-icon-img" src="img/product_sub_icon_1.png" alt="">
+                    </div>
+                    <div class="scroll-change-icon-active">
+                        <img class="scroll-change-icon-img" src="img/product_sub_icon_2_on.png" alt="">
+                    </div>
+                    <div class="scroll-change-icon">
+                        <img class="scroll-change-icon-img" src="img/product_sub_icon_3.png" alt="">
+                    </div>
+                </div>
+                <div class="scroll-change-sub-text">
+                    QR코드 스캔으로 바로 찾기
+                </div>
+                <div class="scroll-change-sub-text2">
+                    모니터 터치 → QR코드 스캔 → 찾기 완료
+                </div>
+                <div class="scroll-change-sub-text3">
+                    인증번호 입력 절차를 QR코드 스캔으로 생략 가능
+                </div>
+            </div>
+        </block>
+        <block class="container scroll-change">
+            <div class="scroll-change-title">
+                뉴노멀 시대엔 안전하게,
+                <div class="scroll-change-title-2">
+                    비대면 시스템
+                </div>
+            </div>
+            <div class="scroll-change-r">
+                <img class="scroll-change-img-3" src="img/product_sub_3.png" alt="">
+            </div>
+            <div class="scroll-change-r scroll-change-textgroup">
+                <div class="icon-group">
+                    <div class="scroll-change-icon">
+                        <img class="scroll-change-icon-img" src="img/product_sub_icon_1.png" alt="">
+                    </div>
+                    <div class="scroll-change-icon">
+                        <img class="scroll-change-icon-img" src="img/product_sub_icon_2.png" alt="">
+                    </div>
+                    <div class="scroll-change-icon-active">
+                        <img class="scroll-change-icon-img" src="img/product_sub_icon_3_on.png" alt="">
+                    </div>
+                </div>
+                <div class="scroll-change-sub-text">
+                    비콘(Beacon)을 이용한 <br>
+                    사용자 및 위치 인증
+                </div>
+                <div class="scroll-change-sub-text2">
+                    시스템 근접 시 비콘 신호를 감지, <br>
+                    '즉시열기' 화면이 자동 팝업 됩니다.
+                </div>
+            </div>
+        </block>
     </div>
     <div class="container hori-scroll bgdelivery">
         <!-- <img class="bgimg" src="/img/product_function.png" alt=""> -->
@@ -402,5 +467,9 @@
           });
         })(jQuery);
       </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="product-sub-depository.js"></script>
 </body>
 </html>
