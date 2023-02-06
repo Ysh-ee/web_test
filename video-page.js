@@ -4,7 +4,7 @@ let tl1 = gsap.timeline({
     scrollTrigger: {
     //   trigger: ".video-box",
       start: "top top",
-      end: "4000% top",
+      end: "4500% top",
       scrub: true,
       pin: ".video-box",
     //   markers: true,    //@@@
