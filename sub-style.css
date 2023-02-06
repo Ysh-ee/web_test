@@ -111,6 +111,8 @@ body {
   height: 92vh;
   background-color: rgb(172, 172, 172);
   overflow: hidden;
+  position: relative;
+
 }
 .sub-banner{
     width: 100%;
@@ -168,9 +170,15 @@ body {
     transform: translate(-50%, -50%);
   }
 .main-banner{
-    background-color: rgba(0, 255, 255, 0.289);
-    /* height: 80vh; */
-    position: relative;
+    /* background-color: rgba(0, 255, 255, 0.289); */
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    top: 75%;
+    /* bottom: 80vh; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: relative; */
 }
 .main-banner-icon{
     /* width: 140px; */
@@ -183,7 +191,7 @@ body {
   /* background-color: #000; */
 
   position: absolute;
-    top: 10%;
+    top: 10vw;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -203,9 +211,11 @@ body {
     text-align: center;
     color: #fff;
 
-    position: absolute;
     /* top: 62%; */
-    top: 21.5vw;
+    position: absolute;
+    top: 6.5vw;
+    /* top: 30%; */
+    /* top: 21.5vw; */
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -225,7 +235,9 @@ body {
     color: #fff;
 
     position: absolute;
-    top: 26.5vw;
+    top: 11.5vw;
+    /* top: 50%; */
+    /* top: 26.5vw; */
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -243,7 +255,9 @@ body {
     color: #fff;
 
     position: absolute;
-    top: 32.3vw;
+    top: 17vw;
+    /* top: 69%; */
+    /* top: 32.3vw; */
     left: 50%;
     transform: translate(-50%, -50%);
 }
