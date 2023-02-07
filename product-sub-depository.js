@@ -24,6 +24,34 @@ gsap.registerPlugin(ScrollTrigger);
 //   // duration: 1
 // });
 
+gsap.from(".artic-img",{
+  scrollTrigger:{
+    trigger:".wrapper",
+    toggleActions: "restart none resume none",
+    start:"top center",
+    // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
+    end:"center center",
+    // markers:true    //@@@
+  },
+  x:500,
+  ease: 3,
+  duration: 1,
+});
+
+gsap.from(".artic-group",{
+  scrollTrigger:{
+    trigger:".wrapper",
+    toggleActions: "restart none resume none",
+    start:"top center",
+    // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
+    end:"center center",
+    // markers:true    //@@@
+  },
+  x:-500,
+  ease: true,
+  duration: 1,
+});
+
 
 gsap.from(".wrapper",{
     scrollTrigger:{
