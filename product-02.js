@@ -24,6 +24,7 @@ gsap.registerPlugin(ScrollTrigger);
 //   // duration: 1
 // });
 
+//-------- img anim(right to mid)
 gsap.from(".artic-img",{
   scrollTrigger:{
     trigger:".wrapper",
@@ -38,6 +39,7 @@ gsap.from(".artic-img",{
   duration: 1,
 });
 
+//---------text anim (left to mid)
 gsap.from(".artic-group",{
   scrollTrigger:{
     trigger:".wrapper",
@@ -67,19 +69,34 @@ gsap.from(".wrapper",{
     
 });
 
+// gsap.from(".wrapper",{
+//     scrollTrigger:{
+//         pin: true, 
+//         trigger:".wrapper",
+//         start:"center top",
+//         // end:"15% bottom",
+//         scrub:2,
+//         pinSpacing: false,
+
+//         // markers:true    //@@@
+//     },
+// });
+
 // ScrollTrigger.create({
 //     snap: 1 / 4 // snap whole page to the closest section!
 //   });
 
+
+//------------------------function-hori-------
 let scrollTween = gsap.to(".hori-item-group", {
-    xPercent: -15,
+    xPercent: -30,
     ease: "none", // <-- IMPORTANT!
     scrollTrigger: {
       trigger: ".hori-scroll",
       pin: true,
       scrub: 0.1,
       //snap: directionalSnap(1 / (sections.length - 1)),
-      end: "+=200",
+      end: "+=300",
     //   markers:true    //@@@
 
     }
@@ -95,19 +112,7 @@ let blocks = gsap.utils.toArray("block"),
 
 // stretch out the body height according to however many sections there are. 
 // gsap.set("scroll-change-group", {height: (blocks.length * 100) + "%"});
-gsap.from(".scroll-change-group",{
-    scrollTrigger:{
-        trigger:".scroll-change-group",
-        start:"top top",
-        end:"bottom top",
-        scrub:20,
-        // pinSpacing: false,
-        pin: true, 
 
-        // markers:true    //@@@
-    },
-    
-});
 // create a ScrollTrigger for each section
 blocks.forEach((block, i) => {
   ScrollTrigger.create({
@@ -116,9 +121,9 @@ blocks.forEach((block, i) => {
     // start: () => (3+i - 0.1) * (innerHeight/3*(i+3) ),
     // end: () => (3+i + 0.1) * (innerHeight/3 ),
     // start:"top top",
-    start: () => 3 * innerHeight + ((i-1)*150) +40,
+    start: () => 3 * innerHeight + ((i+2)*250)+20,
     // 
-    end: () => 3 *innerHeight + ((i-1)*150) + 140 ,
+    end: () => 3 *innerHeight + ((i+2)*250) +40,
     // start: () => (i - 0.3) * innerHeight + 1000,
     // end: () => (i + 0.3) * innerHeight +1000,
     // when a new section activates (from either direction), set the section accordinglyl.
@@ -127,7 +132,17 @@ blocks.forEach((block, i) => {
     onToggle: self => self.isActive && setSection(block)
   });
 });
-
+gsap.from(".scroll-change-group",{
+    scrollTrigger:{
+        trigger:".scroll-change-group",
+        start:"top top",
+        end:"bottom top",
+        scrub:20,
+        // pinSpacing: false,
+        pin: true, 
+        // markers:true    //@@@
+    },
+});
 function setSection(newSection) {
   if (newSection !== currentBlock) {
     gsap.to(currentBlock, { autoAlpha: 0})
