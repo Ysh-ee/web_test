@@ -121,8 +121,8 @@ blocks.forEach((block, i) => {
     // start: () => (3+i - 0.1) * (innerHeight/3*(i+3) ),
     // end: () => (3+i + 0.1) * (innerHeight/3 ),
     // start:"top top",
-    start: () => 3 * innerHeight + ((i+2)*250)+20,
-    end: () => 3 *innerHeight + ((i+2)*250) +40,
+    start: () => 3 * innerHeight + ((i+2)*550),
+    end: () => 3 *innerHeight + ((i+2)*550) +40,
     // start: () => (i - 0.3) * innerHeight + 1000,
     // end: () => (i + 0.3) * innerHeight +1000,
     // when a new section activates (from either direction), set the section accordinglyl.
@@ -136,7 +136,7 @@ gsap.from(".scroll-change-group",{
     scrollTrigger:{
         trigger:".scroll-change-group",
         start:"top top",
-        end:"bottom top",
+        end:"100% top",
         scrub:20,
         // pinSpacing: false,
         pin: true, 

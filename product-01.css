@@ -425,6 +425,13 @@ body {
     position: absolute;
     left: -1.14%;
     bottom: 46.6%;
+  }.artic-title-icon-03{
+    /* background: #ffaaaa6e; */
+    width: 1.620vw;
+    /* height: 1.620vw; */
+    position: absolute;
+    left: -2%;
+    bottom: 46.6%;
   }
   .artic-text{
     /* background: #ffaaaa6e; */
