@@ -23,7 +23,7 @@ gsap.registerPlugin(ScrollTrigger);
 //   // ease:"none",
 //   // duration: 1
 // });
-
+// const anim = gsap.to(".artic-img", { opacity: 0,});
 //-------- img anim(right to mid)
 gsap.from(".artic-img",{
   scrollTrigger:{
@@ -95,9 +95,9 @@ let scrollTween = gsap.to(".hori-item-group", {
     scrollTrigger: {
       trigger: ".hori-scroll",
       pin: true,
-      scrub: 0.1,
+      scrub: 0.5,
       //snap: directionalSnap(1 / (sections.length - 1)),
-      end: "+=300",
+      end: "+=2000",
     //   markers:true    //@@@
 
     }
@@ -122,8 +122,8 @@ blocks.forEach((block, i) => {
     // start: () => (3+i - 0.1) * (innerHeight/3*(i+3) ),
     // end: () => (3+i + 0.1) * (innerHeight/3 ),
     // start:"top top",
-    start: () => 3 * innerHeight + ((i+2)*750),
-    end: () => 3 *innerHeight + ((i+2)*750) +40,
+    start: () => 3 * innerHeight + ((i+2)*950),
+    end: () => 3 *innerHeight + ((i+2)*950) +150,
     // start: () => (i - 0.3) * innerHeight + 1000,
     // end: () => (i + 0.3) * innerHeight +1000,
     // when a new section activates (from either direction), set the section accordinglyl.

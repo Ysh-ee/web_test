@@ -96,7 +96,7 @@ let scrollTween = gsap.to(".hori-item-group", {
       pin: true,
       scrub: 0.1,
       //snap: directionalSnap(1 / (sections.length - 1)),
-      end: "+=300",
+      end: "+=2000",
     //   markers:true    //@@@
 
     }
