@@ -1,0 +1,221 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 62.5%
+}
+body {
+    font-family: Pretendard;
+    overflow-x: hidden;
+}
+.container-long{
+    height: 116.250vh;
+  position: relative;
+
+}
+/* temp */
+.temp-header{
+  height: 8.657vh;
+}
+
+.detail-bg{
+    width: 100vw;
+  height: 103.241vh;
+  position: relative;
+  /* opacity: 0.3; */
+}
+.bg-blue{
+    background-color: #beeaf7;
+}
+.bg-lightblue{
+    background-color: #eaf6fa;
+}
+.banner-img{
+    width: 69.375vw;
+    /* height: 919px; */
+    /* margin: 4.505vw 28.542vw 0 0; */
+    object-fit: contain;
+
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.banner-text-g{
+    width: 32.448vw;
+
+    font-stretch: normal;
+    font-style: normal;
+    text-align: left;
+    color: #000;
+    
+    position: absolute;
+    top: 47.6%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+}
+.banner-text-1{
+    margin-bottom: -0.6vw;
+
+    opacity: 0.8;
+    font-size: 1.927vw;
+    font-weight: 600;
+    line-height: 1.19;
+    letter-spacing: normal;
+}
+.banner-text-2{
+    font-size: 7.292vw;
+    font-weight: bold;
+    line-height: 1.18;
+    letter-spacing: -0.328vw;
+}
+.banner-text-3{
+    margin-top: 1.6vw;
+
+    opacity: 0.6;
+    font-size: 1.406vw;
+    font-weight: 500;
+    line-height: 1.48;
+    letter-spacing: normal;
+}
+/* -----------------------------2-3----------------------------- */
+.sec-img-1{
+    width: 35.521vw;
+
+    position: absolute;
+    top: 55.8%;
+    left: 28.6%;
+    transform: translate(-50%, -50%);
+}
+.sec-img-2{
+    width: 32.240vw;
+
+    position: absolute;
+    top: 55.5%;
+    left: 69.5%;
+    transform: translate(-50%, -50%);
+}
+
+.third-g{
+    position: relative;
+    height: 100%;
+}
+.mt-6{
+    margin-top: 6vh;
+}
+.third-img-1{
+    width: 30.672vw;
+
+    position: absolute;
+    top: 48%;
+    left: 28.6%;
+    transform: translate(-50%, -50%);
+}
+.third-img-2{
+    width: 44.219vw;
+
+    position: absolute;
+    top: 48%;
+    left: 69.5%;
+    transform: translate(-50%, -50%);
+}
+.third-text1{
+    font-size: 1.563vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #231815;
+
+    position: absolute;
+    bottom: 9.3%;
+    left: 28.6%;
+    transform: translate(-50%, -50%);
+}
+.third-text2{
+    font-size: 1.563vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #231815;
+
+    position: absolute;
+    bottom: 9.3%;
+    left: 71.5%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* -----------------------------4--가로---------------------------- */
+
+
+.scroll-change-detail-1-1{
+    /* background-color: rgba(0, 255, 255, 0.179); */
+    width: 57.500vw;
+
+    position: absolute;
+    top: 55vh;
+    left: 25vw;
+    transform: translate(-50%, -50%);
+}
+
+/* -----------------------------END----------------------------- */
+
+.pic-g{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+.pic-1{
+    width: 27.969vw;
+
+    position:absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.pic-2{
+    width: 27.969vw;
+
+    position:absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+.pic-text{
+    opacity: 0.5;
+    font-size: 1.302vw;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #231815;
+}
+.pic-text-pos-1{
+    position:absolute;
+    bottom: 13%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.pic-text-pos-2{
+    position:absolute;
+    bottom: 13%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+

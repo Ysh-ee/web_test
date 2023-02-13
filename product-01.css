@@ -44,6 +44,14 @@ html{
   background-position: center bottom;
   background-size: cover;
 }
+.bgimg-5{
+  width:100vw; 
+  /* height:100vh;  */
+  /* object-fit:cover;  */
+  background-image: url('img/product-05/product-banner-05.png');
+  background-position: center bottom;
+  background-size: cover;
+}
 .bg-opacity{
     /* margin-top: -10vh; */
   width: 100vw;
@@ -78,6 +86,8 @@ html{
   background-position: center center;
   background-size: cover;
 }
+
+/* -----------------------------------------header---------------------------------------- */
 .logo{
     /* background-color: rgba(255, 160, 160, 0.815); */
     /* width: 216px;
@@ -822,6 +832,9 @@ block:not(.first) {
   letter-spacing: normal;
   text-align: left;
   color: #d61f26;
+  }
+  .text-blue{
+    color: #17aed3;
   }
   .scroll-change-sub-text2{
     /* width: 544px;
