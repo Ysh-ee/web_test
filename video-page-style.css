@@ -11,7 +11,16 @@
   }
 
 .video-box{
-    background-color: #ff8d2c;
+  background-color: #e4984b;
+  opacity: 1;
+  /* background-color: #FF8D2C; */
+  /* background-color: #ed9f4a; */
+    /* background-color: #ec9f4a; */
+    /* background-color: #ee9f4a; */
+    /* background-color: #ff8d2c; */
+    /* background-color: rgb(255,141,45); */
+    /* background-color: #ee9e4a; */
+    /* background-color: #ff8d2c; */
     /* background-color: #fa8f26; */
     /* background-color: #f09843; */
     position: relative;

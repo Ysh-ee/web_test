@@ -17,16 +17,23 @@ let tl1 = gsap.timeline({
   gsap.from(".group-1",{
     scrollTrigger:{
       // trigger:".video-box",
-      toggleActions: "restart none resume none",
-      start:"top top",
+      toggleActions: "play none resume none",
+      start:"20% top",
       // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
       end:"center top",
+      scrub: true,
+
       // markers:true    //@@@
     },
     y:800,
-    ease: 3,
-    // duration: 10,
+    ease: true,
+    bounds: true,
+    duration: 1,
   });
+
+  // $("group-1").on("mouseenter", function() {
+  //   TweenMax.to(this, 0.2, {scale:1, delay:0.4})
+  // })
 
 // let tl2 = gsap.timeline({
 //     scrollTrigger: {
