@@ -122,8 +122,8 @@ blocks.forEach((block, i) => {
     // start: () => (3+i - 0.1) * (innerHeight/3*(i+3) ),
     // end: () => (3+i + 0.1) * (innerHeight/3 ),
     // start:"top top",
-    start: () => 3 * innerHeight + ((i+2)*1050),
-    end: () => 3 *innerHeight + ((i+2)*1050) +150,
+    start: () => 3 * innerHeight + ((i+2)*1350),
+    end: () => 3 *innerHeight + ((i+2)*1350) +150,
     // start: () => (i - 0.3) * innerHeight + 1000,
     // end: () => (i + 0.3) * innerHeight +1000,
     // when a new section activates (from either direction), set the section accordinglyl.
