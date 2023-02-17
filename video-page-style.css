@@ -28,8 +28,9 @@
 }
 
 #video-page-1{
-    /* width: 60vw; */
-    height: 20vh;
+  /* width: 60vw; */
+    width: 100vw;
+    height: 100vh;
 
     position: absolute;
     top: 18vw;
@@ -37,6 +38,17 @@
     transform: translate(-50%, -50%);
     
     /* object-fit: cover; */
+}
+#video-page-2{
+  /* width: 60vw; */
+  height: 100vh;
+
+  position: absolute;
+  top: 18vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* object-fit: cover; */
 }
 .group-1{
   /* background-color: #8d5a2a; */

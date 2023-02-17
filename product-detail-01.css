@@ -11,8 +11,14 @@ body {
     font-family: Pretendard;
     overflow-x: hidden;
 }
-.container-long{
-    height: 116.250vh;
+.container-2{
+    /* height: 116.250vh; */
+    height: 116.296vh;
+  position: relative;
+
+}
+.container-6{
+    height: 117.870vh;
   position: relative;
 
 }
@@ -44,6 +50,31 @@ body {
     left: 35%;
     transform: translate(-50%, -50%);
 }
+/* -------------------------route */
+.banner-route{
+    font-size: 1.042vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    /* text-align: center; */
+    color: #000;
+
+    position: absolute;
+    top: 4.2%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+}
+.small-arrow{
+    /* background-color: #3b8ca7; */
+    font-size: 0.542vw;
+
+    margin-left: 0.742vw;
+    margin-right: 0.742vw;
+    margin-bottom: 0.3vw;
+
+}
 .banner-text-g{
     width: 32.448vw;
 
@@ -53,7 +84,7 @@ body {
     color: #000;
     
     position: absolute;
-    top: 47.6%;
+    top: 48%;
     left: 72%;
     transform: translate(-50%, -50%);
 }
@@ -82,11 +113,16 @@ body {
     letter-spacing: normal;
 }
 /* -----------------------------2-3----------------------------- */
+.pos-down{
+    top: 19.4vh;
+}
+
+
 .sec-img-1{
     width: 35.521vw;
 
     position: absolute;
-    top: 55.8%;
+    top: 55.4%;
     left: 28.6%;
     transform: translate(-50%, -50%);
 }
@@ -94,7 +130,7 @@ body {
     width: 32.240vw;
 
     position: absolute;
-    top: 55.5%;
+    top: 54.9%;
     left: 69.5%;
     transform: translate(-50%, -50%);
 }
@@ -102,24 +138,25 @@ body {
 .third-g{
     position: relative;
     height: 100%;
+    top: 9.8vh;
 }
 .mt-6{
-    margin-top: 6vh;
+    /* margin-top: 9.8vh; */
 }
 .third-img-1{
     width: 30.672vw;
 
     position: absolute;
-    top: 48%;
-    left: 28.6%;
+    top: 50%;
+    left: 27.0%;
     transform: translate(-50%, -50%);
 }
 .third-img-2{
     width: 44.219vw;
 
     position: absolute;
-    top: 48%;
-    left: 69.5%;
+    top: 50.5%;
+    left: 69.3%;
     transform: translate(-50%, -50%);
 }
 .third-text1{
@@ -133,8 +170,8 @@ body {
     color: #231815;
 
     position: absolute;
-    bottom: 9.3%;
-    left: 28.6%;
+    bottom: 6.2%;
+    left: 26.9%;
     transform: translate(-50%, -50%);
 }
 .third-text2{
@@ -148,8 +185,8 @@ body {
     color: #231815;
 
     position: absolute;
-    bottom: 9.3%;
-    left: 71.5%;
+    bottom: 6.2%;
+    left: 71.0%;
     transform: translate(-50%, -50%);
 }
 
@@ -159,11 +196,12 @@ body {
 
 .scroll-change-detail-1-1{
     /* background-color: rgba(0, 255, 255, 0.179); */
-    width: 57.500vw;
+    /* width: 57.500vw; */
+    height: 74.259vh;
 
     position: absolute;
-    top: 55vh;
-    left: 25vw;
+    top: 56.5vh;
+    left: 25.3vw;
     transform: translate(-50%, -50%);
 }
 
@@ -209,7 +247,18 @@ body {
 	transform: translateX(-50%);
 }
 
+/* ------------------------------scroll-change-group--------------- */
 
+.tempbg{
+background-color: #536d766e;
+}
+.pos-down2{
+    top: 16.8vh;
+}
+.icon-bigger{
+    width: 3vw;
+    left: 53.5%;
+}
 
 
 /* -----------------------------END----------------------------- */
@@ -223,7 +272,7 @@ body {
     width: 27.969vw;
 
     position:absolute;
-    top: 50%;
+    top: 49.5%;
     left: 35%;
     transform: translate(-50%, -50%);
 }
@@ -231,7 +280,7 @@ body {
     width: 27.969vw;
 
     position:absolute;
-    top: 50%;
+    top: 49.5%;
     left: 65%;
     transform: translate(-50%, -50%);
 }
@@ -248,13 +297,13 @@ body {
 }
 .pic-text-pos-1{
     position:absolute;
-    bottom: 13%;
+    bottom: 19%;
     left: 35%;
     transform: translate(-50%, -50%);
 }
 .pic-text-pos-2{
     position:absolute;
-    bottom: 13%;
+    bottom: 19%;
     left: 65%;
     transform: translate(-50%, -50%);
 }

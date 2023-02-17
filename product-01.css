@@ -794,7 +794,8 @@ block:not(.first) {
 
   border-radius: 0.5vw;
   box-shadow: 0 0.156vw 0.313vw 0 rgba(0, 0, 0, 0.16);
-  background-color: #f8f8f8;
+  background-color: #ffffff;
+  /* background-color: #f8f8f8; */
 
   position:relative;
 
