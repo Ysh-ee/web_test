@@ -290,7 +290,8 @@ header{
 }
 .scroll-pin-1{
     /* background-color: #2a2a2a23; */
-    width: 38.073vw;
+    /* width: 38.073vw; */
+    height: 100vh;
     position: absolute;
     /* top: -16.5vh;
     right: -1vw; */
