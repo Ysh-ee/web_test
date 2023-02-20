@@ -139,9 +139,12 @@ body {
     position: relative;
     height: 100%;
 }
-.mt-6{
-    top: 9.8vh;
-
+.mt-4{
+    /* top: 9.8vh; */
+    top: 4vh;
+}
+.mb-6{
+    margin-bottom: 9.8vh;
 }
 .third-img-1{
     width: 30.672vw;
@@ -204,20 +207,43 @@ body {
     left: 25.3vw;
     transform: translate(-50%, -50%);
 }
+.scroll-change-detail-1-2{
+    /* background-color: rgba(0, 255, 255, 0.179); */
+    /* width: 57.500vw; */
+    height: 76.111vh;
+
+    position: absolute;
+    top: 59.5vh;
+    left: 39.3vw;
+    transform: translate(-50%, -50%);
+}
 
 /* -----------------------------가로card스크롤----------------------------- */
+.card-01-1{
+    background-image: url('img/product-detail-01/card-1.png');
+}
+.card-01-2{
+    background-image: url('img/product-detail-01/card-2.png');
+}
+.card-01-3{
+    background-image: url('img/product-detail-01/card-3.png');
+}
+.card-scroll{
+    /* background-color: rgba(0, 0, 0, 0.165); */
+    height: 101.5vh;
+}
 .gallery {
 	position: absolute;
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
-	background-color: #2f2c337e;
-
+	/* background-color: #2f2c337e; */
+    top: 11%;
 }
 .cards {
 	position: absolute;
-	width: 14rem;
-	height: 18rem;
+	width: 29.583vw;
+	height: 29.583vw;
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -227,18 +253,24 @@ body {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	width: 14rem;
-	height: 18rem;
+	width: 29.583vw;
+	height: 29.583vw;
 	text-align: center;
 	line-height: 18rem;
 	font-size: 2rem;
 	font-family: sans-serif;
-	background-color: #9d7cce;
+	/* background-color: #9d7cce; */
 	position: absolute;
 	top: 0;
 	left: 0;
 	border-radius: 0.8rem;
+
+    background-position: center bottom;
+    background-size: cover;
 }
+/* .cards li .imgs{
+  
+} */
 
 .actions {
 	position: absolute;
@@ -252,6 +284,7 @@ body {
 .tempbg{
 background-color: #536d766e;
 }
+
 .pos-down2{
     top: 16.8vh;
 }
@@ -264,6 +297,7 @@ background-color: #536d766e;
 /* -----------------------------END----------------------------- */
 
 .pic-g{
+    
     position:relative;
     width: 100%;
     height: 100%;

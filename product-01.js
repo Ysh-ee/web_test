@@ -62,10 +62,8 @@ gsap.from(".wrapper",{
         scrub:20,
         pinSpacing: false,
         pin: true, 
-
         // markers:true    //@@@
     },
-    
 });
 
 
@@ -141,10 +139,8 @@ gsap.from(".scroll-change-group",{
         scrub:20,
         // pinSpacing: false,
         pin: true, 
-
         // markers:true    //@@@
     },
-    
 });
 
 

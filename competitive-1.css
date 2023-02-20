@@ -1,0 +1,369 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 62.5%
+}
+body {
+    font-family: Pretendard;
+    overflow-x: hidden;
+}
+  /* ----------------------------header&footer-------------------------- */
+
+header{
+    background-color: #fff;
+    width: 100%;
+    max-height: 8.4vh;
+}
+.logo{
+    margin-top: 1.2vw;
+    margin-left: 5.13vw;
+    float: left;
+
+}
+.logo-smartcube{
+    width: 11.25vw;
+  }
+.header-navbar{
+      width: 8.93vw;
+      float: right;
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 400%;
+    text-align: center;
+    vertical-align: middle;
+    color: #2a2a2a;
+  }
+  .header-icon{
+      float: right;
+    margin: 1.714vw;
+    margin-bottom: 1vw;
+    margin-right: 4.64vw;
+    color: #2a2a2a;
+  }
+  .header-icon-language{
+    width: 2.13vw;
+  }
+  footer{
+    width: 100vw;
+  height: 33.611vh;
+  padding: 3.542vw 5.604vw 3.906vw 7.240vw;
+  background-color: #2a2a2a;
+  position: relative;
+  }
+  .footer-text{
+    font-size: 0.911vw;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .footer-mr41{
+    margin-right: 2.135vw;
+  }
+  .footer-line{
+    width: 0vw;
+  /* height: 1.005vw; */
+  /* line-height: 0.1; */
+
+  margin-left: 1.974vw;
+  margin-right: 1.974vw;
+  border: solid 0.052vw #8d8d8d;
+  /* float: left; */
+  }
+  .footer-smartcube{
+    margin: 2.760vw 4.167vw 0.833vw 0;
+  font-size: 0.990vw;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  }
+  .footer-smalltext{
+    width: 39.896vw;
+  height: 10.093vh;
+  margin: 0.833vw 30.958vw 0 0;
+  font-size: 0.833vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8e8e8e;
+  }
+  .footer-logo{
+    width: 16.302vw;
+    position: absolute;
+    right: 5.604vw;
+    bottom: 8.453vw;
+  }
+  /* ----------------------------1-------------------------- */
+
+  .banner{
+    height: 100vh;
+    width: 100vw;
+
+  }
+  .banner .competitive{
+    background-image: url('img/competitive-1/competitive-banner.png');
+    background-position: center center;
+    background-size: cover;
+    height: 49.074vh;
+    width: 100vw;
+  }
+  .banner .banner-bottom{
+      /* background-color: #2a2a2a31; */
+      height: 50vh;
+      position: relative;
+
+    }
+    .banner .banner-bottom .banner-sub{
+      /* background-color: #2a2a2a31; */
+      width: 100vw;
+      height: 30vh;
+
+      position: relative;
+      position: absolute;
+
+      bottom: 55%;
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
+    .banner .banner-bottom .banner-sub img{
+      /* background-color: #2a2a2a31; */
+      height: 100%;
+      position: absolute;
+
+      left: 40%;
+      transform: translate(-100%, 0%);
+    }
+    .banner .banner-bottom .banner-sub .text-g{
+        /* background-color: #2a2a2a31; */
+        height: 100%;
+        width: 50%;
+
+        
+  
+        position: relative;
+        position: absolute;
+  
+        right: 55%;
+        transform: translate(100%, 0%);
+      }
+      .banner .banner-bottom .banner-sub .text-g .title{
+        font-size: 5.208vw;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: -0.234vw;
+        text-align: left;
+        color: #2a2a2a;
+      }
+      .banner .banner-bottom .banner-sub .text-g .sub-title{
+
+        font-size: 1.042vw;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2a2a2a;
+
+        position: absolute;
+  
+        bottom: 0%;
+        transform: translate(0%, 0%);
+      }
+  .banner-route{
+    /* background-color: #2a2a2a31; */
+    font-size: 1.042vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #000;
+
+    position: absolute;
+    top: 3.889vh;
+    right: 4.740vw;
+    transform: translate(0%, 0%);
+}
+.small-arrow{
+    /* background-color: #3b8ca7; */
+    font-size: 0.542vw;
+
+    margin-left: 0.742vw;
+    margin-right: 0.742vw;
+    margin-bottom: 0.3vw;
+
+}
+  /* ----------------------------scroll-section-1-------------------------- */
+
+.section-1{
+    /* background-color: #2a2a2a23; */
+
+    width: 100vw;
+    height: 223vh;
+    margin-top: 3vh;
+    position: relative;
+
+}
+.scroll-pin-1{
+    /* background-color: #2a2a2a23; */
+    width: 38.073vw;
+    position: absolute;
+    top: -12vh;
+    right: 3.385vw;
+    transform: translate(0%, 0%);
+}
+.bggray{
+    background-color: #f6f6f6;
+}
+.section-1 .block-g{
+    margin-top: 15vh;
+}
+.section-1 .block-g .scroll-block{
+    box-shadow: 0 0.156vw 0.312vw 0 rgba(0, 0, 0, 0.16);
+    height: 38.073vw;
+    width: 100vw;
+}
+.title-g img{
+    /* background-color: #2a2a2a23; */
+    height: 34.907vh;
+    margin-top: 4.630vh;
+    /* padding-left: 4.740vw; */
+}
+.title-g{
+    /* margin: 0 34.427vw 0.417vw 0; */
+    /* background-color: #2a2a2a23; */
+
+    padding-left: 4.948vw;
+    padding-top: 12.963vh;
+}
+.red-text{
+    opacity: 0.92;
+    font-size: 0.885vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d8282f;
+}
+.main-text{
+    font-size: 2.708vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  /* text-align: center; */
+  color: #2a2a2a;
+}
+
+
+  /* ----------------------------scroll-section-2-------------------------- */
+.title-g-2{
+    /* background-color: rgba(0, 0, 0, 0.151); */
+
+    padding-left: 7.3vw;
+    padding-top: 11.963vh;
+
+    position: relative;
+}
+.scroll-pin-2{
+    margin-left: -1.5vw;
+    width: 41.250vw;
+
+    position: absolute;
+    top: 115%;
+    left: 3%;
+    transform: translate(10%, 0%);
+}
+.scroll-pic-4{
+    width: 44.635vw;
+
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    transform: translate(0%, 0%);
+}
+.section-2{
+    /* background-color: rgba(0, 0, 0, 0.151); */
+    margin-top: 10vh;
+    width: 100vw;
+    height: 97vh;
+    position: relative;
+}
+.scroll-block-2{
+    box-shadow: 0 0.156vw 0.312vw 0 rgba(0, 0, 0, 0.16);
+    height: 79.537vh;
+    width: 100vw;
+}
+
+
+  /* ----------------------------section-3 client-------------------------- */
+
+.section-3{
+    /* background-color: rgba(0, 0, 0, 0.13); */
+    /* height: 113.148vh; */
+    height: 113.148vh;
+    width: 100vw;
+
+    position: relative;
+}
+.section-3 img{
+    width: 100%;
+    height: 66.019vh;
+    /* width: 109.375vw; */
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(0%, 0%);
+}
+.title-g-3{
+    /* background-color: rgba(0, 0, 0, 0.13); */
+    padding-top: 19vh;
+    color: #525252;
+    width: 100vw;
+}
+.client{
+    /* background-color: rgba(0, 0, 0, 0.13); */
+
+    font-size: 4.208vw;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    /* letter-spacing: -0.134vw; */
+    text-align: center;
+}
+.client-text{
+    margin-top: 4.537vh;
+    font-size: 1.808vw;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: -0.134vw;
+    text-align: center;
+
+    opacity: 0.8;
+}
+/* 113.148vw */

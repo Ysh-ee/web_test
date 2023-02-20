@@ -2,32 +2,53 @@ gsap.registerPlugin(ScrollTrigger);
 
 let iteration = 0; // gets iterated when we scroll all the way to the end or start and wraps around - allows us to smoothly continue the playhead scrubbing in the correct direction.
 
-const spacing = 0.2,    // spacing of the cards (stagger)
+const spacing = 0.123,    // spacing of the cards (stagger)
 	snap = gsap.utils.snap(spacing), // we'll use this to snap the playhead on the seamlessLoop
 	cards = gsap.utils.toArray('.cards li'),
 	seamlessLoop = buildSeamlessLoop(cards, spacing),
+	
 	scrub = gsap.to(seamlessLoop, { // we reuse this tween to smoothly scrub the playhead on the seamlessLoop
 		totalTime: 0,
-		duration: 0.5,
+		duration: 1,
 		ease: "power3",
-		paused: true
+		paused: true,
 	}),
 	trigger = ScrollTrigger.create({
-		start: 0,
+		start: ".card-scroll",
 		onUpdate(self) {
-			if (self.progress === 1 && self.direction > 0 && !self.wrapping) {
-				wrapForward(self);
-			} else if (self.progress < 1e-5 && self.direction < 0 && !self.wrapping) {
-				wrapBackward(self);
-			} else {
+			// if (self.progress === 1 && self.direction > 0 && !self.wrapping) {
+			// 	wrapForward(self);
+			// } else if (self.progress < 1e-5 && self.direction < 0 && !self.wrapping) {
+			// 	wrapBackward(self);
+			// } else {
         scrub.vars.totalTime = snap((iteration + self.progress) * seamlessLoop.duration());
 				scrub.invalidate().restart(); // to improve performance, we just invalidate and restart the same tween. No need for overwrites or creating a new tween on each update.
-				self.wrapping = false;
-			}
+				// self.wrapping = false;
+			// }
 		},
-		end: "+=1000",
-		pin: ".gallery"
+		pin: ".card-scroll",
+		// pin: ".gallery",
+		// end: "+=500",
+		end:"30% top",
+        // markers:true    //@@@
+
 	});
+
+	//xxxxxxxxxxx
+	// gsap.from(".container",{
+	// 	scrollTrigger:{
+	// 		trigger:".container",
+	// 		start:"bottom top",
+	// 		end:"200% top",
+	// 		scrub:20,
+	// 		pinSpacing: false,
+	// 		pin: true, 
+	// 		markers:true    //@@@
+	// 	},
+	// });
+	
+
+	
 
 // function wrapForward(trigger) { // when the ScrollTrigger reaches the end, loop back to the beginning seamlessly
 // 	iteration++;
@@ -65,7 +86,7 @@ const spacing = 0.2,    // spacing of the cards (stagger)
 
 
 function buildSeamlessLoop(items, spacing) {
-	let overlap = Math.ceil(1 / spacing), // number of EXTRA animations on either side of the start/end to accommodate the seamless looping
+	let overlap = Math.ceil(1 / spacing ), // number of EXTRA animations on either side of the start/end to accommodate the seamless looping
 		startTime = items.length * spacing + 0.5, // the time on the rawSequence at which we'll start the seamless loop
 		loopTime = (items.length + overlap) * spacing + 1, // the spot at the end where we loop back to the startTime 
 		rawSequence = gsap.timeline({paused: true}), // this is where all the "real" animations live
@@ -81,16 +102,16 @@ function buildSeamlessLoop(items, spacing) {
 		i, index, item;
 
 	// set initial state of items
-	gsap.set(items, {xPercent: 400, opacity: 0,	scale: 0});
+	gsap.set(items, {xPercent: 400, opacity: 0,	scale: 0.53});
 
 	// now loop through and create all the animations in a staggered fashion. Remember, we must create EXTRA animations at the end to accommodate the seamless looping.
 	for (i = 0; i < l; i++) {
 		index = i % items.length;
 		item = items[index];
 		time = i * spacing;
-		rawSequence.fromTo(item, {scale: 0, opacity: 0}, {scale: 1, opacity: 1, zIndex: 100, duration: 0.5, yoyo: true, repeat: 1, ease: "power1.in", immediateRender: false}, time)
+		rawSequence.fromTo(item, {scale: 0.53, opacity: 0}, {scale: 1, opacity: 1, zIndex: 100, duration: 0.5, yoyo: true, repeat: 1, ease: "power1.in", immediateRender: false}, time)
 		           .fromTo(item, {xPercent: 400}, {xPercent: -400, duration: 1, ease: "none", immediateRender: false}, time);
-		i <= items.length && seamlessLoop.add("label" + i, time); // we don't really need these, but if you wanted to jump to key spots using labels, here ya go.
+		// i <= items.length && seamlessLoop.add("label" + i, time); // we don't really need these, but if you wanted to jump to key spots using labels, here ya go.
 	}
 	
 	//here's where we set up the scrubbing of the playhead to make it appear seamless. 
@@ -107,3 +128,54 @@ function buildSeamlessLoop(items, spacing) {
 	});
 	return seamlessLoop;
 }
+
+//   ------------------scrollchange-----------------------
+
+let blocks = gsap.utils.toArray("block"),
+    currentBlock = blocks[0];
+
+// gsap.defaults({overwrite: 'auto', duration: 0.3});
+
+// stretch out the body height according to however many sections there are. 
+// gsap.set("scroll-change-group", {height: (blocks.length * 100) + "%"});
+
+// create a ScrollTrigger for each section
+blocks.forEach((block, i) => {
+  ScrollTrigger.create({
+    // use dynamic scroll positions based on the window height (offset by half to make it feel natural)
+    trigger:".scroll-change-group",
+    // start: () => (3+i - 0.1) * (innerHeight/3*(i+3) ),
+    // end: () => (3+i + 0.1) * (innerHeight/3 ),
+    // start:"top top",
+    start: () => 3 * innerHeight + ((i+2)*250) +150,
+    end: () => 3 *innerHeight + ((i+2)*250) +300,
+    // start: () => (i - 0.3) * innerHeight + 1000,
+    // end: () => (i + 0.3) * innerHeight +1000,
+    // when a new section activates (from either direction), set the section accordinglyl.
+    // pin: true,
+    // markers:true,    //@@@
+    onToggle: self => self.isActive && setSection(block)
+  });
+});
+
+gsap.from(".scroll-change-group",{
+    scrollTrigger:{
+        trigger:".scroll-change-group",
+        start:"top top",
+        end:"200% top",
+        scrub:20,
+        // pinSpacing: false,
+        pin: true, 
+        // markers:true    //@@@
+    },
+});
+
+
+function setSection(newSection) {
+	if (newSection !== currentBlock) {
+	  gsap.to(currentBlock, { autoAlpha: 0})
+	  gsap.to(newSection, { autoAlpha: 1});
+	  currentBlock = newSection;
+	}
+  }
+  
