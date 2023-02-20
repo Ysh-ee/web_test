@@ -331,13 +331,15 @@ background-color: #536d766e;
 }
 .pic-text-pos-1{
     position:absolute;
-    bottom: 19%;
+    top: 78%;
+    /* bottom: 19%; */
     left: 35%;
     transform: translate(-50%, -50%);
 }
 .pic-text-pos-2{
     position:absolute;
-    bottom: 19%;
+    top: 78%;
+    /* bottom: 19%; */
     left: 65%;
     transform: translate(-50%, -50%);
 }
