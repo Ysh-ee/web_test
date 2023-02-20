@@ -308,7 +308,9 @@ header{
 }
 .section-1 .block-g .scroll-block{
     box-shadow: 0 0.156vw 0.312vw 0 rgba(0, 0, 0, 0.16);
-    height: 38.073vw;
+    /* height: 38.073vw;?????? */
+    height: 67.685vh;
+
     width: 100vw;
 }
 .title-g img{
