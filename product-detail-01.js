@@ -109,8 +109,14 @@ function buildSeamlessLoop(items, spacing) {
 		index = i % items.length;
 		item = items[index];
 		time = i * spacing;
-		rawSequence.fromTo(item, {scale: 0.53, opacity: 0}, {scale: 1, opacity: 1, zIndex: 100, duration: 0.5, yoyo: true, repeat: 1, ease: "power1.in", immediateRender: false}, time)
-		           .fromTo(item, {xPercent: 400}, {xPercent: -400, duration: 1, ease: "none", immediateRender: false}, time);
+		rawSequence.fromTo(item, 
+							{scale: 0.53, opacity: 0}, 
+							{scale: 1, opacity: 1, zIndex: 100, duration: 0.5, yoyo: true, repeat: 1, ease: "power1.in", immediateRender: false}, 
+							time)
+		           .fromTo(item, 
+							{xPercent: 350}, 
+							{xPercent: -350, duration: 1, ease: "none", immediateRender: false}, 
+							time);
 		// i <= items.length && seamlessLoop.add("label" + i, time); // we don't really need these, but if you wanted to jump to key spots using labels, here ya go.
 	}
 	

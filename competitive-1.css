@@ -116,7 +116,7 @@ header{
   height: 16.111vh;
   /* 16.111vh */
   /* padding: 3.542vw 5.604vw 3.906vw 7.240vw; */
-  padding: 3.056vh 7.292vw 3.906vh 5.093vw;
+  padding: 4.074vh 7.292vw 4.074vh 7.292vw;
   background-color: #2a2a2a;
   position: relative;
   }
@@ -156,8 +156,8 @@ header{
   }
   .footer2-smalltext{
     width: 39.896vw;
-  height: 10.093vh;
-  margin: 0.833vw 30.958vw 0 0;
+  /* height: 10.093vh; */
+  margin: 0.833vw 0 0 0;
   font-size: 0.521vw;
   font-weight: normal;
   font-stretch: normal;
@@ -172,7 +172,7 @@ header{
     width: 9.531vw;
     position: absolute;
     right: 7.292vw;
-    bottom: 7.838vh;
+    bottom: 6.787vh;
   }
   /* ----------------------------1-------------------------- */
 
@@ -283,7 +283,7 @@ header{
     /* background-color: #2a2a2a23; */
 
     width: 100vw;
-    height: 223vh;
+    height: 235vh;
     margin-top: 3vh;
     position: relative;
 
@@ -292,8 +292,8 @@ header{
     /* background-color: #2a2a2a23; */
     width: 38.073vw;
     position: absolute;
-    top: -12vh;
-    right: 3.385vw;
+    top: -16.5vh;
+    right: -1vw;
     transform: translate(0%, 0%);
     z-index: 10;
 }
@@ -396,8 +396,8 @@ header{
     overflow: hidden;
 }
 .section-3 img{
-    width: 100%;
-    height: 74.352vh;
+    /* width: 100%;
+    height: 74.352vh; */
     width: 109.375vw;
     position: absolute;
     bottom: 0%;
