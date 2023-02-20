@@ -303,22 +303,26 @@ background-color: #536d766e;
     height: 100%;
 }
 .pic-1{
-    width: 27.969vw;
 
     position:absolute;
     top: 49.5%;
     left: 35%;
     transform: translate(-50%, -50%);
 }
-.pic-2{
+.pic-1 img{
     width: 27.969vw;
-
+}
+.pic-2{
     position:absolute;
     top: 49.5%;
     left: 65%;
     transform: translate(-50%, -50%);
 }
+.pic-2 img{
+    width: 27.969vw;
+}
 .pic-text{
+    width: 100%;
     opacity: 0.5;
     font-size: 1.302vw;
     font-weight: 500;
@@ -326,23 +330,28 @@ background-color: #536d766e;
     font-style: normal;
     line-height: 1.56;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #231815;
+
+    position:absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .pic-text-pos-1{
-    background-color: rgba(0, 0, 0, 0.179);
+    /* background-color: rgba(0, 0, 0, 0.179);
     position:absolute;
     top: 84%;
-    /* bottom: 19%; */
     left: 35%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    /* bottom: 19%; */
 }
 .pic-text-pos-2{
-    position:absolute;
+    /* position:absolute;
     top: 84%;
-    /* bottom: 19%; */
     left: 65%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    /* bottom: 19%; */
 }
 
 

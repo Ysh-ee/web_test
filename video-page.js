@@ -1,11 +1,11 @@
 const videoPage_1 = document.querySelector("#video-page-1");
-const videoPage_2 = document.querySelector("#video-page-2");
+// const videoPage_2 = document.querySelector("#video-page-2");
 
 let tl1 = gsap.timeline({
     scrollTrigger: {
     //   trigger: ".video-box",
       start: "top top",
-      end: "900% top",
+      end: "100% top",
       scrub: true,
       pin: ".video-box",
     //   markers: true,    //@@@

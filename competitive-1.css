@@ -109,6 +109,68 @@ header{
     right: 5.604vw;
     bottom: 8.453vw;
   }
+  /* ------2222 */
+  footer{
+    width: 100vw;
+  height: 33.611vh;
+  /* 16.111vw */
+  padding: 3.542vw 5.604vw 3.906vw 7.240vw;
+  background-color: #2a2a2a;
+  position: relative;
+  }
+  .footer2-text{
+    font-size: 0.911vw;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .footer2-mr41{
+    margin-right: 2.135vw;
+  }
+  .footer2-line{
+    width: 0vw;
+  /* height: 1.005vw; */
+  /* line-height: 0.1; */
+
+  margin-left: 1.974vw;
+  margin-right: 1.974vw;
+  border: solid 0.052vw #8d8d8d;
+  /* float: left; */
+  }
+  .footer2-smartcube{
+    margin: 2.760vw 4.167vw 0.833vw 0;
+  font-size: 0.990vw;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  }
+  .footer2-smalltext{
+    width: 39.896vw;
+  height: 10.093vh;
+  margin: 0.833vw 30.958vw 0 0;
+  font-size: 0.833vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8e8e8e;
+  }
+  .footer2-logo{
+    width: 16.302vw;
+    position: absolute;
+    right: 5.604vw;
+    bottom: 8.453vw;
+  }
   /* ----------------------------1-------------------------- */
 
   .banner{
@@ -327,15 +389,16 @@ header{
     width: 100vw;
 
     position: relative;
+    overflow: hidden;
 }
 .section-3 img{
     width: 100%;
-    height: 66.019vh;
-    /* width: 109.375vw; */
+    height: 74.352vh;
+    width: 109.375vw;
     position: absolute;
     bottom: 0%;
-    right: 0%;
-    transform: translate(0%, 0%);
+    right: 50%;
+    transform: translate(50%, 12%);
 }
 .title-g-3{
     /* background-color: rgba(0, 0, 0, 0.13); */
