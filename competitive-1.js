@@ -9,6 +9,6 @@ gsap.from(".section-1",{
         scrub:20,
         pinSpacing: false,
         pin: ".scroll-pin-1", 
-        markers:true    //@@@
+        // markers:true    //@@@
     },
 });
