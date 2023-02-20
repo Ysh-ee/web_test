@@ -49,13 +49,13 @@ header{
   .header-icon-language{
     width: 2.13vw;
   }
-  footer{
+  /* footer{
     width: 100vw;
   height: 33.611vh;
   padding: 3.542vw 5.604vw 3.906vw 7.240vw;
   background-color: #2a2a2a;
   position: relative;
-  }
+  } */
   .footer-text{
     font-size: 0.911vw;
     font-weight: 500;
@@ -109,12 +109,13 @@ header{
     right: 5.604vw;
     bottom: 8.453vw;
   }
-  /* ------2222 */
+  /* ---------------footer------2222------------ */
   footer{
     width: 100vw;
-  height: 33.611vh;
-  /* 16.111vw */
-  padding: 3.542vw 5.604vw 3.906vw 7.240vw;
+  /* height: 33.611vh; */
+  height: 16.111vh;
+  /* 16.111vh */
+  /* padding: 3.542vw 5.604vw 3.906vw 7.240vw; */
   background-color: #2a2a2a;
   position: relative;
   }
@@ -292,6 +293,7 @@ header{
     top: -12vh;
     right: 3.385vw;
     transform: translate(0%, 0%);
+    z-index: 10;
 }
 .bggray{
     background-color: #f6f6f6;
