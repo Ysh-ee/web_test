@@ -228,7 +228,8 @@ header{
         transform: translate(100%, 0%);
       }
       .banner .banner-bottom .banner-sub .text-g .title{
-        font-size: 5.208vw;
+        /* font-size: 5.208vw; */
+        font-size: 9.259vh;
         font-weight: 900;
         font-stretch: normal;
         font-style: normal;
@@ -239,7 +240,8 @@ header{
       }
       .banner .banner-bottom .banner-sub .text-g .sub-title{
 
-        font-size: 1.042vw;
+        /* font-size: 1.042vw; */
+        font-size: 1.852vh;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
@@ -353,27 +355,42 @@ header{
 .title-g-2{
     /* background-color: rgba(0, 0, 0, 0.151); */
 
+    width: 100%;
+    height: 100%;
+
     padding-left: 7.3vw;
     padding-top: 7.963vh;
 
     position: relative;
 }
+.title-g-2 .img-g{
+    /* background-color: rgba(109, 82, 82, 0.568); */
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .scroll-pin-2{
     margin-left: -1.5vw;
-    width: 41.250vw;
+    /* width: 41.250vw; */
+    height: 50.185vh;
 
     position: absolute;
-    top: 115%;
-    left: 3%;
-    transform: translate(10%, 0%);
+    top: 55%;
+    left: 48%;
+    transform: translate(-100%, -50%);
 }
 .scroll-pic-4{
-    width: 44.635vw;
+    /* width: 44.635vw; */
+    height: 57.315vh;
 
     position: absolute;
-    top: 70%;
-    right: 5%;
-    transform: translate(0%, 0%);
+    top: 49%;
+    right: 50%;
+    transform: translate(100%, -50%);
 }
 .section-2{
     /* background-color: rgba(0, 0, 0, 0.151); */
@@ -394,7 +411,8 @@ header{
 .section-3{
     /* background-color: rgba(0, 0, 0, 0.13); */
     /* height: 113.148vh; */
-    height: 113.148vh;
+    /* height: 113.148vh; */
+    height: calc(40vh + 40vw);
     width: 100vw;
 
     position: relative;
@@ -410,10 +428,16 @@ header{
     transform: translate(50%, 12%);
 }
 .title-g-3{
-    /* background-color: rgba(0, 0, 0, 0.13); */
+    /* background-color: rgba(140, 78, 78, 0.13); */
     padding-top: 19vh;
     color: #525252;
     width: 100vw;
+
+    position: absolute;
+    top: 0%;
+    /* bottom: 74.352vh; */
+    right: 50%;
+    transform: translate(50%, 0%);
 }
 .client{
     /* background-color: rgba(0, 0, 0, 0.13); */
