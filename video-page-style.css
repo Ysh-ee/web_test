@@ -24,6 +24,7 @@
     /* background-color: #f09843; */
     position: relative;
     height: 100vh;
+    width: 100%;
     /* overflow: hidden; */
 }
 
@@ -33,7 +34,7 @@
     height: 100vh;
 
     position: absolute;
-    top: 18vw;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
