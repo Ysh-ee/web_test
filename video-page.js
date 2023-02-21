@@ -1,18 +1,7 @@
 const videoPage_1 = document.querySelector("#video-page-1");
 // const videoPage_2 = document.querySelector("#video-page-2");
 
-let tl1 = gsap.timeline({
-    scrollTrigger: {
-    //   trigger: ".video-box",
-      start: "top top",
-      end: "800% top",
-      scrub: true,
-      pin: ".video-box",
-    //   markers: true,    //@@@
-      // onEnter: () => video.play(),
-    //   duration:5000
-    }
-  });
+
 
   gsap.from(".group-1",{
     scrollTrigger:{
@@ -29,6 +18,19 @@ let tl1 = gsap.timeline({
     ease: true,
     bounds: true,
     duration: 1,
+  });
+
+  let tl1 = gsap.timeline({
+    scrollTrigger: {
+      // trigger: ".video-box",
+      start: "top top",
+      end: "800% top",
+      scrub: true,
+      pin: ".video-box",
+      markers: true,    //@@@
+      // onEnter: () => video.play(),
+    //   duration:5000
+    }
   });
 
   // $("group-1").on("mouseenter", function() {
