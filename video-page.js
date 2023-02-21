@@ -9,15 +9,17 @@ const videoPage_1 = document.querySelector("#video-page-1");
       toggleActions: "play none resume none",
       start:"20% top",
       // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"center top",
+      end:"150% top",
       scrub: true,
 
       // markers:true    //@@@
     },
     y:800,
-    ease: true,
-    bounds: true,
-    duration: 1,
+    // ease: true,
+    // ease: "bounce({strength:0.5, endAtStart:true})",
+    ease: "back.out(1.4)",
+    // bounds: true,
+    duration: 50,
   });
 
   let tl1 = gsap.timeline({
