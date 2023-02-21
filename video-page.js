@@ -27,7 +27,7 @@ const videoPage_1 = document.querySelector("#video-page-1");
       end: "800% top",
       scrub: true,
       pin: ".video-box",
-      markers: true,    //@@@
+      // markers: true,    //@@@
       // onEnter: () => video.play(),
     //   duration:5000
     }
