@@ -39,6 +39,18 @@ body {
 .bg-lightblue{
     background-color: #eaf6fa;
 }
+.bg-purple{
+    background-color: #c4a0ee;
+}
+.bg-lightpurple{
+    background-color: #eee9f4;
+}
+.bg-darkblue{
+    background-color: #5977b4;
+}
+.color-white{
+    color: white;
+  }
 .banner-img{
     width: 69.375vw;
     /* height: 919px; */
@@ -59,12 +71,16 @@ body {
     line-height: 1.2;
     letter-spacing: normal;
     /* text-align: center; */
-    color: #000;
+    /* color: #000; */
 
     position: absolute;
     top: 4.2%;
-    left: 78%;
-    transform: translate(-50%, -50%);
+    left: 67.4%;
+    transform: translate(0%, -50%);
+    /* left: 45%;
+    transform: translate(100%, -50%); */
+    /* left: 78%;
+    transform: translate(-50%, -50%); */
 }
 .small-arrow{
     /* background-color: #3b8ca7; */
@@ -77,16 +93,20 @@ body {
 }
 .banner-text-g{
     width: 32.448vw;
+    /* 44.3vw */
 
     font-stretch: normal;
     font-style: normal;
     text-align: left;
-    color: #000;
+    /* color: #000; */
     
     position: absolute;
     top: 48%;
     left: 72%;
     transform: translate(-50%, -50%);
+}
+.banner-text-g-long{
+    width: 44.3vw;
 }
 .banner-text-1{
     margin-bottom: -0.6vw;
@@ -217,6 +237,16 @@ body {
     left: 39.3vw;
     transform: translate(-50%, -50%);
 }
+.scroll-change-detail-r{
+    /* background-color: rgba(0, 255, 255, 0.179); */
+
+    width: 50vw;
+
+    position: absolute;
+    top: 61.3vh;
+    left: 50vw;
+    transform: translate(0%, -50%);
+}
 
 /* -----------------------------가로card스크롤----------------------------- */
 .card-01-1{
@@ -227,6 +257,15 @@ body {
 }
 .card-01-3{
     background-image: url('img/product-detail-01/card-3.png');
+}
+.card-2-1{
+    background-image: url('img/product-detail-02/card-1.png');
+}
+.card-2-2{
+    background-image: url('img/product-detail-02/card-2.png');
+}
+.card-2-3{
+    background-image: url('img/product-detail-02/card-3.png');
 }
 .card-scroll{
     /* background-color: rgba(0, 0, 0, 0.165); */

@@ -14,7 +14,7 @@ const videoPage_1 = document.querySelector("#video-page-1");
 
       // markers:true    //@@@
     },
-    y:800,
+    y:"70vh",
     // ease: true,
     // ease: "bounce({strength:0.5, endAtStart:true})",
     ease: "back.out(1.4)",

@@ -420,7 +420,7 @@ body {
     color: #535383;
   }
   .color-blue2{
-    color: #337ec9;
+    color: #337ec9; 
   }
   .color-red{
     color: #d61f26;
@@ -428,6 +428,7 @@ body {
   .color-yellow{
     color: #cba764;
   }
+  
   .artic-title-icon{
     /* background: #ffaaaa6e; */
     width: 1.620vw;
@@ -779,6 +780,14 @@ block:not(.first) {
     left: 83.3vw;
     transform: translate(-50%, -50%);
   }
+  .scroll-change-textgroup-l{
+    /* background-color: rgba(27, 172, 75, 0.466); */
+    position: absolute;
+    height: 15.625vw;
+    top: 58.9vh;
+    left: 35.3vw;
+    transform: translate(-50%, -50%);
+  }
   .icon-group{
     /* background-color: rgba(0, 255, 255, 0.289); */
     width: 100%;
@@ -845,6 +854,12 @@ block:not(.first) {
   .text-blue{
     color: #17aed3;
   }
+  .text-purple{
+    color: #944bbf;
+  }
+  .text-blue2{
+    color: #1b4fa2;
+  }
   .scroll-change-sub-text2{
     /* width: 544px;
     height: 36px; */
@@ -852,12 +867,13 @@ block:not(.first) {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    /* line-height: 1.16; */
+    line-height: 1.35;
     letter-spacing: normal;
     text-align: left;
     color: #666;
 
     margin-top: 2%;
+    
   }
   .scroll-change-sub-text3{
     font-size: 1vw;
