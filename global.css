@@ -104,7 +104,10 @@ footer{
 }
 
 .bg-d6{
-  /* background-color: #ffffff; */
+  position:absolute;
+  width: 100vw;
+  height: 200vh;
+  background-image: linear-gradient(to bottom, #e9e1d1, rgba(242, 240, 234, 0.13));
 }
 .bg-d7{
   /* background-color: #ffffff; */
