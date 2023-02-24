@@ -17,7 +17,7 @@ const videoPage_1 = document.querySelector("#video-page-1");
     y:"70vh",
     // ease: true,
     // ease: "bounce({strength:0.5, endAtStart:true})",
-    ease: "back.out(1.4)",
+    // ease: "back.out(1.4)",//---//
     // bounds: true,
     duration: 50,
   });

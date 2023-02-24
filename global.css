@@ -1,0 +1,218 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 62.5%
+}
+body {
+    font-family: Pretendard;
+    overflow-x: hidden;
+}
+/* ------------footer-------------------------------------- */
+footer{
+    width: 100vw;
+  /* height: 33.611vh; */
+  height: 16.111vh;
+  /* 16.111vh */
+  /* padding: 3.542vw 5.604vw 3.906vw 7.240vw; */
+  padding: 4.074vh 7.292vw 4.074vh 7.292vw;
+  background-color: #2a2a2a;
+  position: relative;
+  }
+  .footer2-text{
+    font-size: 0.625vw;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .footer2-mr41{
+    margin-right: 2.135vw;
+  }
+  .footer2-line{
+    width: 0vw;
+  /* height: 1.005vw; */
+  /* line-height: 0.1; */
+
+  margin-left: 1.974vw;
+  margin-right: 1.974vw;
+  border: solid 0.052vw #8d8d8d;
+  /* float: left; */
+  }
+  .footer2-smartcube{
+    margin: 2.760vw 4.167vw 0.833vw 0;
+  font-size: 0.990vw;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  }
+  .footer2-smalltext{
+    width: 39.896vw;
+  /* height: 10.093vh; */
+  margin: 0.833vw 0 0 0;
+  font-size: 0.521vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8e8e8e;
+  }
+  .footer2-logo{
+    /* 183 27.41 */
+    width: 9.531vw;
+    position: absolute;
+    right: 7.292vw;
+    bottom: 6.787vh;
+  }
+
+
+
+/* bgs product-detail-01 */
+.bg-blue{
+    background-color: #beeaf7;
+}
+.bg-lightblue{
+    background-color: #eaf6fa;
+}
+.bg-purple{
+    background-color: #c4a0ee;
+}
+.bg-lightpurple{
+    background-color: #eee9f4; 
+}
+.bg-d4{
+    background-color: #5977b4;
+    color: white;
+}
+.bg-darkblue2{
+    background-color: #596fbb;
+}
+.bg-custom{
+  background-color: #f6f6f6;
+}
+
+.bg-d6{
+  /* background-color: #ffffff; */
+}
+.bg-d7{
+  /* background-color: #ffffff; */
+}
+.bg-d8{
+  background-color: #4f4f4f;
+  color: white;
+}
+.bg-d9{
+  background-color: #000000b0;
+  color: white;
+}
+.bg-10{
+    background-color: #5d88ad;
+    color: white;
+}
+.bg-d11{
+  background-color: #000000b0;
+  color: white;
+}
+.bg-d12{
+    background-color: #dbdbdb;
+}
+.bg-d13{
+  background-color: #27c7c1;
+}
+.bg-d14{
+    background-color: #54cbd8;
+    color: white;
+}
+.bg-d15{
+    background-color: #956796;
+    color: white;
+}
+.bg-d16{
+    background-color: #999999;
+    color: white;
+}
+.bg-d17{
+  background-color: #00000014;
+}
+.bg-d18{
+  background-color: #000000aa;
+  color: white;
+}
+.bg-d19{
+  background-color: #000000aa;
+  color: white;
+}
+
+  /* text colors */
+  .color-white{
+    color: white;
+  }
+  .color-blue1{
+    color: #3387bf;
+  }
+  .color-purple{
+    color: #76659b;
+  }
+  .color-purple2{
+    color: #535383;
+  }
+  .color-blue2{
+    color: #337ec9; 
+  }
+  .color-red{
+    color: #d61f26;
+  }
+  .color-yellow{
+    color: #cba764;
+  }
+  .color-blue3{
+    color: #1a4589;
+  }
+
+  .text-blue{
+    color: #17aed3;
+  }
+  .text-purple{
+    color: #944bbf;
+  }
+  .text-blue2{
+    color: #1b4fa2;
+  }
+  .text-d10{
+    color:#5d88ad;
+  }
+  .text-d13{
+    color: #02948e;
+  }
+  .text-d14{
+    color: #27b0bf;
+  }
+  .text-d15{
+    color: #88438a;
+  }
+  .text-d6,
+  .text-d7,
+  .text-d8,
+  .text-d9,
+  .text-d11,
+  .text-d16,
+  .text-d17,
+  .text-d18,
+  .text-d19{
+    color: #d61f26;
+  }
+  
+
+  

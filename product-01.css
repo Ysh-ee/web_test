@@ -410,7 +410,8 @@ body {
     display:table-cell;
     vertical-align: bottom;
   }
-  .color-blue1{
+  /* colors */
+  /* .color-blue1{
     color: #3387bf;
   }
   .color-purple{
@@ -428,6 +429,22 @@ body {
   .color-yellow{
     color: #cba764;
   }
+  .color-blue3{
+    color: #1a4589;
+  }
+
+  .text-blue{
+    color: #17aed3;
+  }
+  .text-purple{
+    color: #944bbf;
+  }
+  .text-blue2{
+    color: #1b4fa2;
+  }
+  .text-d10{
+    color:#5d88ad;
+  } */
   
   .artic-title-icon{
     /* background: #ffaaaa6e; */
@@ -797,7 +814,7 @@ block:not(.first) {
     width: 4.448vw;
   height: 4.448vw;
   /* padding: 6px 16.9px 5.7px 16.9px; */
-  margin-right: 0.5vw;
+  margin-right: 1.5vw;
   float: left;
 
   border-radius: 0.5vw;
@@ -812,7 +829,7 @@ block:not(.first) {
 
     width: 4.448vw;
     height: 4.448vw;
-    margin-right: 0.5vw;
+    margin-right: 1.5vw;
     float: left;
 
     position:relative;
@@ -849,17 +866,9 @@ block:not(.first) {
   line-height: 1.16;
   letter-spacing: normal;
   text-align: left;
-  color: #d61f26;
+  /* color: #d61f26; */
   }
-  .text-blue{
-    color: #17aed3;
-  }
-  .text-purple{
-    color: #944bbf;
-  }
-  .text-blue2{
-    color: #1b4fa2;
-  }
+  
   .scroll-change-sub-text2{
     /* width: 544px;
     height: 36px; */
@@ -1004,13 +1013,13 @@ block:not(.first) {
 
 
   /* ---------------------footer-------- */
-  footer{
+  /* footer{
     width: 100vw;
   height: 33.611vh;
   padding: 3.542vw 5.604vw 3.906vw 7.240vw;
   background-color: #2a2a2a;
   position: relative;
-  }
+  } */
   .footer-text{
     font-size: 0.911vw;
     font-weight: 500;

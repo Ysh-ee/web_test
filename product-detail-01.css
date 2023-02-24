@@ -1,4 +1,4 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ html{
 body {
     font-family: Pretendard;
     overflow-x: hidden;
-}
+} */
 .container-2{
     /* height: 116.250vh; */
     height: 116.296vh;
@@ -25,6 +25,8 @@ body {
 /* temp */
 .temp-header{
   height: 8.657vh;
+  box-shadow: 0 0.163vw 0.313vw 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .detail-bg{
@@ -33,24 +35,7 @@ body {
   position: relative;
   /* opacity: 0.3; */
 }
-.bg-blue{
-    background-color: #beeaf7;
-}
-.bg-lightblue{
-    background-color: #eaf6fa;
-}
-.bg-purple{
-    background-color: #c4a0ee;
-}
-.bg-lightpurple{
-    background-color: #eee9f4;
-}
-.bg-darkblue{
-    background-color: #5977b4;
-}
-.color-white{
-    color: white;
-  }
+
 .banner-img{
     width: 69.375vw;
     /* height: 919px; */
@@ -92,21 +77,35 @@ body {
 
 }
 .banner-text-g{
-    width: 32.448vw;
+    /* background-color: #3b8ca7; */
+
     /* 44.3vw */
+    /* width: 32.448vw;
 
     font-stretch: normal;
     font-style: normal;
     text-align: left;
-    /* color: #000; */
     
     position: absolute;
     top: 48%;
     left: 72%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+
+    width: 42.448vw;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: left;
+    position: absolute;
+    top: 48%;
+    left: 55.9%;
+    transform: translate(-0%, -50%);
 }
 .banner-text-g-long{
     width: 44.3vw;
+}
+.banner-text-g-left{
+    /* left: 73.5% */
+    left: 51.1%;
 }
 .banner-text-1{
     margin-bottom: -0.6vw;
@@ -137,22 +136,87 @@ body {
     top: 19.4vh;
 }
 
-
+.sec-img-d6{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sec-img-d6 img{
+    height: 67.963vh;
+}
 .sec-img-1{
-    width: 35.521vw;
+    /* background-color: #3b8ca72c; */
 
+    /* width: 35.521vw; */
+    /* width: 57.292vw; */
+    /* height: 67.407vh; */
+
+    position: relative;
     position: absolute;
     top: 55.4%;
     left: 28.6%;
     transform: translate(-50%, -50%);
 }
+.sec-img-1 img{
+    /* height: 67.407vh; */
+    width: 30.990vw;
+}
+.sec-img-1 .img-02{
+    /* height: 67.407vh; */
+    width: 39.583vw;
+    position: absolute;
+    left: 29.6%;
+    transform: translate(-46.5%, -50%);
+
+}
+.sec-img-1 .img-09{
+    /* height: 67.407vh; */
+    width: 57.292vw;
+}
+.bottom-text-d7{
+    /* background-color: #3b8ca72c; */
+    font-size: 1.563vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #231815;
+
+    width: 30.990vw;
+    position: absolute;
+    top: 55.4%;
+    left: 50%;
+    transform: translate(-50%, 1100%);
+}
 .sec-img-2{
-    width: 32.240vw;
+    /* background-color: #3b8ca734; */
+
+    /* width: 32.240vw;
 
     position: absolute;
     top: 54.9%;
-    left: 69.5%;
+    left: 69.5%; */
+
+    /* width: 30.833vw; */
+    position: absolute;
+    top: 54.9%;
+    left: 73.3%;
     transform: translate(-50%, -50%);
+}
+.sec-img-2 img{
+    width: 30.833vw;
+}
+.sec-img-2 .img-02{
+    width: 33.646vw;
+    position: absolute;
+    /* left: 29.6%; */
+    transform: translate(-60%, -48%);
+}
+.sec-img-2 .img-09{
+    width: 28.021vw;
 }
 
 .third-g{
@@ -174,8 +238,25 @@ body {
     left: 27.0%;
     transform: translate(-50%, -50%);
 }
+.third-img-1-02{
+    height: 39.352vh;
+
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
 .third-img-2{
     width: 44.219vw;
+
+    position: absolute;
+    top: 50.5%;
+    left: 69.3%;
+    transform: translate(-50%, -50%);
+}
+.third-img-2-02{
+    /* width: 44.219vw; */
+    height: 54.907vh;
 
     position: absolute;
     top: 50.5%;
@@ -197,6 +278,21 @@ body {
     left: 26.9%;
     transform: translate(-50%, -50%);
 }
+.third-text1-02{
+    font-size: 1.563vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #231815;
+
+    position: absolute;
+    bottom: 6.2%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+}
 .third-text2{
     font-size: 1.563vw;
     font-weight: 300;
@@ -212,6 +308,21 @@ body {
     left: 71.0%;
     transform: translate(-50%, -50%);
 }
+.third-text2-02{
+    font-size: 1.563vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #231815;
+
+    position: absolute;
+    bottom: 6.2%;
+    left: 69.5%;
+    transform: translate(-50%, -50%);
+}
 
 
 /* -----------------------------4--가로---------------------------- */
@@ -220,11 +331,15 @@ body {
 .scroll-change-detail-1-1{
     /* background-color: rgba(0, 255, 255, 0.179); */
     /* width: 57.500vw; */
-    height: 74.259vh;
+    /* height: 74.259vh;
 
     position: absolute;
     top: 56.5vh;
-    left: 25.3vw;
+    left: 25.3vw; */
+    height: 63.519vh;
+    position: absolute;
+    top: 56.5vh;
+    left: 27.3vw;
     transform: translate(-50%, -50%);
 }
 .scroll-change-detail-1-2{
@@ -328,8 +443,8 @@ background-color: #536d766e;
     top: 16.8vh;
 }
 .icon-bigger{
-    width: 3vw;
-    left: 53.5%;
+    width: 3.906vw;
+    left: 50%;
 }
 
 
@@ -341,6 +456,15 @@ background-color: #536d766e;
     width: 100%;
     height: 100%;
 }
+.pic-mid{
+    position:absolute;
+    top: 49.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pic-mid img{
+    height: 58.981vh;
+}
 .pic-1{
 
     position:absolute;
@@ -348,8 +472,21 @@ background-color: #536d766e;
     left: 35%;
     transform: translate(-50%, -50%);
 }
+.pic-11{
+    left: 29.7%;
+}
+.pic-1-d7{
+    left: 30.2%;
+}
+.pic-1-d9{
+    left: 31.4%;
+}
+.pic-1-d8{
+    left: 31.5%;
+}
 .pic-1 img{
-    width: 27.969vw;
+    /* width: 27.969vw; */
+    height: 58.981vh;
 }
 .pic-2{
     position:absolute;
@@ -357,8 +494,18 @@ background-color: #536d766e;
     left: 65%;
     transform: translate(-50%, -50%);
 }
+.pic-22{
+    left: 65.6%;
+}
+.pic-2-d7{
+    left: 70.8%;
+}
+.pic-2-d8{
+    left: 65.6%;
+}
 .pic-2 img{
-    width: 27.969vw;
+    /* width: 27.969vw; */
+    height: 58.981vh;
 }
 .pic-text{
     width: 100%;
