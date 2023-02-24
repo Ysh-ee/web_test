@@ -106,6 +106,10 @@ body {
 .banner-text-g-left{
     /* left: 73.5% */
     left: 51.1%;
+    left: 48.1%;
+}
+.banner-text-g-left-d6{
+    left: 48.1%;
 }
 .banner-text-1{
     margin-bottom: -0.6vw;
