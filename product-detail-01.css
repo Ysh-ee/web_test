@@ -47,6 +47,9 @@ body {
     left: 35%;
     transform: translate(-50%, -50%);
 }
+.banner-img-d5{
+    top: 47%;
+}
 /* -------------------------route */
 .banner-route{
     font-size: 1.042vw;
@@ -165,6 +168,11 @@ body {
 .sec-img-1 img{
     /* height: 67.407vh; */
     width: 30.990vw;
+    /* 65.370vw */
+}
+.sec-img-1 .img-01{
+    /* height: 65.370vh; */
+    width: 35.521vw;
 }
 .sec-img-1 .img-02{
     /* height: 67.407vh; */
@@ -212,6 +220,12 @@ body {
 }
 .sec-img-2 img{
     width: 30.833vw;
+}
+.sec-img-2 .img-01{
+    width: 33.646vw;
+    position: absolute;
+    /* left: 29.6%; */
+    transform: translate(-60%, -48%);
 }
 .sec-img-2 .img-02{
     width: 33.646vw;
