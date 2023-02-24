@@ -108,8 +108,13 @@ body {
 }
 .banner-text-g-left{
     /* left: 73.5% */
-    left: 51.1%;
+    /* left: 51.1%; */
     left: 48.1%;
+}
+.banner-text-g-left-d3{
+    /* left: 73.5% */
+    /* left: 51.1%; */
+    left: 52.1%;
 }
 .banner-text-g-left-d6{
     left: 48.1%;
@@ -180,7 +185,10 @@ body {
     position: absolute;
     left: 29.6%;
     transform: translate(-46.5%, -50%);
-
+}
+.sec-img-1 .img-03{
+    /* height: 65.370vh; */
+    width: 57.292vw;
 }
 .sec-img-1 .img-09{
     /* height: 67.407vh; */
@@ -270,6 +278,7 @@ body {
     position: absolute;
     top: 50.5%;
     left: 69.3%;
+    /* left: 73.2%; */
     transform: translate(-50%, -50%);
 }
 .third-img-2-02{
@@ -279,6 +288,14 @@ body {
     position: absolute;
     top: 50.5%;
     left: 69.3%;
+    transform: translate(-50%, -50%);
+}
+.third-img-2-09{
+    width: 44.219vw;
+
+    position: absolute;
+    top: 50.5%;
+    left: 73.2%;
     transform: translate(-50%, -50%);
 }
 .third-text1{
@@ -324,6 +341,7 @@ body {
     position: absolute;
     bottom: 6.2%;
     left: 71.0%;
+    /* left: 73%; */
     transform: translate(-50%, -50%);
 }
 .third-text2-02{
@@ -339,6 +357,21 @@ body {
     position: absolute;
     bottom: 6.2%;
     left: 69.5%;
+    transform: translate(-50%, -50%);
+}
+.third-text2-09{
+    font-size: 1.563vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #231815;
+
+    position: absolute;
+    bottom: 6.2%;
+    left: 73%;
     transform: translate(-50%, -50%);
 }
 

@@ -729,6 +729,7 @@ block:not(.first) {
   height: 100%;
   top: 0;
   left: 0;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(168, 168, 168, 0.24) 55%, rgba(124, 124, 124, 0));
   }
   .scroll-change-r{
     width: 50vw;
