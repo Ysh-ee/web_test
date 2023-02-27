@@ -44,7 +44,7 @@ body {
 
     position: absolute;
     top: 55%;
-    left: 35%;
+    left: 34.5%;
     transform: translate(-50%, -50%);
 }
 .banner-img-d5{
@@ -58,6 +58,7 @@ body {
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
+
     /* text-align: center; */
     /* color: #000; */
 
@@ -74,6 +75,7 @@ body {
     /* background-color: #3b8ca7; */
     font-size: 0.542vw;
 
+    vertical-align: middle;
     margin-left: 0.742vw;
     margin-right: 0.742vw;
     margin-bottom: 0.3vw;
@@ -118,6 +120,9 @@ body {
 }
 .banner-text-g-left-d6{
     left: 48.1%;
+}
+.banner-text-g-left-d8{
+    left: 53.1%;
 }
 .banner-text-1{
     margin-bottom: -0.6vw;
@@ -443,7 +448,7 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	/* background-color: #2f2c337e; */
-    top: 11%;
+    top: 16%;
 }
 .cards {
 	position: absolute;

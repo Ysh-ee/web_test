@@ -52,8 +52,22 @@ html{
   background-position: center bottom;
   background-size: cover;
 }
+.bgimg-6{
+  width:100vw; 
+  /* height:100vh;  */
+  /* object-fit:cover;  */
+  background-image: url('img/product-06/product-banner-06.png');
+  background-position: center bottom;
+  background-size: cover;
+}
 .bg07{
   background-image: url('img/product-07/product-banner-07.png');
+}
+.bgimg-8{
+  width:100vw; 
+  background-image: url('img/product-08/product-banner-08.png');
+  background-position: center bottom;
+  background-size: cover;
 }
 .bg-opacity{
     /* margin-top: -10vh; */
@@ -63,7 +77,15 @@ html{
   opacity: 0.4;
   position:absolute;
   z-index: 0;
-
+}
+.bg-opacity80{
+  /* margin-top: -10vh; */
+width: 100vw;
+height: 100vh;
+background-color: #000000;
+opacity: 0.8;
+position:absolute;
+z-index: 0;
 }
 .bgfunction{
   width:100vw; 
@@ -92,6 +114,12 @@ html{
 .bghardware-7{
   width:100vw; 
   background-image: url('img/product-07/product-hardware-07.png');
+  background-position: center center;
+  background-size: cover;
+}
+.bgauto{
+  width:100vw; 
+  background-image: url('img/product-05/bgauto.png');
   background-position: center center;
   background-size: cover;
 }
@@ -586,9 +614,19 @@ body {
       /* height: 110vh; */
       position: relative;
   }
+  .hori-scroll-hard{
+    position: relative;
+}
   .hori-allgroup{
     position: absolute;
     width: 100vw;
+    top:50vh;
+     left:50%;
+     transform: translate(-50%, -50%); 
+  }
+  .hori-allgroup-8{
+    position: absolute;
+    width: 74vw;
     top:50vh;
      left:50%;
      transform: translate(-50%, -50%); 
@@ -600,6 +638,17 @@ body {
     height: 127px; */
     /* padding-top: 7vh; */
     padding-left: 8.542vw;
+    font-size: 5.625vw;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 0.31; */
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+  .hori-function-8{
+    padding-left: 6.3vw;
     font-size: 5.625vw;
     font-weight: 900;
     font-stretch: normal;
@@ -736,10 +785,15 @@ block:not(.first) {
   }
   .scroll-change-img-1{
     /* background-color: rgba(27, 172, 75, 0.466); */
-    width: 42.5vw;
+    /* width: 42.5vw;
     position: absolute;
     top: 56.4vh;
     left: 31.9vw;
+    transform: translate(-50%, -50%); */
+    height: 63.519vh;
+    position: absolute;
+    top: 56.5vh;
+    left: 27.3vw;
     transform: translate(-50%, -50%);
   }
   .scroll-change-img-2{
@@ -841,7 +895,8 @@ block:not(.first) {
   }
 
   .scroll-change-icon-img{
-    width: 2.604vw;
+    /* width: 2.604vw; */
+    width: 3.906vw;
 
     position: absolute;
     top: 50%;
@@ -904,7 +959,7 @@ block:not(.first) {
   }
   .hori-item-group-2{
     /* background-color: #72dcce3d; */
-    width: 150%;
+    width: 200%;
     padding-left: 8.5%;
   }
   .hori-item2{
@@ -1003,12 +1058,12 @@ block:not(.first) {
   margin-top: 5vw; */
   /* margin-bottom: 47px; */
   /* width: 4.167vw; */
-  width: 6.005vw;
-  height: 6.005vw;
-  position: absolute;
-  bottom: -3%;
-  right: -8%;
-  transform: translate(-50%, -50%);
+  width: 9.005vw;
+    height: 9.005vw;
+    position: absolute;
+    bottom: -0%;
+    right: -0%;
+    transform: translate(-0%, -0%);
 }
 
 

@@ -144,25 +144,25 @@ let blocks = gsap.utils.toArray("block"),
 
 // stretch out the body height according to however many sections there are. 
 // gsap.set("scroll-change-group", {height: (blocks.length * 100) + "%"});
-
 // create a ScrollTrigger for each section
 blocks.forEach((block, i) => {
   ScrollTrigger.create({
     // use dynamic scroll positions based on the window height (offset by half to make it feel natural)
     trigger:".scroll-change-group",
-    // start: () => (3+i - 0.1) * (innerHeight/3*(i+3) ),
-    // end: () => (3+i + 0.1) * (innerHeight/3 ),
     // start:"top top",
     start: () => 3 * innerHeight + ((i+2)*250) +150,
     end: () => 3 *innerHeight + ((i+2)*250) +300,
-    // start: () => (i - 0.3) * innerHeight + 1000,
-    // end: () => (i + 0.3) * innerHeight +1000,
+
+	//보류
+	// start: () => (i+1) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.5),
+    // end: () => (i+1) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
     // when a new section activates (from either direction), set the section accordinglyl.
     // pin: true,
     // markers:true,    //@@@
     onToggle: self => self.isActive && setSection(block)
   });
 });
+console.log(innerHeight);
 
 gsap.from(".scroll-change-group",{
     scrollTrigger:{
