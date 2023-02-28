@@ -125,7 +125,7 @@ body {
     left: 53.1%;
 }
 .banner-text-1{
-    margin-bottom: -0.6vw;
+    margin-bottom: -0.2vw;
 
     opacity: 0.8;
     font-size: 1.927vw;
@@ -395,8 +395,10 @@ body {
     height: 63.519vh;
     position: absolute;
     top: 56.5vh;
-    left: 27.3vw;
-    transform: translate(-50%, -50%);
+    /* left: 27.3vw;
+    transform: translate(-50%, -50%); */
+    left: 0vw;
+    transform: translate(-0%, -50%);
 }
 .scroll-change-detail-1-2{
     /* background-color: rgba(0, 255, 255, 0.179); */

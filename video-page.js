@@ -27,7 +27,7 @@ const videoPage_1 = document.querySelector("#video-page-1");
     scrollTrigger: {
       // trigger: ".video-box",
       start: "top top",
-      end: "800% top",
+      end: "600% top",
       scrub: true,
       ease: "steps(" + frame_count + ")",
       pin: ".video-box",
