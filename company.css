@@ -1,0 +1,493 @@
+.top-banner{
+    /* background-color: #376ee648; */
+    height: 90vh;
+}
+.banner-red{
+    height: 46.019vh;
+    background-color: #e63737;
+    /* margin-top: 8.657vh; */
+    position: relative;
+}
+.banner-text1{
+    height: 20.370vh;
+    font-size: 9.740vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 0.15; */
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-text2{
+    font-size: 1.563vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.37;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+
+    margin-top:-1.2vw ;
+}
+
+.banner-bottom{
+    /* background-color: rgba(67, 148, 148, 0.219); */
+
+    height: 45vh;
+    position: relative;
+}
+.banner-bottom-g{
+    width: 50vw;
+    height: 36.389vh;
+
+    /* background-color: rgba(255, 0, 0, 0.219); */
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-bottom-g img{
+    /* background-color: rgba(0, 255, 255, 0.219); */
+    width: 19.167vw;
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+
+
+}
+.banner-bottom-g .banner-main{
+    /* background-color: rgba(0, 255, 255, 0.219); */
+
+    width: 28.958vw;
+
+    font-size: 5.208vw;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 1.17; */
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+
+    position: absolute;
+    top: 55%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+}
+.banner-bottom-g .banner-sub{
+    /* background-color: rgba(0, 255, 255, 0.219); */
+
+    width: 28.958vw;
+
+    font-size: 1.042vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2a2a2a;
+
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    transform: translate(-100%, 0%);
+}
+
+/* -------------------------------1-CEO greeting-------------------------------- */
+
+.ceo-greeting-block{
+    /* background-color: rgba(148, 67, 67, 0.219); */
+
+    height: 103.796vh;
+    position: relative;
+}
+.ceo-greeting-block .ceo-img{
+    /* background-color: rgba(67, 148, 148, 0.219); */
+    
+    height: 75.926vh;
+
+    position: absolute;
+    top: 45%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+}
+.ceo-greeting-block .ceo-text-g{
+    /* background-color: rgba(67, 148, 148, 0.219); */
+    width: 49.844vw;
+    margin-left: 10.052vw;
+
+    position: absolute;
+    top: 47%;
+    left: 0%;
+    transform: translate(-0%, -50%);
+}
+
+.ceo-text-g{
+    position: relative;
+}
+.ceo-text-g .text-1{
+    font-size: 4.167vw;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+.ceo-text-g .text-2{
+    font-size: 1.458vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d61f26;
+
+    margin-top: 2.292vw;
+}
+.ceo-text-g .text-3{
+    font-size: 0.781vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #363636;
+
+    margin-top: 2.292vw;
+}
+.ceo-text-g .ceo-sign{
+    /* background-color: rgba(67, 148, 148, 0.219); */
+
+    font-size: 0.885vw;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+
+    height: 9.259vh;
+    width: 12.240vw;
+
+    position: absolute;
+    top: 109%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+}
+.ceo-text-g .ceo-sign img{
+    margin-top: 2.778vh;
+    width: 9.583vw;
+}
+
+/* ------------------------------2--organization-------------------------------- */
+/* filter: grayscale(1); */
+
+.org-block{
+    height: 126.759vh;
+    width: 100%;
+    position: relative;
+}
+.org-block .box-g{
+    /* background-color: #8b242741; */
+    /* margin-left: 7.552vw;
+    margin-right: 7.552vw;
+    margin-bottom: 5.990vw;
+    margin-top: 8.906vh; */
+    height: 56.406vw;
+    width: 84.896vw;
+    display: flex;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.org-block .box-g .box-line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content:space-between;
+
+}
+.org-block .box-g .box-line .box{
+    background-color: #00000020;
+    width: 27.604vw;
+    height: 27.604vw;
+    padding: 2.604vw;
+    /* margin: 1.042vw; */
+    background-position: center bottom;
+    background-size: cover;
+    
+    position: relative;
+
+}
+.org-block .box-g .box-line .org-1{
+    background-image: url(img/company/org-1.png);
+}
+.org-block .box-g .box-line .org-2{
+    background-image: url(img/company/org-2.png);
+}
+.org-block .box-g .box-line .org-3{
+    background-image: url(img/company/org-3.png);
+}
+.org-block .box-g .box-line .org-4{
+    background-image: url(img/company/org-4.png);
+}
+.org-block .box-g .box-line .org-5{
+    background-image: url(img/company/org-5.png);
+}
+.org-block .box-g .box-line .org-6{
+    background-image: url(img/company/org-6.png);
+}
+.org-block .box-g .box-line .box .box-icon{
+    background-color: rgb(255, 255, 255);
+    width: 1.563vw;
+    height: 1.563vw;
+
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    transform: translate(0%, 0%);
+}
+.org-block .box-g .box-line .box .box-text{
+    font-size: 2.604vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 2.46; */
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.org-block .box-g .box-line .box .box-text-2{
+    font-size: 1.042vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 6.15; */
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.org-block .box-g .box-line .box .box-text-3{
+    font-size: 1.250vw;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-align: right;
+  vertical-align:bottom;
+  color: #fff;
+
+  position: absolute;
+  bottom: 8%;
+  left: 58%;
+  transform: translate(100%, -0%);
+}
+
+/* ------------------------------2--organization-------------------------------- */
+.tec-block{
+    height: 109.352vh;
+    position: relative;
+
+}
+.tec-title{
+    /* background-color: rgba(0, 255, 255, 0.219); */
+
+    font-size: 3.125vw;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #161616;
+
+    padding-top: 10vw;
+}
+
+.tec-g{
+    /* background-color: rgba(255, 0, 0, 0.219); */
+
+    width: 100%;
+    margin-top: 6vw;
+    display: flex;
+    justify-content:space-between;
+
+    
+    position: relative;
+    /* position: absolute;
+    bottom: -50%;
+    right: 0;
+    transform: translate(0%, 50%); */
+}
+.tec-g .list-g{
+    /* background-color: rgba(0, 255, 255, 0.219); */
+    align-content: flex-start;
+    margin-left: 13.333vw;
+    width: 15.625vw;
+}
+.tec-g .list-g .item{
+    /* background-color: rgba(0, 255, 255, 0.219); */
+    font-size: 1.823vw;
+    /* font-weight: normal; */
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 1.17; */
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+
+    margin-bottom: 4.074vh;
+}
+.tec-g .list-g .active{
+    font-size: 2.823vw;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d61f26;
+}
+.tec-g .hori-scroll{
+    /* background-color: rgba(255, 0, 0, 0.219); */
+    width: 64.010vw;
+    height: 59.074vh;
+    /* height: 100%; */
+    overflow-x: hidden;
+
+    /* position: absolute;
+    bottom: -50%;
+    right: 0;
+    transform: translate(0%, 50%); */
+}
+.tec-g .hori-scroll .img-1{
+    width: 100%;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+
+/* ------------------------------3--directions-------------------------------- */
+.dir-block{
+    /* height: 112.315vh; */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.dir-text{
+    width: 100%;
+    font-size: 1.563vw;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    color: #161616;
+
+    margin-top: 17.130vh;
+
+}
+.kakao-map{
+    width: 92.135vw;
+    height: 60.000vh;
+    background-image: url(img/company/kakao-map.png);
+    background-position: center bottom;
+    background-size: cover;
+
+    margin-top: 1.198vw;
+    margin-left: 3.906vw;
+    margin-right: 3.906vw;
+    /* position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.dir-info-g{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    margin-top: 3.093vw;
+}
+.line{
+    width: 0;
+    height: 13.472vh;
+    border: solid 0.052vw #7070706e;
+
+    margin-left: 4.505vw;
+    margin-right: 3.307vw;
+}
+.dir-info-g .info-1{
+    /* background-color: #e637373b; */
+    width: 26.875vw;
+    /* 9.375vw */
+    height: 10.370vh;
+    /* vertical-align: middle; */
+
+}
+.dir-info-g .info-2{
+    /* background-color: #e637373b; */
+    width: 9.375vw;
+    /* height: 13.426vh; */
+    height: 7.500vh;
+    inline-size: 13.4;
+
+    /* 24.010vw */
+
+}
+.dir-info-g .info-3{
+    /* background-color: #e637373b; */
+    width: 14.219vw;
+    height: 7.500vh;
+
+    /* height: 13.426vh; */
+}
+.dir-info-g img{
+    width: 5.677vw;
+    height: 5.677vw;
+
+    margin-right: 1.198vw;
+}
+
+.info-text-small{
+    font-size: 1.302vw;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #161616;
+}
+.info-text{
+    font-size: 1.823vw;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #161616;
+
+    margin-top: 0.521vw;
+}

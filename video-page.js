@@ -22,14 +22,14 @@ const videoPage_1 = document.querySelector("#video-page-1");
     duration: 50,
   });
 
-  var frame_count  = 1420;
+  // var frame_count  = 200;
   let tl1 = gsap.timeline({
     scrollTrigger: {
       // trigger: ".video-box",
       start: "top top",
-      end: "600% top",
+      end: "1600% top",
       scrub: true,
-      ease: "steps(" + frame_count + ")",
+      // ease: "steps(" + frame_count + ")",
       pin: ".video-box",
       // markers: true,    //@@@
       // onEnter: () => video.play(),

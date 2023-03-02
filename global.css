@@ -11,6 +11,77 @@ body {
     font-family: Pretendard;
     overflow-x: hidden;
 }
+/* ------------header-------------------------------------- */
+
+header{
+  background-color: #fff;
+  width: 100%;
+  /* max-height: 8.4vh; */
+  max-height: 8.657vh;
+  height: 8.657vh;
+
+  box-shadow: 0 0.163vw 0.313vw 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+.logo{
+  /* background-color: rgba(255, 160, 160, 0.815); */
+  /* width: 216px;
+  height: 44px; */
+  /* margin-top: 30px; */
+  margin-top: 1.2vw;
+  /* margin-bottom: 30px; */
+  margin-left: 5.13vw;
+  float: left;
+
+  /* line-height: 300%;
+text-align: center;
+vertical-align: middle; */
+
+}
+.logo-smartcube{
+width: 11.25vw;
+}
+.header-navbar{
+/* background-color: rgba(255, 160, 160, 0.815); */
+
+  /* width: 120px; */
+  /* width: 6.25vw; */
+  /* width: 7.65vw; */
+  width: 8.93vw;
+  /* height: 27px; */
+  float: right;
+/* margin: 1px; */
+/* margin-top: 40px; */
+/* font-size: 23px; */
+/* font-size: 2.3rem; */
+/* font-size: 1.9vw; */
+font-size: 1.2vw;
+font-weight: 500;
+font-stretch: normal;
+font-style: normal;
+/* line-height: 5vh; */
+line-height: 400%;
+/* letter-spacing: normal; */
+text-align: center;
+vertical-align: middle;
+color: #2a2a2a;
+}
+.header-icon{
+  /* background-color: rgba(0, 0, 0, 0.152); */
+  /* width: 2.13vw; */
+  /* height: 2.68vh; */
+  float: right;
+margin: 1.714vw;
+margin-bottom: 1vw;
+/* margin-top: 40px; */
+margin-right: 4.64vw;
+color: #2a2a2a;
+}
+.header-icon-language{
+width: 2.13vw;
+/* height: 2.68vh; */
+}
 /* ------------footer-------------------------------------- */
 footer{
     width: 100vw;
@@ -117,7 +188,7 @@ footer{
   color: white;
 }
 .bg-d9{
-  background-color: #000000b0;
+  background-color: #474747;
   color: white;
 }
 .bg-10{
@@ -125,7 +196,7 @@ footer{
     color: white;
 }
 .bg-d11{
-  background-color: #000000b0;
+  background-color: #474747;
   color: white;
 }
 .bg-d12{
@@ -147,14 +218,15 @@ footer{
     color: white;
 }
 .bg-d17{
-  background-color: #00000014;
+  background-color: #dbdbdb;
 }
 .bg-d18{
-  background-color: #000000aa;
+  background-color: #474747;
+
   color: white;
 }
 .bg-d19{
-  background-color: #000000aa;
+  background-color: #474747;
   color: white;
 }
 

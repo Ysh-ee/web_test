@@ -242,8 +242,14 @@ body {
 }
 .sec-img-2 .img-02{
     width: 33.646vw;
+    /* width: 32.188vw; */
     position: absolute;
     /* left: 29.6%; */
+    transform: translate(-60%, -48%);
+}
+.sec-img-2 .img-04{
+    width: 32.188vw;
+    position: absolute;
     transform: translate(-60%, -48%);
 }
 .sec-img-2 .img-09{
