@@ -317,7 +317,7 @@ body {
   }
   nav {
     float: left; 
-    width: 100%;
+    width: 80%;
     /* opacity: 0.3; */
     list-style: none;
     font-size: 1.927vw;
@@ -333,6 +333,7 @@ body {
     float: left; 
     /* width: 14vw; */
     margin-right: 5.8vw;
+    margin-bottom: 1.5vw;
     /* height: 32px; */
     /* line-height: 32px;
     margin-bottom: 10px; */

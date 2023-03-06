@@ -229,15 +229,26 @@
     background-color: #00000020;
     width: 27.604vw;
     height: 27.604vw;
-    padding: 2.604vw;
+    /* padding: 2.604vw; */
     /* margin: 1.042vw; */
     background-position: center bottom;
     background-size: cover;
-    
     position: relative;
 
+    overflow: hidden;
+    
 }
-.org-block .box-g .box-line .org-1{
+.org-block .box-g .box-line img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    position: absolute;
+}
+.org-block .box-g .box-line img:hover{
+    filter: grayscale(0);
+    filter: blur(10px);
+}
+/* .org-block .box-g .box-line .org-1{
     background-image: url(img/company/org-1.png);
 }
 .org-block .box-g .box-line .org-2{
@@ -254,9 +265,9 @@
 }
 .org-block .box-g .box-line .org-6{
     background-image: url(img/company/org-6.png);
-}
+} */
 .org-block .box-g .box-line .box .box-icon{
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     width: 1.563vw;
     height: 1.563vw;
 
@@ -267,23 +278,33 @@
 }
 .org-block .box-g .box-line .box .box-text{
     font-size: 2.604vw;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  /* line-height: 2.46; */
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 2.46; */
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(0%, 0%);
 }
 .org-block .box-g .box-line .box .box-text-2{
     font-size: 1.042vw;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.15;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.15;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(0%, 0%);
 }
 .org-block .box-g .box-line .box .box-text-3{
     font-size: 1.250vw;
