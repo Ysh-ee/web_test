@@ -470,8 +470,15 @@ body {
     line-height: 1.2;
     letter-spacing: normal;
     text-align: center;
-    color: #161616;
+    /* color: #161616; */
+
+    cursor:pointer;
   }
+  /* .artic-button a{
+    all: unset;
+    text-decoration: inherit;
+    color: #161616;
+  } */
   .artic-img{
     /* background: #9180806e; */
     /* border-color: 2px #d61f26; */
@@ -586,7 +593,7 @@ body {
     color: #fff;
   }
   .hori-function-2{
-    width: 252.668vw;
+    /* width: 252.668vw; */
     font-size: 5.625vw;
     font-weight: 900;
     font-stretch: normal;

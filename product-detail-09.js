@@ -127,23 +127,23 @@ blocks.forEach((block, i) => {
 
 	//보류
     //2
-	start: () => (i+4) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
-    end: () => (i+4) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
+	// start: () => (i+4) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
+    // end: () => (i+4) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
 
     //3
 	// start: () => (i+5) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
     // end: () => (i+5) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
 
     //4
-	// start: () => (i+7) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
-    // end: () => (i+7) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
+	start: () => (i+7) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
+    end: () => (i+7) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
 
     // start: () => 7 * innerHeight + ((i+2)*250) +150,
     // end: () => 7 *innerHeight + ((i+2)*250) +300,
 
     // when a new section activates (from either direction), set the section accordinglyl.
     // pin: true,
-    markers:true,    //@@@
+    // markers:true,    //@@@
     onToggle: self => self.isActive && setSection(block)
   });
 });
@@ -153,9 +153,9 @@ gsap.from(".scroll-change-group",{
     scrollTrigger:{
         trigger:".scroll-change-group",
         start:"top top",
-        end:"200% top",
         // end:"200% top",
-        // end:"400% top",
+        // end:"200% top",
+        end:"400% top",
         scrub:20,
         // pinSpacing: false,
         pin: true, 

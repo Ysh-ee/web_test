@@ -29,7 +29,7 @@ const video_2 = document.querySelector("#video-2");
     scrollTrigger: {
       // trigger: ".video-box",
       start: "top top",
-      end: "1600% top",
+      end: "800% top",
       scrub: true,
       // ease: "steps(" + frame_count + ")",
       pin: ".video-box",
@@ -48,7 +48,7 @@ const video_2 = document.querySelector("#video-2");
       toggleActions: "play none resume none",
       start:"20% top",
       // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"120% top",
+      end:"80% top",
       scrub: true,
 
       // markers:true    //@@@
@@ -65,7 +65,7 @@ let tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".black-box",
       start: "top top",
-      end: "1600% top",
+      end: "800% top",
       scrub: true,
       pin: ".black-box",
       // markers: true,    //@@@
