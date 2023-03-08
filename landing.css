@@ -5,14 +5,14 @@
     width: 100vw;
     height: 48.981vh;
 
-    margin-bottom: 1.759vh;
+    margin-bottom: 0.741vh;
 }
 
 /* -2---2- */
 .section-b{
     width: 100vw;
     height: 48.981vh;
-    margin-bottom: 1.759vh;
+    margin-bottom: 0.741vh;
 
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@
     background-color: #1e1e1e;
     width: 100vw;
     height: 84.815vh;
-    margin-bottom: 1.759vh;
+    margin-bottom: 0.741vh;
 
     display: flex;
 
@@ -32,7 +32,7 @@
 .section-scroll{
     width: 100vw;
     height: 48.981vh;
-    margin-bottom: 1.759vh;
+    margin-bottom: 0.741vh;
 
     /* overflow: hidden; */
     
@@ -105,7 +105,7 @@
 
 /* ---------------------------b-------------------------- */
 .section-b .block{
-    width: 49.531vw;
+    width: 49.792vw;
     height: 100%;
 }
 .bg-landing-gray{
@@ -213,6 +213,7 @@
     align-items: flex-end;
 }
 .product-pics img{
+    background-color: #323232;
     height: 44.722vh;
     margin-left: 1.224vw;
     margin-right: 1.224vw;
@@ -294,7 +295,8 @@
     background-color: #1f1f1f;
     /* width: 32.135vw; */
     /* width: 33.802vw; */
-    width: 32.635vw;
+    /* width: 32.635vw; */
+    width: 32.881vw;
     height: 100%;
 }
 .section-scroll .hori-scroll .block .block-text-g{

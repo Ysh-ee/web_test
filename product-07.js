@@ -84,7 +84,14 @@ gsap.from(".wrapper",{
 // ScrollTrigger.create({
 //     snap: 1 / 4 // snap whole page to the closest section!
 //   });
-
+//멈춤
+ScrollTrigger.create({
+  trigger:".wrapper",
+  start:"top top",
+  end: "+=600",
+  pin:".wrapper",
+    // markers:true    //@@@
+});
 
 //------------------------function-hori-------
 let scrollTween = gsap.to(".hori-item-group", {
@@ -154,8 +161,9 @@ function setSection(newSection) {
   }
 }
 
+//hardware, software
 let scrollTween2 = gsap.to(".hori-item-group-2", {
-    xPercent: -30,
+    xPercent: -35,
     ease: "none", // <-- IMPORTANT!
     scrollTrigger: {
       trigger: ".hori-scroll-hard",

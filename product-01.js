@@ -25,6 +25,7 @@ gsap.registerPlugin(ScrollTrigger);
 // });
 // const anim = gsap.to(".artic-img", { opacity: 0,});
 //-------- img anim(right to mid)
+
 gsap.from(".artic-img",{
   scrollTrigger:{
     trigger:".wrapper",
@@ -65,7 +66,14 @@ gsap.from(".wrapper",{
         // markers:true    //@@@
     },
 });
-
+//멈춤
+ScrollTrigger.create({
+  trigger:".wrapper",
+  start:"top top",
+  end: "+=600",
+  pin:".wrapper",
+    // markers:true    //@@@
+});
 
 // gsap.from(".wrapper",{
 //     scrollTrigger:{

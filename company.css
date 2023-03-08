@@ -231,32 +231,96 @@
     height: 27.604vw;
     /* padding: 2.604vw; */
     /* margin: 1.042vw; */
-    background-position: center bottom;
-    background-size: cover;
+    /* background-position: center bottom;
+    background-size: cover; */
     position: relative;
 
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
-.org-block .box-g .box-line img{
+/* .org-block .box-g .box-line .box img{
     width: 100%;
     height: 100%;
     filter: grayscale(1);
     position: absolute;
 }
-.org-block .box-g .box-line img:hover{
+.org-block .box-g .box-line .box img:hover{
     filter: grayscale(0);
     filter: blur(10px);
+} */
+/* ---------------------- */
+.org-block .box-g .box-line .box .org-img{
+    width: 100%;
+    height: 100%;
+    background-position: center bottom;
+    background-size: cover;
 }
-/* .org-block .box-g .box-line .org-1{
+.org-block .box-g .box-line .box .org-img .moff{
+    display: flex;
+}
+.org-block .box-g .box-line .box .org-img .mon{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.org-block .box-g .box-line .box .org-img:hover .moff{
+    display: none;
+}
+.org-block .box-g .box-line .box .org-img:hover .mon{
+    display: flex;
+}
+
+/* 3 */
+.org-block .box-g .box-line .box .org-3{
+    background-image: url(img/company/org-3.png);
+    filter: grayscale(1);
+}
+.org-block .box-g .box-line .box .org-3:hover{
+    background-image: url(img/company/org-3-br.png);
+    filter: grayscale(0);
+}
+/* 4 */
+.org-block .box-g .box-line .box .org-4{
+    background-image: url(img/company/org-4.png);
+    filter: grayscale(1);
+}
+.org-block .box-g .box-line .box .org-4:hover{
+    background-image: url(img/company/org-4-br.png);
+    filter: grayscale(0);
+}
+/* 5 */
+.org-block .box-g .box-line .box .org-5{
+    background-image: url(img/company/org-5.png);
+    filter: grayscale(1);
+}
+.org-block .box-g .box-line .box .org-5:hover{
+    background-image: url(img/company/org-5-br.png);
+    filter: grayscale(0);
+}
+/* 6 */
+.org-block .box-g .box-line .box .org-6{
+    background-image: url(img/company/org-6.png);
+    filter: grayscale(1);
+}
+.org-block .box-g .box-line .box .org-6:hover{
+    background-image: url(img/company/org-6-br.png);
+    filter: grayscale(0);
+}
+
+
+/* ------------------------ */
+
+.org-block .box-g .box-line .org-1{
     background-image: url(img/company/org-1.png);
 }
 .org-block .box-g .box-line .org-2{
     background-image: url(img/company/org-2.png);
 }
-.org-block .box-g .box-line .org-3{
+/* .org-block .box-g .box-line .org-3{
     background-image: url(img/company/org-3.png);
-}
+} */
+/* 
 .org-block .box-g .box-line .org-4{
     background-image: url(img/company/org-4.png);
 }
@@ -306,7 +370,10 @@
     left: 10%;
     transform: translate(0%, 0%);
 }
-.org-block .box-g .box-line .box .box-text-3{
+.org-block .box-g .box-line .box .org-img .mon .box-text-3{
+    /* background-color: #d61f256b; */
+    width: 100%;
+
     font-size: 1.250vw;
   font-weight: 300;
   font-stretch: normal;
@@ -314,17 +381,19 @@
   line-height: 1.55;
   letter-spacing: normal;
   text-align: right;
-  vertical-align:bottom;
+  vertical-align: bottom;
+
   color: #fff;
 
   position: absolute;
-  bottom: 8%;
-  left: 58%;
-  transform: translate(100%, -0%);
+  bottom: 9%;
+  right: 9%;
+  transform: translate(-0%, -0%);
 }
 
 /* ------------------------------2--organization-------------------------------- */
 .tec-block{
+    /* background-color: rgba(255, 0, 0, 0.219); */
     height: 109.352vh;
     position: relative;
 
@@ -360,10 +429,16 @@
     transform: translate(0%, 50%); */
 }
 .tec-g .list-g{
+    background-color: rgb(255, 255, 255);
     /* background-color: rgba(0, 255, 255, 0.219); */
     align-content: flex-start;
-    margin-left: 13.333vw;
-    width: 15.625vw;
+    /* margin-left: 13.333vw;
+    width: 15.625vw; */
+    padding-left: 13.333vw;
+    width: 35.625vw;
+
+    position: relative;
+    z-index: 10;
 }
 .tec-g .list-g .item{
     /* background-color: rgba(0, 255, 255, 0.219); */
@@ -391,9 +466,9 @@
 .tec-g .hori-scroll{
     /* background-color: rgba(255, 0, 0, 0.219); */
     width: 64.010vw;
-    height: 59.074vh;
+    height: 60.074vh;
     /* height: 100%; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
     /* position: absolute;
     bottom: -50%;
@@ -401,7 +476,7 @@
     transform: translate(0%, 50%); */
 }
 .tec-g .hori-scroll .img-1{
-    width: 100%;
+    width: 200%;
     background-position: center bottom;
     background-size: cover;
 }

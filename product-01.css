@@ -585,6 +585,17 @@ body {
     text-align: left;
     color: #fff;
   }
+  .hori-function-2{
+    width: 252.668vw;
+    font-size: 5.625vw;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 0.31; */
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
   .hori-function-8{
     padding-left: 6.3vw;
     font-size: 5.625vw;
@@ -644,6 +655,10 @@ body {
   }
   .hori-sec-item{
     margin-left: 1vw;
+    /* position: relative; */
+  }
+  .hori-last-item{
+    margin-right: 11.771vw;
     /* position: relative; */
   }
   .hori-item-number{
@@ -895,9 +910,16 @@ block:not(.first) {
   .pt7{
     padding-top: 6vh;
   }
+  .sw{
+    margin-top: -8vh;;
+    padding-left: 152.668vw;
+  }
+  .software-hori{
+    height: 13.519vh;
+  }
   .hori-item-group-2{
     /* background-color: #72dcce3d; */
-    width: 200%;
+    width: 600%;
     padding-left: 8.5%;
   }
   .hori-item2{
@@ -907,7 +929,7 @@ block:not(.first) {
     float: left;
     /* margin: 0 20px 0 0; */
     /* padding: 0px 47.1px 46.4px 23px; */
-    border-radius: 1.406vw;
+    /* border-radius: 1.406vw; */
     background-color: #fff;
     position: relative;
   }

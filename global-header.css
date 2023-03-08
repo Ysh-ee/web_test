@@ -93,7 +93,7 @@ header{
     height: 100%;
     float: right;
     
-    font-size: 1.2vw;
+    font-size: 1.198vw;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -102,7 +102,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center; 
-    color: #2a2a2a;
+    color: #000;
 
     flex-direction: column;
     }
@@ -117,8 +117,8 @@ header{
         height: 100%;
         float: right;
         
-        font-size: 1.2vw;
-        font-weight: 500;
+        font-size: 0.885vw;
+        font-weight: 300;
         font-stretch: normal;
         font-style: normal;
         
@@ -141,9 +141,9 @@ header{
 } */
     .sub-header{
         display: none;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.97);
         width: 100vw;
-        height: 48.509vh;
+        height: 39.343vh;
 
         /* margin-top: 8.657vh; */
         padding-left: 15.9vw;
@@ -154,14 +154,14 @@ header{
       .sub-navbar a{
         text-decoration: inherit;
 
-        font-size: 1.042vw;
-        font-weight: 500;
+        font-size: 0.885vw;
+        font-weight: 300;
         font-stretch: normal;
         font-style: normal;
         text-align: center;
         display: flex;
 
-        margin-top: 2.778vh;
+        margin-top: 2.037vh;
         /* justify-content: center; */
         align-items: center; 
         color: #2a2a2a;
