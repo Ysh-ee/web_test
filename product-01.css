@@ -349,6 +349,8 @@ body {
     /* background: #ffaaaa6e; */
     width: 60%;
     margin-top: 10vh;
+    opacity: 1;
+
       /* margin-top: 34.5vh; */
       /* height: 42.741vw; */
 
@@ -494,6 +496,7 @@ body {
       right: 0%;
       bottom: 0%;
       transform: translate(-0%, -0%);
+      opacity: 1;
   }
   .artic-img2{
     /* border-color: 20px #d61f26; */

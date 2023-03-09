@@ -24,8 +24,8 @@ gsap.registerPlugin(ScrollTrigger);
 //   // duration: 1
 // });
 // const anim = gsap.to(".artic-img", { opacity: 0,});
-//-------- img anim(right to mid)
 
+//-------- img anim(right to mid)
 gsap.from(".artic-img",{
   scrollTrigger:{
     trigger:".wrapper",
@@ -35,11 +35,10 @@ gsap.from(".artic-img",{
     end:"center center",
     // markers:true    //@@@
   },
-  x:500,
-  ease: 3,
-  duration: 1,
+  // x:500,
+  // ease: 3,
+  // duration: 1,
 });
-
 //---------text anim (left to mid)
 gsap.from(".artic-group",{
   scrollTrigger:{
@@ -50,31 +49,45 @@ gsap.from(".artic-group",{
     end:"center center",
     // markers:true    //@@@
   },
-  x:-500,
-  ease: true,
-  duration: 1,
+  // x:-500,
+  // ease: true,
+  // duration: 1,
 });
+// gsap.to(".artic-img", { opacity: 0,});
+var animR = gsap.from(".artic-img", {
+  x:500,
+  ease: 3,
+  duration: 1,
+  opacity: 0,
+  });
+var animL = gsap.from(".artic-group", {
+  x:-500,
+  ease: 3,
+  duration: 1,
+  opacity: 0,
+  });
 
+  document.querySelector(".play").onclick = function() { return animL.restart(); }
+document.querySelector("#play2").onclick = function() { return animR.restart(); }
+// document.querySelector("#play").onclick = function() { return animR.play(); }
+// $.querySelector("#play").onclick = function() { return animL.play(); }
+
+//덮 hori-scroll
 gsap.from(".wrapper",{
-    scrollTrigger:{
-        trigger:".wrapper",
-        start:"top top",
-        // end:"bottom top",
-        scrub:20,
-        pinSpacing: false,
-        pin: true, 
+  scrollTrigger:{
+      trigger:".wrapper",
+      start:"top top",
+      // end:"15% bottom",
+      scrub:2,
+      pinSpacing: false,
+      pin: true, 
+
         // markers:true    //@@@
     },
 });
-//멈춤
-ScrollTrigger.create({
-  trigger:".wrapper",
-  start:"top top",
-  end: "+=600",
-  pin:".wrapper",
-    // markers:true    //@@@
-});
 
+
+//멈춤
 // gsap.from(".wrapper",{
 //     scrollTrigger:{
 //         trigger:".wrapper",
