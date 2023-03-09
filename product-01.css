@@ -1004,7 +1004,7 @@ block:not(.first) {
 
   /* margin: 0 20px 0 0;
   padding: 50px 35.5px 52.1px 40px; */
-  border-radius: 1.406vw;
+  /* border-radius: 1.406vw; */
   background-color: #fff;
 }
 .hardware-item-text-group{

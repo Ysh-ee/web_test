@@ -29,7 +29,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".artic-img",{
   scrollTrigger:{
     trigger:".wrapper",
-    toggleActions: "restart none resume none",
+    toggleActions: "play none resume none",
     start:"top center",
     // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
     end:"center center",
@@ -49,9 +49,9 @@ gsap.from(".artic-group",{
     end:"center center",
     // markers:true    //@@@
   },
-  // x:-500,
-  // ease: true,
-  // duration: 1,
+  x:-500,
+  ease: true,
+  duration: 1,
 });
 // gsap.to(".artic-img", { opacity: 0,});
 var animR = gsap.from(".artic-img", {
@@ -60,17 +60,18 @@ var animR = gsap.from(".artic-img", {
   duration: 1,
   opacity: 0,
   });
-var animL = gsap.from(".artic-group", {
-  x:-500,
-  ease: 3,
-  duration: 1,
-  opacity: 0,
-  });
+// var animL = gsap.from(".artic-group", {
+//   x:-500,
+//   ease: 3,
+//   duration: 1,
+//   opacity: 0,
+//   });
 
-  document.querySelector(".play").onclick = function() { return animL.restart(); }
-document.querySelector("#play2").onclick = function() { return animR.restart(); }
-// document.querySelector("#play").onclick = function() { return animR.play(); }
-// $.querySelector("#play").onclick = function() { return animL.play(); }
+  document.querySelector("#play1").onclick = function() { return animR.restart(); }
+  document.querySelector("#play2").onclick = function() { return animR.restart(); }
+  document.querySelector("#play3").onclick = function() { return animR.restart(); }
+  document.querySelector("#play4").onclick = function() { return animR.restart(); }
+// document.querySelector("#play").onclick = function() { return animR.restart(); }
 
 //덮 hori-scroll
 gsap.from(".wrapper",{
