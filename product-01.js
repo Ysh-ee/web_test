@@ -43,7 +43,7 @@ gsap.from(".artic-img",{
 gsap.from(".artic-group",{
   scrollTrigger:{
     trigger:".wrapper",
-    toggleActions: "restart none resume none",
+    toggleActions: "play none resume none",
     start:"top center",
     // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
     end:"center center",
