@@ -456,7 +456,7 @@
 
     margin-bottom: 4.074vh;
 }
-.tec-g .list-g .active a{
+.tec-g .list-g .active{
     font-size: 2.823vw;
     font-weight: 600;
     font-stretch: normal;
@@ -482,7 +482,7 @@
     transform: translate(0%, 50%); */
 }
 .tec-g .hori-scroll .img-1{
-    background-color: #e63737;
+    /* background-color: #e63737; */
     width: 200%;
     background-position: center bottom;
     background-size: cover;
