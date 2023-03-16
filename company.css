@@ -20,7 +20,7 @@
     color: #fff;
 
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -391,7 +391,7 @@
   transform: translate(-0%, -0%);
 }
 
-/* ------------------------------2--organization-------------------------------- */
+/* ------------------------------2--technology-------------------------------- */
 .tec-block{
     /* background-color: rgba(255, 0, 0, 0.219); */
     height: 109.352vh;
@@ -440,7 +440,10 @@
     position: relative;
     z-index: 10;
 }
-.tec-g .list-g .item{
+.tec-g .list-g .item,
+.tec-g .list-g .item a{
+    text-decoration: inherit;
+
     /* background-color: rgba(0, 255, 255, 0.219); */
     font-size: 1.823vw;
     /* font-weight: normal; */
@@ -453,7 +456,7 @@
 
     margin-bottom: 4.074vh;
 }
-.tec-g .list-g .active{
+.tec-g .list-g .active a{
     font-size: 2.823vw;
     font-weight: 600;
     font-stretch: normal;
@@ -467,6 +470,9 @@
     /* background-color: rgba(255, 0, 0, 0.219); */
     width: 64.010vw;
     height: 60.074vh;
+    display: flex;
+    
+    
     /* height: 100%; */
     /* overflow-x: hidden; */
 
@@ -476,9 +482,14 @@
     transform: translate(0%, 50%); */
 }
 .tec-g .hori-scroll .img-1{
+    background-color: #e63737;
     width: 200%;
     background-position: center bottom;
     background-size: cover;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 

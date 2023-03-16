@@ -1,0 +1,200 @@
+.tec-block{
+    /* background-color: rgba(255, 0, 0, 0.219); */
+    height: 109.352vh;
+    position: relative;
+
+}
+.tec-title{
+    /* background-color: rgba(0, 255, 255, 0.219); */
+
+    font-size: 3.125vw;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #161616;
+
+    padding-top: 10vw;
+}
+
+.tec-g{
+    /* background-color: rgba(255, 0, 0, 0.219); */
+
+    width: 100%;
+    margin-top: 6vw;
+    display: flex;
+    justify-content:space-between;
+
+    
+    position: relative;
+    /* position: absolute;
+    bottom: -50%;
+    right: 0;
+    transform: translate(0%, 50%); */
+}
+.tec-g .list-g{
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgba(0, 255, 255, 0.219); */
+    align-content: flex-start;
+    /* margin-left: 13.333vw;
+    width: 15.625vw; */
+    padding-left: 13.333vw;
+    width: 35.625vw;
+
+    position: relative;
+    z-index: 10;
+}
+.tec-g .list-g .item,
+.tec-g .list-g .item a{
+    text-decoration: inherit;
+
+    /* background-color: rgba(0, 255, 255, 0.219); */
+    font-size: 1.823vw;
+    /* font-weight: normal; */
+    font-stretch: normal;
+    font-style: normal;
+    /* line-height: 1.17; */
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+
+    margin-bottom: 4.074vh;
+}
+.tec-g .list-g .active a{
+    font-size: 2.823vw;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d61f26;
+}
+.tec-g .hori-scroll{
+    /* background-color: rgba(255, 0, 0, 0.219); */
+    width: 64.010vw;
+    height: 60.074vh;
+    display: flex;
+    
+    
+    /* height: 100%; */
+    /* overflow-x: hidden; */
+
+    /* position: absolute;
+    bottom: -50%;
+    right: 0;
+    transform: translate(0%, 50%); */
+}
+.tec-g .hori-scroll .img-1{
+    background-color: #e63737;
+    width: 200%;
+    background-position: center bottom;
+    background-size: cover;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+/* --------------------------------------- */
+
+
+
+/* Most of these styles could be removed but are for the demo to look better */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-weight: 300;
+}
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.full-screen {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#masthead {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 9999;
+}
+#masthead a {
+  padding: 1rem 2rem;
+}
+
+
+#panels #panels-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ddd;
+}
+#panels #panels-container .panel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+  text-align: left;
+  border-right: 1px solid #f00;
+}
+#panels #panels-container .panel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+#panels #panels-container .panel .panels-navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+#panels #panels-container .panel .anchor-panel,
+#panels #panels-container .panel .nav-panel {
+  color: #000;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+#panels #panels-container .panels-navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  right: 2rem;
+}

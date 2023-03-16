@@ -1,12 +1,10 @@
-gsap.registerPlugin(ScrollToPlugin,ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
-
-
-  let panelsSection = document.querySelector("#panels"),
+/* Main navigation */
+let panelsSection = document.querySelector("#panels"),
 	panelsContainer = document.querySelector("#panels-container"),
 	tween;
-
-document.querySelectorAll(".item").forEach(anchor => {
+document.querySelectorAll(".anchor").forEach(anchor => {
 	anchor.addEventListener("click", function(e) {
 		e.preventDefault();
 		let targetElem = document.querySelector(e.target.getAttribute("href")),
@@ -34,31 +32,13 @@ tween = gsap.to(panels, {
 	scrollTrigger: {
 		trigger: "#panels-container",
 		pin: true,
-		start: "bottom bottom",
-		scrub: 0.5,
-		// snap: {
-		// 	snapTo: 1 / (panels.length - 1),
-		// 	inertia: false,
-		// 	duration: {min: 0.1, max: 0.1}
-		// },
-		end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth),
-    markers:true    //@@@
+		start: "top top",
+		scrub: 1,
+		snap: {
+			snapTo: 1 / (panels.length - 1),
+			inertia: false,
+			duration: {min: 0.1, max: 0.1}
+		},
+		end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
 	}
 });
-
-
-
-// let scrollTween = gsap.to(".hori-scroll", {
-//   xPercent: -130,
-//   ease: "none", // <-- IMPORTANT!
-//   scrollTrigger: {
-//     trigger: ".tec-block",
-//     pin: ".tec-block",
-//     scrub: 0.5,
-//     //snap: directionalSnap(1 / (sections.length - 1)),
-//   //   start: "10% top",
-//   //   end: "+=600",
-//   start: "bottom bottom",
-//   //   markers:true    //@@@
-//   }
-// });

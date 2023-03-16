@@ -111,47 +111,28 @@ let scrollTween = gsap.to(".hori-item-group", {
 
 //   ------------------scrollchange---------
 
-let blocks = gsap.utils.toArray("block"),
-    currentBlock = blocks[0];
+// let blocks = gsap.utils.toArray("block"),
+//     currentBlock = blocks[0];
 
-// gsap.defaults({overwrite: 'auto', duration: 0.3});
+// blocks.forEach((block, i) => {
+//   ScrollTrigger.create({
+//     trigger:".scroll-change-group",
+//     start: () => 1 * innerHeight + ((i+2)*10) +150,
+//     end: () => 1 *innerHeight + ((i+2)*10) +300,
+//     // markers:true,    //@@@
+//     onToggle: self => self.isActive && setSection(block)
+//   });
+// });
 
-// stretch out the body height according to however many sections there are. 
-// gsap.set("scroll-change-group", {height: (blocks.length * 100) + "%"});
-
-// create a ScrollTrigger for each section
-blocks.forEach((block, i) => {
-  ScrollTrigger.create({
-    // use dynamic scroll positions based on the window height (offset by half to make it feel natural)
-    trigger:".scroll-change-group",
-    // start: () => (3+i - 0.1) * (innerHeight/3*(i+3) ),
-    // end: () => (3+i + 0.1) * (innerHeight/3 ),
-    // start:"top top",
-    start: () => 1 * innerHeight + ((i+2)*10) +150,
-    end: () => 1 *innerHeight + ((i+2)*10) +300,
-    // start: () => (i - 0.3) * innerHeight + 1000,
-    // end: () => (i + 0.3) * innerHeight +1000,
-    // when a new section activates (from either direction), set the section accordinglyl.
-    // pin: true,
-    // markers:true,    //@@@
-    onToggle: self => self.isActive && setSection(block)
-  });
-});
-
-gsap.from(".scroll-change-group",{
-    scrollTrigger:{
-        trigger:".scroll-change-group",
-        start:"top top",
-        end:"400% top",
-        scrub:20,
-        // pinSpacing: false,
-        pin: true, 
-        // markers:true    //@@@
-    },
-});
-
-
-
+// gsap.from(".scroll-change-group",{
+//     scrollTrigger:{
+//         trigger:".scroll-change-group",
+//         start:"top top",
+//         end:"400% top",
+//         scrub:20,
+//         pin: true, 
+//     },
+// });
 
 function setSection(newSection) {
   if (newSection !== currentBlock) {

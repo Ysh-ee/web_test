@@ -82,6 +82,7 @@ gsap.from(".wrapper",{
       scrub:2,
       pinSpacing: false,
       pin: true, 
+      // snap: 0,
 
         // markers:true    //@@@
     },
