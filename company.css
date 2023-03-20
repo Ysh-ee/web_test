@@ -271,6 +271,17 @@
     display: flex;
 }
 
+/* 1 */
+.org-block .box-g .box-line .box .org-1{
+    background-image: url(img/company/org-1.png);
+    filter: grayscale(1);
+}
+.org-block .box-g .box-line .box .org-1:hover{
+    background-image: url(img/company/org-1-br.png);
+    filter: grayscale(0);
+}
+
+
 /* 3 */
 .org-block .box-g .box-line .box .org-3{
     background-image: url(img/company/org-3.png);
@@ -597,4 +608,100 @@
     color: #161616;
 
     margin-top: 0.521vw;
+}
+/* --------------------------------history-------------------------------- */
+.his-block{
+    /* background-color: #d61f2574; */
+    height: 104.074vh;
+}
+
+.his-sub{
+    width: 100%;
+    height: 33%;
+    /* background-color: #ddb2b474; */
+    position: relative;
+
+
+}
+
+.his-text{
+    /* height: 20.370vh; */
+    font-size: 0.990vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.his-scroll-years{
+    /* background-color: #d61f2574; */
+    width: 20.729vw;
+    display: flex;
+    overflow: hidden;
+
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.his-scroll-years .active{
+    color: #d61f26;
+    opacity: 1;
+
+}
+.his-scroll-years .first{
+    margin-left: 7.448vw;
+    /* margin-left: 5.260vw; */
+}
+.his-year{
+    margin-left: 2.188vw;
+    opacity: 0.1;
+    font-size: 2.656vw;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+.his-line{
+    width: 6.354vw;
+  height: 1.5px;
+  background-color: #d61f26;
+
+  position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.his-r{
+    width: 0.833vw;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(2000%, -50%);
+}
+.his-l{
+    width: 0.833vw;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-2000%, -50%);
+}
+
+.his-pics{
+    width: 100vw;
+}
+.his-scroll-pics{
+    margin-left: 37.344vw;
+    height: 27.344vw;
+    width: 500vw;
 }
