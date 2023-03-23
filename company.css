@@ -717,7 +717,7 @@
 .his-scroll-pics{
     margin-left: 37.344vw;
     height: 27.344vw;
-    width: 500vw;
+    width: 483vw;
     display: flex;
 
 }
@@ -751,11 +751,14 @@
     margin-top: 1vw;
     width: 1.146vw;
   height: 1.146vw;
-  border: solid 0.260vw #aeaeae;
+  border: solid 0.260vw #646464;
   /* border: solid 0.260vw #d61f26; */
   border-radius: 1vw;
   background-color: #fff;
   /* display: block;  */
+}
+.cir-red.active{
+  border: solid 0.260vw #d61f26;
 }
 .cir-gray{
   margin: 0px auto;
@@ -809,7 +812,7 @@
 }
 .his-redline{
     margin-left: -37.344vw;
-    width: 10.1%;
+    width: 50vw;
   /* max-width: 100%; */
   height: 1px;
   /* height: 0.05vw; */
@@ -822,28 +825,99 @@
 
 /* one */
 /* width: 31.5vw; */
-.his-line-22{
-    margin-left: 12.8vw;
-    width: 86.8vw;
-  /* max-width: 100%; */
-  height: 1px;
-  /* height: 0.05vw; */
-  margin-top: 2.8vw;
-  display: inline-block;
-  position: absolute;
-  background-color: #d61f26;
-  z-index: -1;
+
+/* 3 */
+/* width: 86.8vw; */
+.his-line-00{
+    height: 1px;
+    /* height: 0.05vw; */
+    margin-top: 2.8vw;
+    /* margin-top: 2.8vw; */
+    display: inline-block;
+    position: absolute;
+    background-color: #d61f26;
+    z-index: -1;
 }
-.his-line-21{
+/* 22 */
+.his-line-22-1{
+    margin-left: 12.8vw;
+    width: 31.5vw;
+}
+.his-line-22-2{
+    margin-left: 44.3vw;
+    width: 27.6vw;
+}
+.his-line-22-3{
+    margin-left: 71.9vw;
+    width: 27.8vw;
+}
+
+/* 21 */
+.his-line-21-1{
     margin-left: 99.6vw;
-    width: 55.3vw;
-  /* max-width: 100%; */
-  height: 1px;
-  /* height: 0.05vw; */
-  margin-top: 2.8vw;
-  display: inline-block;
-  position: absolute;
-  background-color: #d61f26;
-  /* background-color: #1f3ad6; */
-  z-index: -1;
+    width: 27.65vw;
+}
+.his-line-21-2{
+    margin-left: 127.25vw;
+    width: 27.65vw;
+}
+
+/* 20 */
+.his-line-20-1{
+    margin-left: 154.9vw;
+    width: 31.65vw;
+}
+.his-line-20-2{
+    margin-left: 186.55vw;
+    width: 27vw;
+}
+
+/* 19 */
+.his-line-19{
+    margin-left: 213.55vw;
+    width: 17.4vw;
+}
+
+/* 18 */
+.his-line-18{
+    margin-left: 230.95vw;
+    width: 21.7vw;
+}
+
+/* 17 */
+.his-line-17-1{
+    margin-left: 252.65vw;
+    width: 31.5vw;
+}
+.his-line-17-2{
+    margin-left: 284.15vw;
+    width: 25.1vw;
+}
+.his-line-17-3{
+    margin-left: 309.25vw;
+    width: 19.2vw;
+}
+
+/* 14 */
+.his-line-14{
+    margin-left: 328.45vw;
+    width: 25.5vw;
+}
+
+/* 13 */
+.his-line-13{
+    margin-left: 353.95vw;
+    width: 23.5vw;
+}
+
+/* 12 */
+.his-line-12{
+    margin-left: 377.45vw;
+    width: 23.5vw;
+}
+
+/* 11 */
+.his-line-11{
+    margin-left: 400.95vw;
+    width: 22.5vw;
 }
