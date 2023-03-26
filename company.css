@@ -234,9 +234,30 @@
     /* background-position: center bottom;
     background-size: cover; */
     position: relative;
-
     /* overflow: hidden; */
+}
+.org-block .box-g .box-line .box-2{
+    background-color: #00000020;
+    width: 27.604vw;
+    height: 27.604vw;
+    /* padding: 2.604vw; */
+    /* margin: 1.042vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
     
+}
+.org-block .box-g .box-line .box-2 .box-half{
+    background-color: #000000d2;
+    width: 27.604vw;
+    height: 13.18vw;
+    /* padding: 2.604vw; */
+    /* margin: 1.042vw; */
+    /* background-position: center bottom;
+    background-size: cover; */
+    position: relative;
+    
+    /* overflow: hidden; */
 }
 /* .org-block .box-g .box-line .box img{
     width: 100%;
@@ -255,30 +276,69 @@
     background-position: center bottom;
     background-size: cover;
 }
+/* .org-block .box-g .box-line .box .org-img-2{
+    width: 100%;
+    height: 50%;
+} */
+.org-block .box-g .box-line .box-2 .box-half .moff,
 .org-block .box-g .box-line .box .org-img .moff{
-    display: flex;
+    /* display: flex; */
+
+    opacity: 1;
+    transition: all 0.5s;
 }
+.org-block .box-g .box-line .box-2 .box-half .mon,
 .org-block .box-g .box-line .box .org-img .mon{
     position: relative;
     width: 100%;
     height: 100%;
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    transition: all 0.5s;
 }
+.org-block .box-g .box-line .box-2 .box-half:hover .moff,
 .org-block .box-g .box-line .box .org-img:hover .moff{
-    display: none;
+    /* display: none; */
+
+    opacity: 0;
+    transition: all 0.5s;
 }
+.org-block .box-g .box-line .box-2 .box-half:hover .mon,
 .org-block .box-g .box-line .box .org-img:hover .mon{
-    display: flex;
+    /* display: flex; */
+
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 /* 1 */
 .org-block .box-g .box-line .box .org-1{
     background-image: url(img/company/org-1.png);
     filter: grayscale(1);
+    transition: all 0.5s;
 }
 .org-block .box-g .box-line .box .org-1:hover{
     background-image: url(img/company/org-1-br.png);
     filter: grayscale(0);
+    transition: all 0.5s;
+}
+
+/* 2 */
+.org-block .box-g .box-line .box-2 .org-2-1{
+    background-color: black;
+    transition: all 0.5s;
+}
+.org-block .box-g .box-line .box-2 .org-2-1:hover{
+    background-color: #d61f26;
+    transition: all 0.5s;
+}
+.org-block .box-g .box-line .box-2 .org-2-2{
+    background-color: black;
+    transition: all 0.5s;
+}
+.org-block .box-g .box-line .box-2 .org-2-2:hover{
+    background-color: #d61f26;
+    transition: all 0.5s;
 }
 
 
@@ -286,37 +346,45 @@
 .org-block .box-g .box-line .box .org-3{
     background-image: url(img/company/org-3.png);
     filter: grayscale(1);
+    transition: all 0.5s;
 }
 .org-block .box-g .box-line .box .org-3:hover{
     background-image: url(img/company/org-3-br.png);
     filter: grayscale(0);
+    transition: all 0.5s;
 }
 /* 4 */
 .org-block .box-g .box-line .box .org-4{
     background-image: url(img/company/org-4.png);
     filter: grayscale(1);
+    transition: all 0.5s;
 }
 .org-block .box-g .box-line .box .org-4:hover{
     background-image: url(img/company/org-4-br.png);
     filter: grayscale(0);
+    transition: all 0.5s;
 }
 /* 5 */
 .org-block .box-g .box-line .box .org-5{
     background-image: url(img/company/org-5.png);
     filter: grayscale(1);
+    transition: all 0.5s;
 }
 .org-block .box-g .box-line .box .org-5:hover{
     background-image: url(img/company/org-5-br.png);
     filter: grayscale(0);
+    transition: all 0.5s;
 }
 /* 6 */
 .org-block .box-g .box-line .box .org-6{
     background-image: url(img/company/org-6.png);
     filter: grayscale(1);
+    transition: all 0.5s;
 }
 .org-block .box-g .box-line .box .org-6:hover{
     background-image: url(img/company/org-6-br.png);
     filter: grayscale(0);
+    transition: all 0.5s;
 }
 
 
@@ -341,18 +409,20 @@
 .org-block .box-g .box-line .org-6{
     background-image: url(img/company/org-6.png);
 } */
+.org-block .box-g .box-line .box-2 .box-icon,
 .org-block .box-g .box-line .box .box-icon{
     /* background-color: rgb(255, 255, 255); */
     width: 1.563vw;
     height: 1.563vw;
 
     position: absolute;
-    bottom: 10%;
-    right: 10%;
+    bottom: 2.8vw;
+    right: 2.8vw;
     transform: translate(0%, 0%);
 }
+.org-block .box-g .box-line .box-2 .box-text,
 .org-block .box-g .box-line .box .box-text{
-    font-size: 2.604vw;
+    font-size: 1.979vw;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -362,12 +432,13 @@
     color: #fff;
 
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 2.8vw;
+    left: 2.8vw;
     transform: translate(0%, 0%);
 }
+.org-block .box-g .box-line .box-2 .box-text-2,
 .org-block .box-g .box-line .box .box-text-2{
-    font-size: 1.042vw;
+    font-size: 0.938vw;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -377,15 +448,16 @@
     color: #fff;
 
     position: absolute;
-    top: 20%;
-    left: 10.2%;
+    top: 5.3vw;
+    left: 2.8vw;
     transform: translate(0%, 0%);
 }
+
 .org-block .box-g .box-line .box .org-img .mon .box-text-3{
     /* background-color: #d61f256b; */
     width: 100%;
 
-    font-size: 1.250vw;
+    font-size: 1.042vw;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -641,20 +713,27 @@
     transform: translate(-50%, -50%);
 }
 .his-years{
-    /* background-color: #d61f2574; */
+    background-color: #ddb2b474;
     width: 25vw;
-    /* display: flex; */
-    overflow: hidden;
+    height: 3vw;
+    /* overflow: hidden; */
 
     position: absolute;
     top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.actions {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 .his-scroll-years{
     /* background-color: #d61f2574; */
     /* width: 25vw; */
-    display: flex;
+width: 100%;
+    /* display: flex; */
 
     /* position: absolute;
     top: 58%;
@@ -675,7 +754,12 @@
     /* margin-left: 5.260vw; */
 }
 .his-year{
-    margin-left: 2.188vw;
+    padding: 0;
+	margin: 0;
+    /* margin-left: 2.188vw; */
+    margin-left: 9.4vw;
+    
+    list-style: none;
     opacity: 0.1;
     font-size: 2.656vw;
     font-weight: 500;
@@ -683,8 +767,11 @@
     font-style: normal;
     line-height: 1.18;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #000;
+    position: absolute;
+	top: 0;
+	left: 0;
 }
 .his-line{
     width: 6.354vw;

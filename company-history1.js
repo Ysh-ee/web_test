@@ -1,44 +1,5 @@
-
-
-
 gsap.registerPlugin(ScrollTrigger);
-console.clear();
-
-// gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
-
-// let scrollYears = gsap.to(".his-scroll-years", {
-//     xPercent: -350,
-//     ease: "none", 
-//     scrollTrigger: {
-//     //   trigger: ".his-block",
-//     //   pin: ".his-block",
-//       scrub: 1,
-//     //   snap:0.094,
-//       //snap: directionalSnap(1 / (sections.length - 1)),
-//     //   start: "10% top",
-//       end: "+=300%",
-//     start: "bottom bottom",
-//     // end: "bottom center",
-//       markers:true    //@@@
-//     }
-//   });
-
-
-// let scrollYears = gsap.to(".his-scroll-years", {
-//     xPercent: -350,
-//     ease: "none", 
-//     scrollTrigger: {
-//     //   trigger: ".his-block",
-//     //   pin: ".his-block",
-//       scrub: 1,
-//       //snap: directionalSnap(1 / (sections.length - 1)),
-//     //   start: "10% top",
-//       end: "+=300%",
-//     start: "bottom bottom",
-//     // end: "bottom center",
-//     //   markers:true    //@@@
-//     }
-//   });
+// console.clear();
 
 let scrollPics = gsap.to(".his-scroll-pics", {
     xPercent: -85,
@@ -69,42 +30,68 @@ const spacing = 0.2,    // spacing of the cards (stagger)
 		duration: 0.5,
 		ease: "power3",
 		paused: true
-	}),
-	trigger = ScrollTrigger.create({
+	});
+	// trigger = ScrollTrigger.create({
+    //     trigger: ".his-block",
+	// 	start: "bottom bottom",
+    //     // containerAnimation: scrollPics,
+
+	// 	onUpdate(self) {
+			
+    //     scrub.vars.totalTime = snap((iteration + self.progress) * seamlessLoop.duration() *0.5);
+	// 			scrub.invalidate().restart(); // to improve performance, we just invalidate and restart the same tween. No need for overwrites or creating a new tween on each update.
+	// 			self.wrapping = false;
+	// 		// }
+	// 	},
+	// 	end: "+=1500",
+	// 	// pin: ".his-block",
+    // markers:true,    //@@@
+
+	// });
+    //-----------------------------------------------------------------
+const yearElements = document.querySelectorAll('.cir-red');
+// const distances = Array.from(yearElements).map(year => year.offsetLeft - yearElements[0].offsetLeft);
+// yearElements.forEach((year, i) => {
+//         ScrollTrigger.create({
+//           trigger: year,
+//         containerAnimation: scrollPics,
+//           start: `top+=${distances[i]}`,
+//           end: `+=${year.offsetWidth}`,
+//           markers:true,    //@@@
+//           onToggle: self => {
+//             if (self.isActive) {
+//               iteration = i;
+//               scrubTo(scrub.vars.totalTime); // update the scrubbing position when a year is active
+//             }
+//           }
+//         });
+//       });
+
+      
+      trigger = ScrollTrigger.create({
         trigger: ".his-block",
 		start: "bottom bottom",
         // containerAnimation: scrollPics,
 
 		onUpdate(self) {
-			// if (self.progress === 1 && self.direction > 0 && !self.wrapping) {
-			// 	wrapForward(self);
-			// } else if (self.progress < 1e-5 && self.direction < 0 && !self.wrapping) {
-			// 	wrapBackward(self);
-			// } else {
-        scrub.vars.totalTime = snap((iteration + self.progress) * seamlessLoop.duration());
+        scrub.vars.totalTime = snap((iteration + self.progress) * seamlessLoop.duration() *1);
 				scrub.invalidate().restart(); // to improve performance, we just invalidate and restart the same tween. No need for overwrites or creating a new tween on each update.
 				self.wrapping = false;
 			// }
 		},
-		end: "+=1500",
+		end: "+=2000",
 		// pin: ".his-block",
     markers:true,    //@@@
 
 	});
-
+//------------------------------------------------------------------------------
 function scrubTo(totalTime) { // moves the scroll position to the place that corresponds to the totalTime value of the seamlessLoop, and wraps if necessary.
 	let progress = (totalTime - seamlessLoop.duration() * iteration) / seamlessLoop.duration();
-	if (progress > 1) {
-		// wrapForward(trigger);
-	} else if (progress < 0) {
-		// wrapBackward(trigger);
-	} else {
-		trigger.scroll(trigger.start + progress * (trigger.end - trigger.start));
-	}
+	trigger.scroll(trigger.start + progress * (trigger.end - trigger.start));
 }
 
-// document.querySelector(".next").addEventListener("click", () => scrubTo(scrub.vars.totalTime + spacing));
-// document.querySelector(".prev").addEventListener("click", () => scrubTo(scrub.vars.totalTime - spacing));
+document.querySelector(".next").addEventListener("click", () => scrubTo(scrub.vars.totalTime + spacing));
+document.querySelector(".prev").addEventListener("click", () => scrubTo(scrub.vars.totalTime - spacing));
 
 function buildSeamlessLoop(items, spacing) {
 	let overlap = Math.ceil(1 / spacing), // number of EXTRA animations on either side of the start/end to accommodate the seamless looping
@@ -114,9 +101,7 @@ function buildSeamlessLoop(items, spacing) {
 		seamlessLoop = gsap.timeline({ // this merely scrubs the playhead of the rawSequence so that it appears to seamlessly loop
 			paused: true,
 			repeat: -0, // to accommodate infinite scrolling/looping ((-1
-			// onRepeat() { // works around a super rare edge case bug that's fixed GSAP 3.6.1
-			// 	this._time === this._dur && (this._tTime += this._dur - 0.01);
-			// }
+			
 		}),
 		l = items.length + overlap * 2,
 		time = 0,
@@ -130,7 +115,7 @@ function buildSeamlessLoop(items, spacing) {
 		index = i % items.length;
 		item = items[index];
 		time = i * spacing;
-		rawSequence.fromTo(item, {scale: 1, opacity: 0, color:"black",}, 
+		rawSequence.fromTo(item, {scale: 1, opacity: 0, color:"gray",}, 
                                  {scale: 1, opacity: 1, color:"#d61f26", 
                                   zIndex: 100, duration: 0.5, yoyo: true, repeat: 1, ease: "power1.in", immediateRender: false}
                                  , time)
@@ -405,7 +390,7 @@ gsap.from(".line-1", {
 
 //-----o
   const cirs = gsap.utils.toArray('.cir-red');
-  cirs.forEach(cir =>{
+  cirs.forEach((cir,i) =>{
     gsap.to(cir, { 
         scrollTrigger: {
           trigger: cir,
@@ -414,6 +399,26 @@ gsap.from(".line-1", {
           toggleClass: "active",
           start: "left center",
           end: "1200% left",
+        //   onToggle:(self) => console.log(i, "-", self.isActive),
+        //   onToggle: self => {
+        //                 if (self.isActive) {
+        //                 //   iteration = i;
+        //                 console.log(i, "-", self.isActive);
+        //                 // scrubTo(scrub.vars.totalTime + spacing); // update the scrubbing position when a year is active
+        //                 }else{
+        //                 console.log(i, "x", self.isActive);
+
+        //                 }
+        //               },
+        //   onEnter: () => console.log(i, "in"),
+        //   onEnterBack: () => console.log(i, "in back"),
+        //   onLeave: () => console.log(i, "out"),
+        //   onLeaveBack: () => console.log(i, "out back"),
+
+        //   onEnter: () => scrubTo(scrub.vars.totalTime + spacing),
+        //   onLeaveBack: () => console.log(i, "out back"),
+
+
           markers:true,    //@@@
         
         // id: i
@@ -444,55 +449,6 @@ gsap.from(".line-1", {
 //   })
   //--------------------------TRIGGER CIRSSSSSSSSS-------------@@@@@@--------------
 
-
-  //----------------------xxx----------------------------------------
-//   const years = gsap.utils.toArray('.his-year');
-//   years.forEach(year =>{
-//     gsap.to(year, { 
-//         x: -200,
-//         scrollTrigger: {
-//           trigger: cir,
-//           containerAnimation: scrollPics,
-//           scrub: true,
-//           toggleClass: "active",
-//           start: "left center",
-//           end: "1200% left",
-//           markers:true,    //@@@
-        
-//         // id: i
-//         }
-//       })
-//   });
-
-// gsap.to(".his-scroll-years",{
-//     x: "-33%",
-//     scrollTrigger: {
-//         trigger: '.cir-2',
-//         containerAnimation: scrollPics,
-//         scrub: true,
-//     //   toggleClass: "active",
-//         start: "left center",
-//         end: "120% center",
-//         markers:true,    //@@@
-//     // id: "123"
-//     }
-// })
-//ㅠㅠㅠㅠㅠㅠㅠㅠ
-// gsap.to(".his-scroll-years",{
-//     x: "-66%",
-//     scrollTrigger: {
-//         trigger: '.cir-3',
-//         containerAnimation: scrollPics,
-//         scrub: true,
-//     //   toggleClass: "active",
-//         start: "left center",
-//         end: "120% center",
-//         markers:true,    //@@@
-//     // id: "123"
-//     }
-// })
-
-//------------------------------------------------------
 
 //년도
 // ScrollTrigger.create({
