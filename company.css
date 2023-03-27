@@ -237,7 +237,7 @@
     /* overflow: hidden; */
 }
 .org-block .box-g .box-line .box-2{
-    background-color: #00000020;
+    /* background-color: #00000020; */
     width: 27.604vw;
     height: 27.604vw;
     /* padding: 2.604vw; */
@@ -285,7 +285,7 @@
     /* display: flex; */
 
     opacity: 1;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box-2 .box-half .mon,
 .org-block .box-g .box-line .box .org-img .mon{
@@ -294,51 +294,51 @@
     height: 100%;
     /* display: none; */
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box-2 .box-half:hover .moff,
 .org-block .box-g .box-line .box .org-img:hover .moff{
     /* display: none; */
 
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box-2 .box-half:hover .mon,
 .org-block .box-g .box-line .box .org-img:hover .mon{
     /* display: flex; */
 
     opacity: 1;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 /* 1 */
 .org-block .box-g .box-line .box .org-1{
     background-image: url(img/company/org-1.png);
     filter: grayscale(1);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box .org-1:hover{
     background-image: url(img/company/org-1-br.png);
     filter: grayscale(0);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 /* 2 */
 .org-block .box-g .box-line .box-2 .org-2-1{
     background-color: black;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box-2 .org-2-1:hover{
     background-color: #d61f26;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box-2 .org-2-2{
     background-color: black;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box-2 .org-2-2:hover{
     background-color: #d61f26;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 
@@ -346,45 +346,45 @@
 .org-block .box-g .box-line .box .org-3{
     background-image: url(img/company/org-3.png);
     filter: grayscale(1);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box .org-3:hover{
     background-image: url(img/company/org-3-br.png);
     filter: grayscale(0);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 /* 4 */
 .org-block .box-g .box-line .box .org-4{
     background-image: url(img/company/org-4.png);
     filter: grayscale(1);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box .org-4:hover{
     background-image: url(img/company/org-4-br.png);
     filter: grayscale(0);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 /* 5 */
 .org-block .box-g .box-line .box .org-5{
     background-image: url(img/company/org-5.png);
     filter: grayscale(1);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box .org-5:hover{
     background-image: url(img/company/org-5-br.png);
     filter: grayscale(0);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 /* 6 */
 .org-block .box-g .box-line .box .org-6{
     background-image: url(img/company/org-6.png);
     filter: grayscale(1);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .org-block .box-g .box-line .box .org-6:hover{
     background-image: url(img/company/org-6-br.png);
     filter: grayscale(0);
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 

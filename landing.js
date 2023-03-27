@@ -10,7 +10,9 @@ let scrollTween = gsap.to(".section-scroll", {
       //snap: directionalSnap(1 / (sections.length - 1)),
       start: "100% 40%",
       end: "+=400",
-    //   markers:true    //@@@
+      // markers:true    //@@@
 
     }
   });
+
+  
