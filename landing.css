@@ -345,16 +345,19 @@ section:first-of-type {
 
 }
 .section-scroll .hori-scroll{
-    width: 200vw;
+    width: 265.762vw;
+    /* width: 265.762vw; */
     height: 100%;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     flex-wrap: nowrap;
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }
 .section-scroll .hori-scroll .block{
     background-color: #1f1f1f;
+    float: left;
+    margin-right: 0.5vw;
     /* width: 32.135vw; */
     /* width: 33.802vw; */
     /* width: 32.635vw; */

@@ -90,9 +90,6 @@ function scrubTo(totalTime) { // moves the scroll position to the place that cor
 	trigger.scroll(trigger.start + progress * (trigger.end - trigger.start));
 }
 
-document.querySelector(".next").addEventListener("click", () => scrubTo(scrub.vars.totalTime + spacing));
-document.querySelector(".prev").addEventListener("click", () => scrubTo(scrub.vars.totalTime - spacing));
-
 function buildSeamlessLoop(items, spacing) {
 	let overlap = Math.ceil(1 / spacing), // number of EXTRA animations on either side of the start/end to accommodate the seamless looping
 		startTime = items.length * spacing + 0.5, // the time on the rawSequence at which we'll start the seamless loop

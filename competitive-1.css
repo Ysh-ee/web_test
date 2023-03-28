@@ -192,8 +192,7 @@ header{
         bottom: 0%;
         transform: translate(0%, 0%);
       }
-  .banner-route{
-    /* background-color: #2a2a2a31; */
+  /* .banner-route{
     font-size: 1.042vw;
     font-weight: 300;
     font-stretch: normal;
@@ -206,7 +205,7 @@ header{
     top: 3.889vh;
     right: 4.740vw;
     transform: translate(0%, 0%);
-}
+} */
 .small-arrow{
     /* background-color: #3b8ca7; */
     font-size: 0.542vw;

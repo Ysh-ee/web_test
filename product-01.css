@@ -11,7 +11,7 @@ html{
   width:100vw; 
   /* height:100vh;  */
   /* object-fit:cover;  */
-  background-image: url('img/product-banner-1.png');
+  background-image: url('img/product-01/product-banner-01.png');
   background-position: center bottom;
   background-size: cover;
 }
@@ -207,6 +207,17 @@ body {
     transform: translate(-50%, -50%);
     /* position: relative; */
 }
+.main-banner-p01{
+  /* background-color: rgba(0, 255, 255, 0.289); */
+  width: 100vw;
+  height: 40vh;
+  position: absolute;
+  top: 75%;
+  /* bottom: 80vh; */
+  left: 7%;
+  transform: translate(0%, -50%);
+  /* position: relative; */
+}
 .main-banner-icon{
     /* width: 140px; */
     width: 7.3vw;
@@ -287,6 +298,64 @@ body {
     /* top: 32.3vw; */
     left: 50%;
     transform: translate(-50%, -50%);
+}
+/* -----p01 */
+.main-banner-text1-p01{
+  opacity: 0.8;
+  font-size: 1.667vw;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+
+  position: absolute;
+  top: 6.5vw;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.main-banner-text2-p01{
+  /* width: 520px;
+  height: 200px; */
+  /* margin: 20px 0 18px; */
+  /* font-family: Pretendard; */
+  /* font-size: 120px; */
+  font-size: 6.250vw;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 1.18; */
+  letter-spacing: -0.281vw;
+  text-align: center;
+  color: #000;
+
+  position: absolute;
+  top: 11.5vw;
+  /* top: 50%; */
+  /* top: 26.5vw; */
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.main-banner-text3-p01{
+  /* width: 50%; */
+  /* height: 24px; */
+  opacity: 0.8;
+  font-size: 1.042vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+
+  position: absolute;
+  top: 17vw;
+  /* top: 69%; */
+  /* top: 32.3vw; */
+  left: 0;
+  transform: translate(0%, -50%);
 }
 
 /* ----------------------------22222---------------------------- */

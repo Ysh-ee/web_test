@@ -10,6 +10,85 @@
 
   }
 
+  .banner{
+    height: 100vh;
+    width: 100vw;
+
+  }
+  .banner .competitive{
+    background-image: url('img/competitive-1/competitive-banner.png');
+    background-position: center center;
+    background-size: cover;
+    height: 49.074vh;
+    width: 100vw;
+  }
+  .banner .banner-bottom{
+      /* background-color: #2a2a2a31; */
+      height: 50vh;
+      position: relative;
+
+    }
+    .banner .banner-bottom .banner-sub{
+      /* background-color: #2a2a2a31; */
+      width: 100vw;
+      height: 30vh;
+
+      position: relative;
+      position: absolute;
+
+      bottom: 55%;
+      right: 50%;
+      transform: translate(50%, 50%);
+    }
+    .banner .banner-bottom .banner-sub img{
+      /* background-color: #2a2a2a31; */
+      height: 100%;
+      position: absolute;
+
+      left: 40%;
+      transform: translate(-100%, 0%);
+    }
+    .banner .banner-bottom .banner-sub .text-g{
+        /* background-color: #2a2a2a31; */
+        height: 55%;
+        width: 50%;
+        position: relative;
+        position: absolute;
+        right: 55%;
+        transform: translate(100%, 50%);
+      }
+      .banner .banner-bottom .banner-sub .text-g .title{
+        /* font-size: 5.208vw; */
+        font-size: 9.259vh;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: -0.234vw;
+        text-align: left;
+        color: #2a2a2a;
+      }
+      .banner .banner-bottom .banner-sub .text-g .sub-title{
+
+        /* font-size: 1.042vw; */
+        font-size: 1.852vh;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2a2a2a;
+
+        position: absolute;
+  
+        bottom: 0%;
+        transform: translate(0%, 0%);
+      }
+
+
+
+
   .video-box{
     /* 1 */
     /* background-color: #EF8127; */

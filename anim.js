@@ -237,9 +237,6 @@ let tl2 = gsap.timeline({
       start: "150% 500",
       end: "250% 300",
       scrub: true,
-      // pin: "#video-2",
-      // markers: true,    //@@@
-    //   onEnter: () => video.play(),
     }
   });
 //----------------video3 play----------------
@@ -251,9 +248,6 @@ let tl3 = gsap.timeline({
       start: "200% top",
       end: "350% top",
       scrub: true,
-      // pin: "#video-2",
-      // markers: true,    //@@@
-    //   onEnter: () => video.play(),
     }
   });
   //----------------video4 play----------------
@@ -265,7 +259,6 @@ let tl4 = gsap.timeline({
       start: "580% top",
       end: "750% 20%",
       scrub: true,
-      // pin: "#video-2",
       // markers: true,    //@@@
     //   onEnter: () => video.play(),
     }
