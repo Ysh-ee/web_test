@@ -713,10 +713,10 @@
     transform: translate(-50%, -50%);
 }
 .his-years{
-    background-color: #ddb2b474;
+    /* background-color: #ddb2b474; */
     width: 25vw;
     height: 3vw;
-    /* overflow: hidden; */
+    overflow: hidden;
 
     position: absolute;
     top: 58%;
@@ -756,8 +756,8 @@ width: 100%;
 .his-year{
     padding: 0;
 	margin: 0;
-    /* margin-left: 2.188vw; */
-    margin-left: 9.4vw;
+    margin-left: 2.188vw;
+    /* margin-left: 9.4vw; */
     
     list-style: none;
     opacity: 0.1;
@@ -769,9 +769,9 @@ width: 100%;
     letter-spacing: normal;
     text-align: center;
     color: #000;
-    position: absolute;
+    /* position: absolute;
 	top: 0;
-	left: 0;
+	left: 0; */
 }
 .his-line{
     width: 6.354vw;
