@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 let sections = gsap.utils.toArray(".block");
 // console.log(sections.length, "-")
-gsap.to(sections, {
+let scrollPics = gsap.to(sections, {
   xPercent: -101.5 * 4 +0.33,
   // xPercent: -45 * (sections.length - 1),
   ease: "none",
@@ -26,7 +26,24 @@ gsap.to(sections, {
   }
 });
 
+const pics = gsap.utils.toArray('.section-scroll .hori-scroll .block img');
+// console.log(pics.length,"-")
 
+pics.forEach((pics, i) =>{
+    gsap.to(pics, { 
+        scrollTrigger: {
+          trigger: pics,
+          containerAnimation: scrollPics,
+          scrub: true,
+          toggleClass: "active",
+          start: "left center",
+          end: "center center",
+          // markers:true,    //@@@
+        
+        // id: i
+        }
+      })
+  });
 
 
 

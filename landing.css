@@ -374,7 +374,7 @@ section:first-of-type {
     height: 57%;
     filter: grayscale(1);
 }
-.section-scroll .hori-scroll .block img:hover{
+.section-scroll .hori-scroll .block img.active{
     width: 100%;
     height: 57%;
     filter: grayscale(0);
