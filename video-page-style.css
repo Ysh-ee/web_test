@@ -119,12 +119,13 @@
   /* background-color: rgba(0, 0, 0, 0.85); */
   background-color: #000;
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   margin-top: -100vh;
     height: 100vh;
     width: 100vw;
 }
-#video-2{
+.video-2,
+#p1_scan{
   width: 6.866vw;
   height: 3.946vw;
   margin-bottom: -0.7vw;
@@ -133,6 +134,10 @@
   height: 3.646vw;
 margin-bottom: -0.5vw; */
 }
+#p1-1,
+#p1-2,
+#p1-3,
+#p1-5,
 #video-page-1{
   /* width: 60vw; */
     width: 100vw;
@@ -164,6 +169,9 @@ margin-bottom: -0.5vw; */
 
   opacity: 0;
 }
+.group-5,
+.group-4,
+.group-3,
 .group-2{
   /* background-color: #8d5a2a; */
 
@@ -172,6 +180,8 @@ margin-bottom: -0.5vw; */
   top: 70vh;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
+
 }
 .title-1{
   /* font-size: 3.250vw;
@@ -184,18 +194,22 @@ margin-bottom: -0.5vw; */
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.7;
+  /* line-height: 0.7; */
   letter-spacing: normal;
   text-align: center;
   color: #fff;
 }
-.text-1{
-  /* margin-top: 1vw;
-  font-size: 1.550vw;
-  font-weight: 400;
+.title-b{
+  font-size: 3.646vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 0.7; */
+  letter-spacing: normal;
   text-align: center;
-  color: #fff; */
-
+  color: #000;
+}
+.text-1{
   margin-top: 5vh;
   font-size: 1.823vw;
   font-weight: normal;
@@ -205,6 +219,18 @@ margin-bottom: -0.5vw; */
   letter-spacing: normal;
   text-align: center;
   color: #fff;
+  
+}
+.text-b{
+  margin-top: 5vh;
+  font-size: 1.823vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: 1.83; */
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
   
 }
 
@@ -237,9 +263,21 @@ margin-bottom: -0.5vw; */
 /* ------------------------------------------------------------------- */
 /* ------------ */
 /* ------------ */
+
 .video-box-1{
   position: relative;
   height: 100vh;
   width: 100%;
   opacity: 1;
+}
+.video-box-5,
+.video-box-3,
+.video-box-2{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  opacity: 1;
+  
+  margin-top: -100vh;
+
 }
