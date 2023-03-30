@@ -19,7 +19,7 @@ const spacing = 0.190,    // spacing of the cards (stagger)
 		start: ".card-scroll",
 		onUpdate(self) {
 			console.log(cards.length)
-			scrub.vars.totalTime = snap((iteration + self.progress) * (cards.length / 10));
+			scrub.vars.totalTime = snap((iteration + self.progress) * (cards.length / 10 - 0.2));
 			scrub.invalidate().restart(); // to improve performance, we just invalidate and restart the same tween. No need for overwrites or creating a new tween on each update.
 		},
 				

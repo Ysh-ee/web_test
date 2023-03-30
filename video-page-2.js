@@ -8,7 +8,7 @@ gsap.fromTo(".video-box",
       trigger:".video-box",
       toggleActions: "play none resume none",
       start:"0% top",
-      end:"5% top",
+      end:"10% top",
       scrub: true,
 
       // markers:true,    //@@@
