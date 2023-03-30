@@ -345,7 +345,8 @@ section:first-of-type {
 
 }
 .section-scroll .hori-scroll{
-    width: 265.762vw;
+    width: 267.762vw;
+    /* width: 265.762vw; */
     /* width: 265.762vw; */
     height: 100%;
     /* display: flex;

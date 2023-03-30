@@ -50,10 +50,28 @@ let scrollPics = gsap.to(".his-scroll-pics", {
       end: "+=300%",
     start: "bottom bottom",
     // end: "bottom center",
-    //   markers:true    //@@@
+      // markers:true    //@@@
     }
   });
 
+
+  //-----o
+  const cirs = gsap.utils.toArray('.cir-red');
+  cirs.forEach(cir =>{
+    gsap.to(cir, { 
+        scrollTrigger: {
+          trigger: cir,
+          containerAnimation: scrollPics,
+          scrub: true,
+          toggleClass: "active",
+          start: "left center",
+          end: "1200% left",
+          // markers:true,    //@@@
+        
+        // id: i
+        }
+      })
+  });
   //--------------------------------------------------------------------
 //--------------------------------------------------------------------
 //--------------------------------------------------------------------
@@ -403,23 +421,7 @@ gsap.from(".line-1", {
     ease: "none",
   });
 
-//-----o
-  const cirs = gsap.utils.toArray('.cir-red');
-  cirs.forEach(cir =>{
-    gsap.to(cir, { 
-        scrollTrigger: {
-          trigger: cir,
-          containerAnimation: scrollPics,
-          scrub: true,
-          toggleClass: "active",
-          start: "left center",
-          end: "1200% left",
-          // markers:true,    //@@@
-        
-        // id: i
-        }
-      })
-  });
+
 // document.querySelector(".next").addEventListener("click", () => scrubTo(scrub.vars.totalTime + spacing));
 
   //--------------------------TRIGGER CIRSSSSSSSSS-------------@@@@@@--------------

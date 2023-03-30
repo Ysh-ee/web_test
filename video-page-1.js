@@ -3,61 +3,103 @@ const video_2 = document.querySelector("#video-2");
 
 
 
-  gsap.from(".group-1",{
+  gsap.fromTo(".group-1",
+  {y:"50vh", opacity:0},
+  {
     scrollTrigger:{
-      // trigger:".video-box",
+      trigger:".video-page-1",
       toggleActions: "play none resume none",
       start:"5% top",
       // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"40% top",
+      end:"20% top",
       scrub: true,
 
-      // markers:true    //@@@
+      // markers:true,    //@@@
+      id:"t-up"
     },
-    y:"70vh",
-    // ease: true,
-    // ease: "bounce({strength:0.5, endAtStart:true})",
-    // ease: "back.out(1.4)",//---//
-    // bounds: true,
+    y:0,
+    opacity:1,
     duration: 50,
   });
 
-  
-
-  // var frame_count  = 200;
   let tl1 = gsap.timeline({
     scrollTrigger: {
-      // trigger: ".video-box",
+      trigger:".video-page-1",
       start: "top top",
-      end: "400% top",
+      end: "200% top",
       scrub: true,
       // ease: "steps(" + frame_count + ")",
-      pin: ".video-box",
+      pin: ".video-box-1",
       // markers: true,    //@@@
       // onEnter: () => video.play(),
     //   duration:5000
-    }
+    id:"anim-1"
+    },
   });
 
-  // $("group-1").on("mouseenter", function() {
-  //   TweenMax.to(this, 0.2, {scale:1, delay:0.4})
-  // })
-  gsap.from(".group-2",{
+
+  gsap.fromTo(".group-1",
+  {y:0,opacity:1},
+  {
+    scrollTrigger:{
+      trigger:".video-page-1",
+      toggleActions: "play none resume none",
+      start:"180% top",
+      end:"200% top",
+      // start:"60% center",
+      // end:"100% center",
+      scrub: true,
+
+      // markers:true,    //@@@
+      id:"t-up2"
+
+    },
+    y:"-50vh",
+    opacity:0,
+
+    duration: 50,
+  });
+
+
+//------------------------------------black-box------------------------------------
+  
+  gsap.fromTo(".black-box",
+  {
+    opacity:0
+  },
+  {
     scrollTrigger:{
       trigger:".black-box",
       toggleActions: "play none resume none",
-      start:"20% top",
-      // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"40% top",
+      start:"0% top",
+      end:"-1% top",
       scrub: true,
+      // ease: "back",
 
-      // markers:true    //@@@
+      markers:true,    //@@@
+      id:"show"
     },
-    y:"70vh",
-    // ease: true,
-    // ease: "bounce({strength:0.5, endAtStart:true})",
-    // ease: "back.out(1.4)",//---//
-    // bounds: true,
+    opacity:1
+  });
+
+  
+  gsap.fromTo(".group-2",
+  {y:"50vh", opacity:0},
+  {
+    scrollTrigger:{
+      trigger:".black-box",
+      toggleActions: "play none resume none",
+      start:"5% top",
+      // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
+      end:"20% top",
+      scrub: true,
+      // ease: "back",
+
+      // markers:true,    //@@@
+      // id:"t-up"
+    },
+    y:0,
+    opacity:1,
     duration: 50,
   });
 
@@ -65,11 +107,10 @@ let tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".black-box",
       start: "top top",
-      end: "400% top",
+      end: "300% top",
       scrub: true,
       pin: ".black-box",
       // markers: true,    //@@@
-      // onEnter: () => video.play(),
     //   duration:5000
     }
   });

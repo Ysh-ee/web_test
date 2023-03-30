@@ -5,7 +5,8 @@ let iteration = 0; // gets iterated when we scroll all the way to the end or sta
 const spacing = 0.190,    // spacing of the cards (stagger)
 	snap = gsap.utils.snap(spacing), // we'll use this to snap the playhead on the seamlessLoop
 	cards = gsap.utils.toArray('.cards li'),
-	seamlessLoop = buildSeamlessLoop(cards, spacing),
+	texts = gsap.utils.toArray('.cards li div'),
+	seamlessLoop = buildSeamlessLoop(cards, spacing, texts),
 	
 	scrub = gsap.to(seamlessLoop, { // we reuse this tween to smoothly scrub the playhead on the seamlessLoop
 		totalTime: 0,
@@ -16,7 +17,9 @@ const spacing = 0.190,    // spacing of the cards (stagger)
 	trigger = ScrollTrigger.create({
 		start: ".card-scroll",
 		onUpdate(self) {
-			scrub.vars.totalTime = snap((iteration + self.progress) * 0.5);
+			console.log(cards.length)
+			scrub.vars.totalTime = snap((iteration + self.progress) * (cards.length / 10));
+			// console.log((iteration + self.progress) * 0.5);
 			scrub.invalidate().restart(); // to improve performance, we just invalidate and restart the same tween. No need for overwrites or creating a new tween on each update.
 		},
 				
@@ -28,36 +31,59 @@ const spacing = 0.190,    // spacing of the cards (stagger)
 
 	}); 
 
-	
-function wrapForward(trigger) { // when the ScrollTrigger reaches the end, loop back to the beginning seamlessly
-	iteration++;
-	trigger.wrapping = true;
-	trigger.scroll(trigger.start + 1);
-}
+	// text mid show
+// cards.forEach((card, i) =>{
+//     gsap.to(card, { 
+//         scrollTrigger: {
+//           trigger: card,
+//           containerAnimation: scrub,
+//           // containerAnimation: scrollPics,
+//           scrub: true,
+//           start: "left center",
+//           end: "right center",
+//           toggleClass: console.log(i),
+//         //   toggleClass: "active",
+//           markers:true,    //@@@
+        
+//         id: i
+//         }
+//       })
+//   });
+//------------?????
+// function wrapForward(trigger) { // when the ScrollTrigger reaches the end, loop back to the beginning seamlessly
+// 	iteration++;
+// 	trigger.wrapping = true;
+// 	trigger.scroll(trigger.start + 10);
 
-function wrapBackward(trigger) { // when the ScrollTrigger reaches the start again (in reverse), loop back to the end seamlessly
-	iteration--;
-	if (iteration < 0) { // to keep the playhead from stopping at the beginning, we jump ahead 10 iterations
-		iteration = 9;
-		seamlessLoop.totalTime(seamlessLoop.totalTime() + seamlessLoop.duration() * 10);
-    scrub.pause(); // otherwise it may update the totalTime right before the trigger updates, making the starting value different than what we just set above. 
-	}
-	trigger.wrapping = true;
-	trigger.scroll(trigger.end - 1);
-}
+// }
 
-function scrubTo(totalTime) { // moves the scroll position to the place that corresponds to the totalTime value of the seamlessLoop, and wraps if necessary.
-	let progress = (totalTime - seamlessLoop.duration() * iteration) / seamlessLoop.duration();
-	if (progress > 1) {
-		wrapForward(trigger);
-	} else if (progress < 0) {
-		wrapBackward(trigger);
-	} else {
-		trigger.scroll(trigger.start + progress * (trigger.end - trigger.start));
-	}
-}
+// function wrapBackward(trigger) { // when the ScrollTrigger reaches the start again (in reverse), loop back to the end seamlessly
+// 	iteration--;
+// 	if (iteration < 0) { // to keep the playhead from stopping at the beginning, we jump ahead 10 iterations
+// 		iteration = 9;
+// 		seamlessLoop.totalTime(seamlessLoop.totalTime() + seamlessLoop.duration() * 10);
+//     scrub.pause(); // otherwise it may update the totalTime right before the trigger updates, making the starting value different than what we just set above. 
+// 	}
+// 	trigger.wrapping = true;
+// 	trigger.scroll(trigger.end - 1);
+// }
 
-function buildSeamlessLoop(items, spacing) {
+// function scrubTo(totalTime) { // moves the scroll position to the place that corresponds to the totalTime value of the seamlessLoop, and wraps if necessary.
+// 	let progress = (totalTime - seamlessLoop.duration() * iteration) / seamlessLoop.duration();
+// 	if (progress > 1) {
+// 		wrapForward(trigger);
+// 	console.log("+");
+
+// 	} else if (progress < 0) {
+// 		wrapBackward(trigger);
+// 	console.log("-");
+
+// 	} else {
+// 		trigger.scroll(trigger.start + progress * (trigger.end - trigger.start));
+// 	}
+// }
+
+function buildSeamlessLoop(items, spacing, texts) {
 	let overlap = Math.ceil(1 / spacing ), // number of EXTRA animations on either side of the start/end to accommodate the seamless looping
 		startTime = items.length * spacing + 0.5, // the time on the rawSequence at which we'll start the seamless loop
 		loopTime = (items.length + overlap) * spacing + 1, // the spot at the end where we loop back to the startTime 
@@ -72,12 +98,15 @@ function buildSeamlessLoop(items, spacing) {
 		l = items.length + overlap * 2,
 		time = 0,
 		i, index, item;
+		console.log("+");
 
 	// set initial state of items
 	gsap.set(items, {xPercent: 400, opacity: 0,	scale: 0.53});
 
 	// now loop through and create all the animations in a staggered fashion. Remember, we must create EXTRA animations at the end to accommodate the seamless looping.
 	for (i = 0; i < l; i++) {
+		// console.log(items.length,"-", spacing);
+		text = texts[index];
 		index = i % items.length;
 		item = items[index];
 		time = i * spacing;
@@ -98,7 +127,8 @@ function buildSeamlessLoop(items, spacing) {
 		time: loopTime,
 		duration: loopTime - startTime,
 		ease: "none"
-	}).fromTo(rawSequence, {time: overlap * spacing + 1}, {
+	})
+	.fromTo(rawSequence, {time: overlap * spacing + 1}, {
 		time: startTime,
 		duration: startTime - (overlap * spacing + 1),
 		immediateRender: false,
@@ -106,8 +136,9 @@ function buildSeamlessLoop(items, spacing) {
 	});
 	return seamlessLoop;
 }
-
-//   --------------------------------scrollchange-------------------------------------
+//   --------------------------------------------------------------------------------------
+//   --------------------------------------------------------------------------------------
+//   --------------------------------------------------scrollchange-------------------------------------
 
 let blocks = gsap.utils.toArray("block"),
     currentBlock = blocks[0];

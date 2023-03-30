@@ -16,7 +16,7 @@ const spacing = 0.190,    // spacing of the cards (stagger)
 	trigger = ScrollTrigger.create({
 		start: ".card-scroll",
 		onUpdate(self) {
-			scrub.vars.totalTime = snap((iteration + self.progress) * 0.5);
+			scrub.vars.totalTime = snap((iteration + self.progress) * (cards.length / 10));
 			scrub.invalidate().restart(); // to improve performance, we just invalidate and restart the same tween. No need for overwrites or creating a new tween on each update.
 		},
 				
