@@ -87,7 +87,7 @@
 .banner-bottom-g .banner-sub{
     /* background-color: rgba(0, 255, 255, 0.219); */
 
-    width: 28.958vw;
+    width: 33.958vw;
 
     font-size: 1.042vw;
     font-weight: normal;
@@ -100,8 +100,8 @@
 
     position: absolute;
     top: 60%;
-    left: 100%;
-    transform: translate(-100%, 0%);
+    left: 43%;
+    transform: translate(-0%, 0%);
 }
 
 /* -------------------------------1-CEO greeting-------------------------------- */

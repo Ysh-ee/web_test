@@ -111,28 +111,28 @@ let scrollTween = gsap.to(".hori-item-group", {
 
 //   ------------------scrollchange---------
 
-// let blocks = gsap.utils.toArray("block"),
-//     currentBlock = blocks[0];
+let blocks = gsap.utils.toArray("block"),
+    currentBlock = blocks[0];
 
-// blocks.forEach((block, i) => {
-//   ScrollTrigger.create({
-//     trigger:".scroll-change-group",
-//     start: () => 1 * innerHeight + ((i+2)*10) +150,
-//     end: () => 1 *innerHeight + ((i+2)*10) +300,
-//     // markers:true,    //@@@
-//     onToggle: self => self.isActive && setSection(block)
-//   });
-// });
+blocks.forEach((block, i) => {
+  ScrollTrigger.create({
+    trigger:".scroll-change-group",
+    start: () => 1 * innerHeight + ((i+2)*10) +150,
+    end: () => 1 *innerHeight + ((i+2)*10) +300,
+    // markers:true,    //@@@
+    onToggle: self => self.isActive && setSection(block)
+  });
+});
 
-// gsap.from(".scroll-change-group",{
-//     scrollTrigger:{
-//         trigger:".scroll-change-group",
-//         start:"top top",
-//         end:"400% top",
-//         scrub:20,
-//         pin: true, 
-//     },
-// });
+gsap.from(".scroll-change-group",{
+    scrollTrigger:{
+        trigger:".scroll-change-group",
+        start:"top top",
+        end:"400% top",
+        scrub:20,
+        pin: true, 
+    },
+});
 
 function setSection(newSection) {
   if (newSection !== currentBlock) {
@@ -144,7 +144,7 @@ function setSection(newSection) {
 
 //hardware, software
 let scrollTween2 = gsap.to(".hori-item-group-2", {
-    xPercent: -35,
+    xPercent: -40,
     ease: "none", // <-- IMPORTANT!
     scrollTrigger: {
       trigger: ".hori-scroll-hard",
