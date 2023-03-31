@@ -507,12 +507,13 @@ footer{
 
   /* 리모컨 */
 .remote{
-  background-color: rgba(4, 0, 255, 0.487);
+  /* background-color: rgba(4, 0, 255, 0.487); */
 
   position: fixed;
   top:40%;
   right: 10%;
   z-index: 50;
+  
 }
 .remote-g{
   background-color: rgba(0, 255, 149, 0.289);
@@ -522,32 +523,38 @@ footer{
   height: 2vh;
   transform: matrix(0, -1, 1, 0, 0, 0);
   top: 31%;
-  right: 15.3vh;
+  right: 15.23vh;
   /* right: 10.3%; */
+  /* box-shadow: 0px 0px 1vw rgba(0, 0, 0, 0.288); */
+
 
 }
 .remote-g .remote-top{
   background-color: #2A2A2A;
   color: #FFFFFF;
   float: left;
+  font-size: 0.469vw;
 
   width: 20%;
   height: 100%;
 
   text-align: center;
-  vertical-align: middle;
+  padding-top: 0.5vh;
+  /* vertical-align: middle; */
   /* height: 100%; */
   
 }
 .remote-g .remote-product{
-  background-color: red;
+  background-color: #FFFFFF;
   float: left;
-
+  font-size: 0.469vw;
   width: 80%;
   height: 100%;
 
   text-align: center;
-  vertical-align: middle;
+  /* vertical-align: middle; */
+  padding-top: 0.5vh;
+
 
   /* width: 23px;
   height: 139px;
@@ -593,6 +600,7 @@ border: 1px solid #000000;
 
   padding-top: 13.148vh;
   padding-left: 1.823vw;
+  
 }
 .remote-body .remote-name{
   /* font-size: 1.823vw; */
@@ -610,7 +618,20 @@ border: 1px solid #000000;
   color: #888888;
   font-size: 0.990vw;
   margin-bottom: 3.981vh;
+
   /* opacity: 0.5; */
+}
+.remote-body .remote-nav-g .remo a{
+  color: #888888;
+  text-decoration-line: none;
+}
+.remote-body .remote-nav-g .curr a{
+  color: #2A2A2A;
+  text-decoration-line: none;
+}
+.remote-body .remote-nav-g .remo a:hover{
+  color: #2A2A2A;
+  text-decoration-line: none;
 }
 .remote-body .remote-nav-g .remo:hover{
   color: #2A2A2A;
