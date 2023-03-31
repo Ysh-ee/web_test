@@ -18,7 +18,7 @@ let scrollBlocks = gsap.to(".block", {
       // delay: 0.1,
       // ease: "power1.inOut"
     },
-    end: "+=700",
+    end: "+=2000",
       start: "100% 40%",
       // markers:true    //@@@
   }
