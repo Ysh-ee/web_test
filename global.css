@@ -505,4 +505,136 @@ footer{
   }
   
 
+  /* 리모컨 */
+.remote{
+  background-color: rgba(4, 0, 255, 0.487);
+
+  position: fixed;
+  top:40%;
+  right: 10%;
+  z-index: 50;
+}
+.remote-g{
+  background-color: rgba(0, 255, 149, 0.289);
+  position: fixed;
+
+  width: 18.519vh;
+  height: 2vh;
+  transform: matrix(0, -1, 1, 0, 0, 0);
+  top: 31%;
+  right: 15.3vh;
+  /* right: 10.3%; */
+
+}
+.remote-g .remote-top{
+  background-color: #2A2A2A;
+  color: #FFFFFF;
+  float: left;
+
+  width: 20%;
+  height: 100%;
+
+  text-align: center;
+  vertical-align: middle;
+  /* height: 100%; */
   
+}
+.remote-g .remote-product{
+  background-color: red;
+  float: left;
+
+  width: 80%;
+  height: 100%;
+
+  text-align: center;
+  vertical-align: middle;
+
+  /* width: 23px;
+  height: 139px;
+  transform: matrix(0, -1, 1, 0, 0, 0); */
+  /* position: relative; */
+
+  /* width: 0;
+  height: 0; */
+  /* border-bottom: 2vh solid transparent;
+  border-left: 1.198vh solid pink;
+  border-right: 10vh solid transparent; */
+
+  /* border-bottom: 2vh solid transparent;
+  border-left: 1.198vh solid pink;
+  border-right: 10vh solid transparent; */
+
+  /* border-top: 7.188vw solid pink;
+  border-right: 1.198vw solid pink;
+  border-bottom: 1vw solid transparent; */
+
+  /* width: 23px;
+height: 139px;
+background: #FFFFFF 0% 0% no-repeat padding-box; */
+}
+
+.remote-product-arrow{
+  width: 5px;
+height: 9px;
+/* transform: matrix(-1, 0, 0, -1, 0, 0); */
+/* UI Properties */
+border: 1px solid #000000;
+}
+
+.remote-body{
+  background-color: #ffffff;
+  position: fixed;
+
+  width: 23.519vh;
+  height: 100vh;
+
+  top:0;
+  right: 0;
+
+  padding-top: 13.148vh;
+  padding-left: 1.823vw;
+}
+.remote-body .remote-name{
+  /* font-size: 1.823vw; */
+  font-size: 1.302vw;
+  font-weight: 600;
+  /* margin-top: 13.148vw;
+  margin-left: 1.823vw; */
+  margin-bottom: 6.667vh;
+  
+}
+.remote-body .remote-nav-g{
+
+}
+.remote-body .remote-nav-g .remo{
+  color: #888888;
+  font-size: 0.990vw;
+  margin-bottom: 3.981vh;
+  /* opacity: 0.5; */
+}
+.remote-body .remote-nav-g .remo:hover{
+  color: #2A2A2A;
+}
+.remote-body .remote-nav-g .remo .remo-g{
+  display: none;
+  flex-direction: column;
+}
+.remote-body .remote-nav-g .remo:hover .remo-g{
+  display: flex;
+}
+.remote-body .remote-nav-g .remo:hover .remo-g .remo-sub:hover{
+  color: #2A2A2A;
+}
+.remote-body .remote-nav-g .curr{
+  color: #2A2A2A;
+  font-weight: 600;
+}
+
+.remote-body .remote-nav-g .remo .remo-g .remo-sub{
+  color: #888888;
+  font-size: 0.781vw;
+  font-weight: 500;
+
+  margin-top:1.852vh;
+  margin-left: 0.7vh;
+}
