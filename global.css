@@ -110,10 +110,12 @@ header:hover .sub-header{
   display: flex;
   justify-content: center;
   align-items: center; 
+  width: 11.25vw;
 
 }
 .logo img{
-width: 11.25vw;
+width: 8.250vw;
+/* width: 11.25vw; */
 }
 
 .header-icon{
@@ -243,8 +245,9 @@ width: 11.25vw;
     }
     .sub-navbar-black a{
       text-decoration: inherit;
-
-      font-size: 0.885vw;
+      
+      font-size: 0.677vw;
+      /* font-size: 0.885vw; */
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
@@ -259,7 +262,8 @@ width: 11.25vw;
     .sub-navbar a{
       text-decoration: inherit;
 
-      font-size: 0.885vw;
+      font-size: 0.677vw;
+      /* font-size: 0.885vw;?????? */
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
