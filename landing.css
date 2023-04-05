@@ -269,6 +269,17 @@ section:first-of-type {
     justify-content: center;
     align-items: flex-end;
 }
+.h39{height: 39%;}
+.h32{height: 32%;}
+.product-pics2{
+    /* background-color: #4592cd67; */
+    /* height: 35.5%; */
+    padding-right: 2.557vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 .product-pics img{
     background-color: #323232;
     height: 23.722vw;
@@ -278,6 +289,17 @@ section:first-of-type {
     margin-right: 1.224vw;
     filter: grayscale(1);
 }
+.product-pics2 img{
+    background-color: #323232;
+    height: 25.056vh;
+    /* height: 15.781vw; */
+    /* height: 21.722vw; */
+    /* height: 44.722vh; */
+    margin-left: 0.6vw;
+    margin-right: 0.6vw;
+    filter: grayscale(1);
+}
+.product-pics2 img:hover,
 .product-pics img:hover{
     filter: grayscale(0);
 }
