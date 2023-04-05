@@ -19,7 +19,8 @@ let scrollBlocks = gsap.to(".block", {
       // ease: "power1.inOut"
     },
     end: "+=2000",
-      start: "100% 40%",
+    start: "100% 40%",
+		paused: true,
       // markers:true    //@@@
   }
 });
