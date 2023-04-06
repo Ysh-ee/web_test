@@ -226,10 +226,10 @@ width: 8.250vw;
   all: unset;
 } */
   .sub-header{
-      display: none;
+      /* display: none; */
       background-color: rgb(255, 255, 255);
       width: 100vw;
-      height: 39.343vh;
+      height: 30vh;
       opacity: 0.97;
 
       /* margin-top: 8.657vh; */
