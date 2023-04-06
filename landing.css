@@ -359,6 +359,11 @@ section:first-of-type {
     cursor:pointer;
 
 }
+.product-info .info-more:hover{
+    background-color: #D61F26;
+    color: #fff;
+
+}
 
 /* 26 */
 
