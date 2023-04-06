@@ -226,7 +226,7 @@ width: 8.250vw;
   all: unset;
 } */
   .sub-header{
-      /* display: none; */
+      display: none;
       background-color: rgb(255, 255, 255);
       width: 100vw;
       height: 30vh;
