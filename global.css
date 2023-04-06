@@ -47,7 +47,7 @@ header:hover .sub-header{
   display: flex;
   /* background-color: rgb(255, 255, 255); */
   width: 100vw;
-  height: 39.343vh;
+  height: 35vh;
   opacity: 0.97;
 
   margin-top: 8.657vh;
@@ -229,7 +229,7 @@ width: 8.250vw;
       display: none;
       background-color: rgb(255, 255, 255);
       width: 100vw;
-      height: 30vh;
+      height: 35vh;
       opacity: 0.97;
 
       /* margin-top: 8.657vh; */
@@ -246,7 +246,9 @@ width: 8.250vw;
     .sub-navbar-black a{
       text-decoration: inherit;
       
-      font-size: 0.677vw;
+      /* testtest */
+      font-size: 1.296vh;
+      /* font-size: 0.677vw; */
       /* font-size: 0.885vw; */
       font-weight: 300;
       font-stretch: normal;
@@ -262,7 +264,9 @@ width: 8.250vw;
     .sub-navbar a{
       text-decoration: inherit;
 
-      font-size: 0.677vw;
+      /* testtest */
+      font-size: 1.296vh;
+      /* font-size: 0.677vw; */
       /* font-size: 0.885vw;?????? */
       font-weight: 300;
       font-stretch: normal;
