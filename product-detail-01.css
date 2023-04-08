@@ -81,6 +81,59 @@ body {
     margin-bottom: 0.3vw;
 
 }
+
+
+.artic-tag-g{
+    display: flex;
+    margin-bottom: 0.625vw;
+  }
+  .artic-tag{
+    background: #ffffff 0% 0% no-repeat padding-box;
+    /* background: #D9FFFF 0% 0% no-repeat padding-box; */
+    border-radius: 0.833vw;
+
+    padding: 0.260vw;
+    padding-left: 0.729vw;
+    padding-right: 0.729vw;
+    margin-right: 0.573vw;
+
+    font: normal normal 500 0.729vw Pretendard;
+    color: #000000;
+    width: fit-content;
+  }
+  .tag-d-1{
+      background-color: #D9FFFF;
+  }
+  .tag-d-2{
+    background-color: #E3CBFF;
+}
+.tag-d-3{
+    background-color: #8298E6;
+    color: #fff;
+}
+.tag-d-4{
+    background-color: #88A6E2;
+    color: #fff;
+}
+.tag-d-7,
+.tag-d-5{
+    background-color: #F1F1F1;
+}
+.tag-d-6{
+    background-color: #FFFAEE;
+}
+.tag-d-11,
+.tag-d-9,
+.tag-d-8{
+    background-color: #878787;
+    color: #fff;
+}
+.tag-d-10{
+    background-color: #7AA9D1;
+    color: #fff;
+}
+
+
 .banner-text-g{
     /* background-color: #3b8ca7; */
 
@@ -117,7 +170,7 @@ body {
     /* left: 73.5% */
     /* left: 51.1%; */
     left: 52.1%;
-}
+} 
 .banner-text-g-left-d6{
     left: 48.1%;
 }

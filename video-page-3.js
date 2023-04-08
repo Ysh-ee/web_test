@@ -12,7 +12,8 @@ gsap.fromTo(".video-box-1",
       trigger:".video-box-1",
       toggleActions: "play none resume none",
       start:"0% top",
-      end:"10% top",
+      end:"20% top",
+      // end:"10% top",
       scrub: true,
 
       // markers:true,    //@@@
@@ -28,8 +29,8 @@ gsap.fromTo(".video-box-1",
       trigger:"#p1-1",
       toggleActions: "play none resume none",
       start:"0 top",
-      // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"30% top",
+      end:"50% top",
+      // end:"30% top",
       scrub: true,
 
       // markers:true,    //@@@
@@ -44,13 +45,12 @@ gsap.fromTo(".video-box-1",
     scrollTrigger: {
       trigger:"#p1-1",
       start: "top top",
-      end: "200% top",
+      end: "350% top",
+      // end: "200% top",
       scrub: true,
-      // ease: "steps(" + frame_count + ")",
       pin: ".video-box-1",
+
       // markers: true,    //@@@
-      // onEnter: () => video.play(),
-    //   duration:5000
     id:"anim-1"
     },
   });
@@ -62,10 +62,10 @@ gsap.fromTo(".video-box-1",
     scrollTrigger:{
       trigger:"#p1-1",
       toggleActions: "play none resume none",
-      start:"180% top",
-      end:"200% top",
-      // start:"60% center",
-      // end:"100% center",
+      start:"320% top",
+      end:"350% top",
+      // start:"180% top",
+      // end:"200% top",
       scrub: true,
 
       // markers:true,    //@@@
@@ -91,7 +91,6 @@ gsap.fromTo(".video-box-2",
       start:"0% top",
       end:"1% top",
       scrub: true,
-      // ease: "back",
 
       // markers:true,    //@@@
       id:"show2"
@@ -106,10 +105,9 @@ gsap.fromTo(".video-box-2",
       trigger:".video-box-2",
       toggleActions: "play none resume none",
       start:"0 top",
-      // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"20% top",
+      end:"40% top",
+      // end:"20% top",
       scrub: true,
-      // ease: "back",
 
       // markers:true,    //@@@
       // id:"t-up"
@@ -123,9 +121,11 @@ let tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".video-box-2",
       start: "top top",
-      end: "200% top",
+      end: "350% top",
+      // end: "200% top",
       scrub: true,
       pin: ".video-box-2",
+
       // markers: true,    //@@@
     //   duration:5000
     }
@@ -137,10 +137,10 @@ let tl2 = gsap.timeline({
     scrollTrigger:{
       trigger:"#p1-2",
       toggleActions: "play none resume none",
-      start:"180% top",
-      end:"200% top",
-      // start:"60% center",
-      // end:"100% center",
+      start:"320% top",
+      end:"350% top",
+      // start:"180% top",
+      // end:"200% top",
       scrub: true,
 
       // markers:true,    //@@@
@@ -166,7 +166,6 @@ gsap.fromTo(".video-box-3",
     start:"0% top",
     end:"1% top",
     scrub: true,
-    // ease: "back",
 
     // markers:true,    //@@@
     id:"show2"
@@ -181,10 +180,9 @@ gsap.fromTo(".group-3",
     trigger:".video-box-3",
     toggleActions: "play none resume none",
     start:"0 top",
-    // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-    end:"20% top",
+    end:"40% top",
+    // end:"20% top",
     scrub: true,
-    // ease: "back",
 
     // markers:true,    //@@@
     id:"t-up"
@@ -198,11 +196,12 @@ let tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".video-box-3",
     start: "top top",
-    end: "200% top",
+    end: "350% top",
+    // end: "200% top",
     scrub: true,
     pin: ".video-box-3",
+
     // markers: true,    //@@@
-  //   duration:5000
   }
 });
 
@@ -212,10 +211,10 @@ gsap.fromTo(".group-3",
   scrollTrigger:{
     trigger:"#p1-3",
     toggleActions: "play none resume none",
-    start:"180% top",
-    end:"200% top",
-    // start:"60% center",
-    // end:"100% center",
+    start:"320% top",
+    end:"350% top",
+    // start:"180% top",
+    // end:"200% top",
     scrub: true,
 
     // markers:true,    //@@@
@@ -240,7 +239,6 @@ gsap.fromTo(".group-3",
       start:"0% top",
       end:"-1% top",
       scrub: true,
-      // ease: "back",
 
       // markers:true,    //@@@
       id:"show4"
@@ -256,10 +254,9 @@ gsap.fromTo(".group-3",
       trigger:".video-box-4",
       toggleActions: "play none resume none",
       start:"0 top",
-      // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"20% top",
+      end:"40% top",
+      // end:"20% top",
       scrub: true,
-      // ease: "back",
 
       // markers:true,    //@@@
       // id:"t-up"
@@ -273,11 +270,12 @@ let tl4 = gsap.timeline({
     scrollTrigger: {
       trigger: ".video-box-4",
       start: "top top",
-      end: "200% top",
+      end: "350% top",
+      // end: "200% top",
       scrub: true,
       pin: ".video-box-4",
+
       // markers: true,    //@@@
-    //   duration:5000
     }
   });
   gsap.fromTo(".group-4",
@@ -286,8 +284,10 @@ let tl4 = gsap.timeline({
   scrollTrigger:{
     trigger:"#p1-4",
     toggleActions: "play none resume none",
-    start:"180% top",
-    end:"200% top",
+    start:"320% top",
+    end:"350% top",
+    // start:"180% top",
+    // end:"200% top",
     scrub: true,
 
     // markers:true,    //@@@
@@ -326,10 +326,9 @@ gsap.fromTo(".group-5",
     trigger:".video-box-5",
     toggleActions: "play none resume none",
     start:"0 top",
-    // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-    end:"20% top",
+    end:"40% top",
+    // end:"20% top",
     scrub: true,
-    // ease: "back",
 
     // markers:true,    //@@@
     id:"t-up5"
@@ -343,35 +342,14 @@ let tl5 = gsap.timeline({
   scrollTrigger: {
     trigger: ".video-box-5",
     start: "top top",
-    end: "200% top",
+    end: "350% top",
+    // end: "200% top",
     scrub: true,
     pin: ".video-box-5",
     // markers: true,    //@@@
-  //   duration:5000
   }
 });
 
-// gsap.fromTo(".group-5",
-// {y:0,opacity:1},
-// {
-//   scrollTrigger:{
-//     trigger:"#p1-3",
-//     toggleActions: "play none resume none",
-//     start:"180% top",
-//     end:"200% top",
-//     // start:"60% center",
-//     // end:"100% center",
-//     scrub: true,
-
-//     markers:true,    //@@@
-//     id:"t-up55"
-
-//   },
-//   y:"-50vh",
-//   opacity:0,
-
-//   duration: 50,
-// });
 
   p1_1.onloadedmetadata = function () {
     tl1.to(p1_1, { currentTime: p1_1.duration });

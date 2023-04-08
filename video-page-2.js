@@ -1,6 +1,7 @@
 const videoPage_1 = document.querySelector("#video-page-1");
 const video_2 = document.querySelector("#video-2");
 
+//영상 첫 그라데이션 
 gsap.fromTo(".video-box",
   {opacity:0},
   {
@@ -8,7 +9,8 @@ gsap.fromTo(".video-box",
       trigger:".video-box",
       toggleActions: "play none resume none",
       start:"0% top",
-      end:"10% top",
+      end:"20% top",
+      // end:"10% top",
       scrub: true,
 
       // markers:true,    //@@@
@@ -23,9 +25,11 @@ gsap.fromTo(".video-box",
     scrollTrigger:{
       trigger:".video-page-1",
       toggleActions: "play none resume none",
-      start:"0 top",
       // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"30% top",
+      start:"0 top",
+      end:"50% top",
+      //start:"0 top",
+      // end:"30% top",
       scrub: true,
       // ease: "back",
 
@@ -41,17 +45,17 @@ gsap.fromTo(".video-box",
     duration: 50,
   });
 
+  //첫 영상 전체
   let tl1 = gsap.timeline({
     scrollTrigger: {
       trigger:".video-page-1",
       start: "top top",
-      end: "220% top",
+      end: "380% top",
+      // start: "top top",
+      // end: "220% top",
       scrub: true,
-      // ease: "steps(" + frame_count + ")",
       pin: ".video-box",
       // markers: true,    //@@@
-      // onEnter: () => video.play(),
-    //   duration:5000
     id:"anim-1"
     },
   });
@@ -63,10 +67,11 @@ gsap.fromTo(".video-box",
     scrollTrigger:{
       trigger:".video-page-1",
       toggleActions: "play none resume none",
-      start:"180% top",
-      end:"200% top",
-      // start:"60% center",
-      // end:"100% center",
+      start:"330% top",
+      end:"360% top",
+      // start:"180% top",
+      // end:"200% top",
+      
       scrub: true,
 
       // markers:true,    //@@@
@@ -124,9 +129,9 @@ gsap.fromTo(".video-box",
     scrollTrigger:{
       trigger:".black-box",
       toggleActions: "play none resume none",
-      start:"5% top",
       // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-      end:"20% top",
+      start:"5% top",
+      end:"40% top",
       scrub: true,
       // ease: "back",
 
@@ -137,79 +142,21 @@ gsap.fromTo(".video-box",
     opacity:1,
     duration: 50,
   });
-  // const black = gsap.from(".black-box", { opacity: 0, paused: true });
-  // const ST = ScrollTrigger.create({
-  //   trigger: ".video-box",
-  //   start: "120% center",
-  //   end: "130% center",
-    
-  //   animation: black, // can be left out
-  //   pin: ".video-box", // can be left out
-  //   markers:true,    //@@@
-  //   scrub: true      // can be left out
-  // });
-// gsap.fromTo(".black-box",
-// {
-//   // y: 0,
-//   opacity:0.2
-// },
-// {
-//   scrollTrigger:{
-//     trigger: ".black-box",
-//     start: "100% bottom", 
-//     end: "200% top", 
-//     pin: ".video-box", 
-//     pinSpacing: false,
-
-//     markers:true,    //@@@
-//     id:"blackBox"
-//   },
-//   // y: "-100vh"
-// });
-  // ScrollTrigger.create({
-  //   trigger: ".black-box",
-  //   start: "top top", 
-  //   end: "10% top", 
-  //   pin: ".video-box", 
-  //   pinSpacing: false,
-  //     markers:true    //@@@
-
-  // });
-
-//   gsap.from(".group-2",{
-//     scrollTrigger:{
-//       trigger:".black-box",
-//       toggleActions: "play none resume none",
-//       start:"20% top",
-//       // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-//       end:"40% top",
-//       scrub: true,
-
-//       markers:true,    //@@@
-//       id:"text-2"
-//     },
-//     y:"70vh",
-//     duration: 50,
-//   });
-
+  
 let tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".black-box",
       start: "top top",
-      end: "300% top",
+      end: "450% top",
       scrub: true,
       pin: ".black-box",
       // markers: true,    //@@@
-      // onEnter: () => video.play(),
-    //   duration:5000
     }
   });
 
 
   videoPage_1.onloadedmetadata = function () {
     tl1.to(videoPage_1, { currentTime: videoPage_1.duration });
-    // tlUp.to("group-1",{y:0, opacity:1})
-    //     .to("group-1",{y:"-20vh", opacity:0});
   };
   video_2.onloadedmetadata = function () {
     tl2.to(video_2, { currentTime: video_2.duration });
