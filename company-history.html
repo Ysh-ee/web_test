@@ -84,7 +84,9 @@
     <div class="hidden-header">
         <div class="main-header hidden-navbar">
             <div class="logo">
-                <img src="img/logo_Smartcube.png" alt="">
+                <a href="landing.html">
+                    <img src="img/logo_Smartcube.png" alt="">
+                </a>
             </div>
             <div class="navbars-g">
                 <div class="header-navbar">
@@ -153,6 +155,51 @@
             </div>
         </div>
     </div>
+
+    <div class="remote">
+        <div class="side-constrol" id="control">
+            <div class="side-content">
+                <span>COMPANY</span>
+            </div>
+            <div class="remote-body">
+                <div class="remote-top-pos">
+                    <div class="side-top">
+                        <a href="#">
+                            <div class="top-button">
+                                <span>TOP</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-g">
+                <div class="content-main">
+                    COMPANY
+                </div>
+                <div class="remote-nav-g">
+                    <div class="remo">
+                        <a href="company-ceo-greeting.html">CEO 인사말</a>
+                    </div>
+                    <div class="remo curr">
+                        <a href="company-history.html">연혁</a>
+                    </div>
+                    <div class="remo">
+                        <a href="company-organization.html">조직 구성</a>
+                    </div>
+                    <div class="remo">
+                        <a href="company-technology.html">특허 및 기술</a>
+                    </div>
+                    <div class="remo">
+                        <a href="company-directions.html">찾아오시는 길</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="target">
+            <a class="side-top-hidden" href="#"></a>
+            <div class="side-none"></div>
+        </div>
+    </div>
         
     <!-- 1 -->
     <div class="top-banner">
@@ -184,10 +231,6 @@
                 주요 년도
     
             </div>
-            <!-- <div class="actions">
-                <button class="prev">Prev</button>
-                <button class="next">Next</button>
-            </div> -->
             <div class="his-years">
                 <div class="his-scroll-years">
                     <div class="his-year first">
@@ -232,10 +275,6 @@
             </div>
         </div>
         <div class="his-pics">
-            <!-- <img class="his-scroll-pics" src="img/company/his-temp.png" alt=""> -->
-            <!-- <div class="his-grayline">
-
-            </div> -->
             <div class="his-scroll-pics">
                 <div style="display: flex;">
                     <div class="his-redline"></div>
@@ -488,17 +527,6 @@
             <img class="footer2-logo" src="img/logo_Smartcube_footer.png" alt="">
         </div>
     </footer>
-
-    
-<!-- 
-      <script>
-        (function($) {
-          $('nav li').click(function() {
-            $(this).addClass('active').siblings('li').removeClass('active');
-            $('section:nth-of-type('+$(this).data('rel')+')').stop().fadeIn(400, 'linear').siblings('section').stop().fadeOut(400, 'linear'); 
-          });
-        })(jQuery);
-      </script> -->
 
       
 <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>

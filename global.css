@@ -565,7 +565,7 @@ footer{
   font-size: 1.389vh;
   /* font-size: 0.781vw; */
   
-  font-weight: 500;
+  font-weight: 400;
 
   margin-top:1.852vh;
   margin-left: 0.7vh;
@@ -623,6 +623,16 @@ footer{
                      
   transition: all 1s;
   }
+  .remote-body-landing{
+    /* background-color: rgba(0, 255, 149, 0.289); */
+    position: fixed;
+    position: relative;
+  
+    width: 25vh;
+    height: 100vh;
+    
+    transition: all 1s;
+    }
   /* .remote-top-pos:hover{
   background-color: rgb(255, 250, 92);
 
@@ -653,6 +663,20 @@ footer{
     
     /* clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%); */
   }
+  .side-top-landing{
+    background-color: #2A2A2A;
+    
+    position: fixed;
+    position: relative;
+
+    width: 25vh;
+    height: 100vh;
+    z-index: 51;
+
+    clip-path: polygon(0 27.5%, 
+                     9% 27.5%, 9% 35%, 0 35%);
+  }
+  .side-top-landing .top-button,
   .side-top .top-button{
     /* background-color: #2A2A2A; */
     /* background-color: #ff3b3b7b; */
@@ -676,11 +700,13 @@ footer{
     /* pointer-events: auto; */
 
   }
+  .side-top-landing .top-button span,
   .side-top .top-button span{
     position: relative;
     margin-right: 1.2vw;
     padding-right: 0.2vw;
   }
+  .side-top-landing .top-button span::after,
   .side-top .top-button span::after{
     position: absolute;
     left: 110%; 

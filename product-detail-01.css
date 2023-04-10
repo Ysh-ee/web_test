@@ -51,36 +51,26 @@ body {
     top: 47%;
 }
 /* -------------------------route */
-.banner-route{
+/* .banner-route{
     font-size: 1.042vw;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-
-    /* text-align: center; */
-    /* color: #000; */
-
     position: absolute;
     top: 4.2%;
     left: 67.4%;
     transform: translate(0%, -50%);
-    /* left: 45%;
-    transform: translate(100%, -50%); */
-    /* left: 78%;
-    transform: translate(-50%, -50%); */
 }
 .small-arrow{
-    /* background-color: #3b8ca7; */
     font-size: 0.542vw;
 
     vertical-align: middle;
     margin-left: 0.742vw;
     margin-right: 0.742vw;
     margin-bottom: 0.3vw;
-
-}
+} */
 
 
 .artic-tag-g{
