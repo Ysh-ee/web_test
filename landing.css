@@ -325,6 +325,8 @@ section:first-of-type {
     color: #fff;
 }
 .product-info .info-2{
+    /* background-color: #4592cd33; */
+    width: 28vw;
     font-size: 1.042vw;
     font-weight: normal;
     font-stretch: normal;
@@ -413,4 +415,17 @@ section:first-of-type {
     width: 100%;
     height: 43%;
 } */
+.block-text-g .text-2{
+    font-size: 0.625vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
 
+    opacity: 0.8;
+
+
+    margin-top: 1.019vh;
+}

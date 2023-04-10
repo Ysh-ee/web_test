@@ -186,8 +186,10 @@
     width: 12.240vw;
 
     position: absolute;
-    top: 109%;
-    left: 84%;
+    /* top: 109%;
+    left: 84%; */
+    top: 120%;
+    left: 95%;
     transform: translate(-50%, -50%);
 }
 .ceo-text-g .ceo-sign img{
@@ -870,12 +872,12 @@ width: 100%;
     color: #000;
 }
 .his-imgcard{
-  /* background-color: #d61f2548; */
+  background-color: #d61f2548;
 
     /* display: inline-block; */
     margin-right: 6.094vw;
     width: 25.417vw;
-    height: 25vw;
+    height: 28vw;
     text-align: center; 
 
     
