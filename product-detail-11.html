@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./product-01.css">
     <link rel="stylesheet" href="./product-detail-01.css">
+
+    <link rel="stylesheet" type="text/css" href="./normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./demo.css" />
+    <link rel="stylesheet" type="text/css" href="./component.css" />
+    <script src="./modernizr.custom.js"></script>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 </head>
 <body>
     <header>
@@ -280,28 +285,101 @@
             <div class="side-none"></div>
         </div>
     </div>
-        
+
+
+    <!-- <div class="bg-d6">
+    </div> -->
     <!-- 상세페이지-11-무인냉장함  -->
-    <div class="container-2 detail-bg bg-d11 scroll-chang-down">
-        <img class="banner-img" src="img/product-detail-11/detail-banner.png" alt="">
-        <div class="banner-text-g">
-            <div class="artic-tag-g">
-                <!-- 마지막은 냉장만 -->
-                <div class="artic-tag tag-d-11">냉장</div>
-                <div class="artic-tag tag-d-11">택배수신</div>
-                <div class="artic-tag tag-d-11">보관</div>
-            </div>
-            <div class="banner-text-1">
-                맞춤형 설계로 차별화
-            </div>
-            <div class="banner-text-2">
-                무인냉장함
-            </div>
-            <div class="banner-text-3">
-                신선식품 및 냉장식품에 대한 배달과 보관 수요 증가에 따른 제품
-            </div>
+    <div class="xuSlider slideshow" id="slideshow">
+        <div class="container-2 detail-bg bg-d11 scroll-chang-down">
+            <ul class="slides">
+
+                <li class="current">
+                    <div class="tiltview col">
+                        <a><img src="img/product-detail-11/detail-banner-1.png"></a>
+                    </div>
+                    <div class="banner-text-g description">
+                        <div class="artic-tag-g">
+                            <div class="artic-tag tag-d-11">냉장</div>
+                            <div class="artic-tag tag-d-11">택배수신</div>
+                            <div class="artic-tag tag-d-11">보관</div>
+                        </div>
+                        <div class="banner-text-1 color-white">
+                            맞춤형 설계로 차별화
+                        </div>
+                        <div class="banner-text-2 color-white">
+                            무인냉장함
+                        </div>
+                        <div class="banner-text-3 color-white">
+                            신선식품 및 냉장식품에 대한 배달과 보관 수요 증가에 따른 제품
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tiltview col">
+                        <a><img src="img/product-detail-11/detail-banner-2.png"></a>
+                    </div>
+                    <div class="banner-text-g description">
+                        <div class="artic-tag-g">
+                            <div class="artic-tag tag-d-11">냉장</div>
+                            <div class="artic-tag tag-d-11">택배수신</div>
+                            <div class="artic-tag tag-d-11">보관</div>
+                        </div>
+                        <div class="banner-text-1 color-white">
+                            맞춤형 설계로 차별화
+                        </div>
+                        <div class="banner-text-2 color-white">
+                            코코픽
+                        </div>
+                        <div class="banner-text-3 color-white">
+                            신선식품 및 냉장식품에 대한 배달과 보관 수요 증가에 따른 제품
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tiltview col">
+                        <a><img src="img/product-detail-11/detail-banner-3.png"></a>
+                    </div>
+                    <div class="banner-text-g description">
+                        <div class="artic-tag-g">
+                            <div class="artic-tag tag-d-11">냉장</div>
+                        </div>
+                        <div class="banner-text-1 color-white">
+                            맞춤형 설계로 차별화
+                        </div>
+                        <div class="banner-text-2 color-white">
+                            오피스 미니바
+                        </div>
+                        <div class="banner-text-3 color-white">
+                            신선식품 및 냉장식품에 대한 배달과 보관 수요 증가에 따른 제품
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- <img class="banner-img" src="img/product-detail-11/detail-banner.png" alt="">
+            <div class="banner-text-g">
+                <div class="artic-tag-g">
+                    <div class="artic-tag tag-d-11">냉장</div>
+                    <div class="artic-tag tag-d-11">택배수신</div>
+                    <div class="artic-tag tag-d-11">보관</div>
+                </div>
+                <div class="banner-text-1">
+                    맞춤형 설계로 차별화
+                </div>
+                <div class="banner-text-2">
+                    무인냉장함
+                </div>
+                <div class="banner-text-3">
+                    신선식품 및 냉장식품에 대한 배달과 보관 수요 증가에 따른 제품
+                </div>
+            </div> -->
+
+
         </div>
     </div>
+
     <!-- 특별한기능 가로card스크롤 -->
     <div class="container card-scroll">
         <div class="third-g">
@@ -478,5 +556,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 <script src="product-detail-01.js"></script>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="classie.js"></script>
+<script src="tiltSlider.js"></script>
 </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+        new TiltSlider(document.getElementById('slideshow'));
+                
+        window.setInterval(function(){              
+            $('nav>.current').next().trigger('click');
+            if($('nav > .current').next().index() == '-1'){
+                $('nav > span').trigger('click');
+            }               
+        }, 1500);
+    }); 
+</script>

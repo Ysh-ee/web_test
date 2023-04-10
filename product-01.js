@@ -76,6 +76,8 @@ var animR = gsap.from(".artic-img", {
 //덮 hori-scroll
 gsap.from(".wrapper",{
   scrollTrigger:{
+      xPercent: 150 * (".wrapper".length - 150),
+      snap: 150 / (".wrapper".length - 150),
       trigger:".wrapper",
       start:"top top",
       // end:"15% bottom",

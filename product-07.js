@@ -56,6 +56,8 @@ gsap.from(".artic-group",{
 
 gsap.from(".wrapper",{
     scrollTrigger:{
+      xPercent: 150 * (".wrapper".length - 150),
+      snap: 150 / (".wrapper".length - 150),
         trigger:".wrapper",
         start:"top top",
         // end:"bottom top",

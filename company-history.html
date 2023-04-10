@@ -233,10 +233,10 @@
             </div>
             <div class="his-years">
                 <div class="his-scroll-years">
-                    <div class="his-year first">
+                    <div class="his-year first active">
                         2022
                     </div>
-                    <div class="his-year year21 ">
+                    <!-- <div class="his-year year21 ">
                         2021
                     </div>
                     <div class="his-year year20">
@@ -265,7 +265,7 @@
                     </div>
                     <div class="his-year last">
                         2005
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div>
@@ -545,6 +545,75 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script> -->
 <script src="company-history.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+
 
 </body>
 </html>
+
+<script>
+    $(window).ready(function(){
+
+        var last_scrollTop = 0;
+        
+        $(window).scroll(function(){
+
+            //var tmp = $(this).scrollTop();
+
+            if($(".his2022").hasClass("active") === true){
+                $('.his-year').text('2022');
+            }
+            
+            if($(".his2021").hasClass("active") === true){
+                $('.his-year').text('2021');
+               // $('.his2022').removeClass('active');                
+            } 
+            
+            if($(".his2020").hasClass("active") === true){
+                $('.his-year').text('2020');
+                //$('.his2021').removeClass('active');
+            }
+            
+            if($(".his2019").hasClass("active") === true){
+                $('.his-year').text('2019');
+               // $('.his2020').removeClass('active');
+            }
+            
+            if($(".his2018").hasClass("active") === true){
+                $('.his-year').text('2018');
+               // $('.his2019').removeClass('active');
+            }
+            
+            if($(".his2017").hasClass("active") === true){
+                $('.his-year').text('2017');
+                //$('.his2018').removeClass('active');
+            } 
+            
+            if($(".his2014").hasClass("active") === true){
+                $('.his-year').text('2014');
+               // $('.his2017').removeClass('active');
+            } 
+            
+            if($(".his2013").hasClass("active") === true){
+                $('.his-year').text('2013');
+               // $('.his2014').removeClass('active');
+            }
+            
+            if($(".his2012").hasClass("active") === true){
+                $('.his-year').text('2012');
+                //$('.his2013').removeClass('active');
+            }
+            
+            if($(".his2011").hasClass("active") === true){
+                $('.his-year').text('2011');
+                //$('.his2012').removeClass('active');
+            }
+            
+            if($(".his2005").hasClass("active") === true){
+                $('.his-year').text('2005');
+               // $('.his2011').removeClass('active');
+            }
+
+        });
+    });
+</script>
