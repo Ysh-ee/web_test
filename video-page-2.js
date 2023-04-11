@@ -122,43 +122,43 @@ gsap.fromTo(".left-bar",
   // })
 
   //left swich
-  gsap.to(".list-first",
-  {
-    scrollTrigger:{
-      trigger:".black-box",
-      toggleActions: "play none resume none",
-      start:"0 top",
-      end:"10% top",
-      scrub: true,
-      ease: true,
-      toggleClass: "off",
+  // gsap.to(".list-first",
+  // {
+  //   scrollTrigger:{
+  //     trigger:".black-box",
+  //     toggleActions: "play none resume none",
+  //     start:"0 top",
+  //     end:"10% top",
+  //     scrub: true,
+  //     ease: true,
+  //     toggleClass: "off",
 
-      // markers:true,    //@@@
-      id:"t-up"
-    },
-    y:"-45vh",
-    duration: 50,
+  //     // markers:true,    //@@@
+  //     id:"t-up"
+  //   },
+  //   y:"-45vh",
+  //   duration: 50,
     
-  });
-  gsap.to(".list-last",
-  {
-    scrollTrigger:{
-      trigger:".list-last",
-      toggleActions: "play none resume none",
-      // start:"0 top",
-      // end:"10% top",
-      scrub: true,
-      ease: true,
+  // });
+  // gsap.to(".list-last",
+  // {
+  //   scrollTrigger:{
+  //     trigger:".list-last",
+  //     toggleActions: "play none resume none",
+  //     // start:"0 top",
+  //     // end:"10% top",
+  //     scrub: true,
+  //     ease: true,
 
-      start: "top 53%",
-      end: "bottom 62%",
-      toggleClass: "on",
+  //     start: "top 53%",
+  //     end: "bottom 62%",
+  //     toggleClass: "on",
 
-      // markers:true,    //@@@
-    },
-    y:"-40vh",
-    duration: 50,
-  });
+  //     // markers:true,    //@@@
+  //   },
+  //   y:"-40vh",
+  //   duration: 50,
+  // });
 
 
   gsap.fromTo(".black-box",
