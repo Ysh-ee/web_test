@@ -552,7 +552,7 @@
     color: #d61f26;
 }
 .tec-g .hori-scroll{
-    background-color: rgba(255, 0, 0, 0.219);
+    /* background-color: rgba(255, 0, 0, 0.219); */
     width: 65vw;
     /* width: 2000%; */
     
