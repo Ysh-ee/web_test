@@ -59,7 +59,7 @@ let scrollTween = gsap.to(".hori-scroll", {
     //snap: directionalSnap(1 / (sections.length - 1)),
   //   start: "10% top",
     end: "+=4000",
-  start: "top top",
+  start: "bottom bottom",
     // markers:true    //@@@
   }
 });

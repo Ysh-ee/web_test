@@ -123,7 +123,7 @@
 }
 
 .description {
-	transition: opacity 0.75s;
+	transition: opacity 0.25s;
 }
 
 .current .description,
