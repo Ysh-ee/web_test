@@ -19,6 +19,23 @@ gsap.fromTo(".video-box",
     opacity:1
   });
 
+  //첫 left
+gsap.fromTo(".left-bar",
+{opacity:0},
+{
+  scrollTrigger:{
+    trigger:".video-box",
+    toggleActions: "play none resume none",
+    start:"0% top",
+    end:"20% top",
+    scrub: true,
+
+    // markers:true,    //@@@
+    id:"show"
+  },
+  opacity:1
+});
+
   gsap.fromTo(".group-1",
   {y:"50vh", opacity:0},
   {
@@ -103,6 +120,47 @@ gsap.fromTo(".video-box",
   // $("group-1").on("mouseenter", function() {
   //   TweenMax.to(this, 0.2, {scale:1, delay:0.4})
   // })
+
+  //left swich
+  gsap.to(".list-first",
+  {
+    scrollTrigger:{
+      trigger:".black-box",
+      toggleActions: "play none resume none",
+      start:"0 top",
+      end:"10% top",
+      scrub: true,
+      ease: true,
+      toggleClass: "off",
+
+      // markers:true,    //@@@
+      id:"t-up"
+    },
+    y:"-45vh",
+    duration: 50,
+    
+  });
+  gsap.to(".list-last",
+  {
+    scrollTrigger:{
+      trigger:".list-last",
+      toggleActions: "play none resume none",
+      // start:"0 top",
+      // end:"10% top",
+      scrub: true,
+      ease: true,
+
+      start: "top 53%",
+      end: "bottom 62%",
+      toggleClass: "on",
+
+      // markers:true,    //@@@
+    },
+    y:"-40vh",
+    duration: 50,
+  });
+
+
   gsap.fromTo(".black-box",
   {
     opacity:0
@@ -163,3 +221,22 @@ let tl2 = gsap.timeline({
   };
 
  
+  // const textOn = gsap.utils.toArray(".list-g .list-text");
+
+  // textOn.forEach((txt, i) =>{
+  //   gsap.to(txt, { 
+  //       scrollTrigger: {
+  //         trigger: txt,
+  //         // containerAnimation: tl1,
+  //         // containerAnimation: scrollPics,
+  //         scrub: true,
+  //         //51% 64%
+  //         start: "top 51%",
+  //         end: "bottom 64%",
+  //         toggleClass: "on",
+  //         markers:true,    //@@@
+        
+  //       id: i
+  //       }
+  //     })
+  // });

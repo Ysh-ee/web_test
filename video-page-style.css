@@ -284,3 +284,85 @@ margin-bottom: -0.5vw; */
   margin-top: -100vh;
 
 }
+
+
+/* --------------------------------left remote-------------------------------- */
+
+.left-bar{
+padding-left: 1vw;
+}
+
+.left-line {
+  position: fixed;
+  z-index: 41;
+
+  top: 0;
+  border-left : 1px solid #ffffff;
+  opacity: 0.3;
+  height : 100vh;
+}
+
+.left-line-mid {
+  position: fixed;
+  z-index: 42;
+
+  top: 51%;
+  margin-left: -2px;
+  border-left : 4px solid #ffffff;
+  height : 13vh;
+}
+
+
+.list-g{
+  position: fixed;
+
+  background-color: rgba(255, 74, 74, 0.241);
+  padding-left: 1.5vw;
+  height: 100vh;
+  /* width: fit-content; */
+  
+  
+}
+
+.list-first{
+  background-color: rgba(255, 74, 74, 0.241);
+
+  position: fixed;
+  z-index: 93;
+  top: 56%;
+  /* height: 13vh; */
+
+  /* font-size: 1.198vw;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1; */
+}
+.list-text.on{
+  font-size: 1.198vw;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.list-text{
+  font-size: 0.781vw;
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.list-last{
+  background-color: rgba(255, 74, 74, 0.241);
+
+  position: fixed;
+  z-index: 43;
+  top: 92%;
+  
+  /* font-size: 0.781vw;
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 0.5; */
+}
+

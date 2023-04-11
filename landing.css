@@ -61,7 +61,8 @@
     display: block;
 }
 .text-g{
-    padding-top: 6.019vh;
+    padding-top: 9vh;
+    /* padding-top: 6.019vh; */
     width: 100%;
     /* height: 16.481vh; */
     height: 36%;
@@ -113,6 +114,10 @@
     color: #cd4545;
 
     margin-top: 1.481vh;
+}
+a{
+    text-decoration-line: none;
+
 }
 
 /* ---------------------------b-------------------------- */
