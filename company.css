@@ -552,9 +552,12 @@
     color: #d61f26;
 }
 .tec-g .hori-scroll{
-    /* background-color: rgba(255, 0, 0, 0.219); */
-    width: 64.010vw;
-    height: 60.074vh;
+    background-color: rgba(255, 0, 0, 0.219);
+    width: 65vw;
+    /* width: 2000%; */
+    
+    /* height: 1000vw; */
+    /* height: 60.074vh; */
     display: flex;
     
     
@@ -566,9 +569,10 @@
     right: 0;
     transform: translate(0%, 50%); */
 }
-.tec-g .hori-scroll .img-1{
+.tec-g .hori-scroll .panel{
     /* background-color: #e63737; */
-    width: 200%;
+    /* width: 200%; */
+    height: 32.031vw;
     background-position: center bottom;
     background-size: cover;
 
@@ -576,6 +580,13 @@
     flex-direction: row;
     justify-content: flex-start;
 }
+/* 1278.333 */
+.img-1{width: 595vw;}
+.img-2{width: 45vw;}
+.img-3{width: 22.083vw;}
+.img-4{width: 136.667vw;}
+.img-5{width: 90.833vw;}
+.img-6{width: 388.750vw;}
 
 
 /* ------------------------------3--directions-------------------------------- */

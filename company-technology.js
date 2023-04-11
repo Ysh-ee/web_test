@@ -49,16 +49,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 let scrollTween = gsap.to(".hori-scroll", {
-  xPercent: -130,
+  xPercent: -1580,
   ease: "none", // <-- IMPORTANT!
   scrollTrigger: {
     trigger: ".tec-block",
     pin: ".tec-block",
     scrub: 0.5,
+    // duration:1000,
     //snap: directionalSnap(1 / (sections.length - 1)),
   //   start: "10% top",
-  //   end: "+=600",
-  start: "bottom bottom",
-  //   markers:true    //@@@
+    end: "+=4000",
+  start: "top top",
+    // markers:true    //@@@
   }
 });
