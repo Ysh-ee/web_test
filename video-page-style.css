@@ -165,9 +165,11 @@ margin-bottom: -0.5vw; */
   width: 90vw;
   height: 40vh;
   position: absolute;
-  top: 70vh;
+  /* top: 70vh; */
+  top: 50vh;
   left: 50%;
-  transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, 0%);
+  /* transform: translate(-50%, -50%); */
 
   opacity: 0;
 }
@@ -179,9 +181,11 @@ margin-bottom: -0.5vw; */
 
   height: 40vh;
   position: relative;
-  top: 70vh;
+  /* top: 70vh; */
+  top: 50vh;
   left: 50%;
-  transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, 0%);
+  /* transform: translate(-50%, -50%); */
   opacity: 0;
 
 }
