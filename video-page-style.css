@@ -167,7 +167,7 @@ margin-bottom: -0.5vw; */
   position: absolute;
   top: 70vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
 
   opacity: 0;
 }
@@ -181,7 +181,7 @@ margin-bottom: -0.5vw; */
   position: relative;
   top: 70vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   opacity: 0;
 
 }
