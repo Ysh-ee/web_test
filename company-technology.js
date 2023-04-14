@@ -49,7 +49,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 let scrollTween = gsap.to(".hori-scroll", {
-  xPercent: -1580,
+  xPercent: -1830,
   ease: "none", // <-- IMPORTANT!
   scrollTrigger: {
     trigger: ".tec-block",

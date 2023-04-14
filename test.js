@@ -133,10 +133,11 @@ gsap.fromTo(".left-bar",
       ease: true,
       toggleClass: "off",
 
-      markers:true,    //@@@
+      // markers:true,    //@@@
       id:"t-up"
     },
     y:"-45vh",
+    opacity:0.5,
     duration: 50,
     
   });
@@ -159,10 +160,13 @@ gsap.fromTo(".left-bar",
       
       toggleClass: "on",
 
-      markers:true,    //@@@
+      // markers:true,    //@@@
       id:"t2-up"
     },
     y:"-35vh",
+    x:"1vw",
+    opacity:1,
+    scale:1.5,
     duration: 50,
   });
 
