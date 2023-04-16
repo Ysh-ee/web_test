@@ -350,11 +350,16 @@ padding-left: 1vw;
   opacity: 1;
 }
 .list-text{
+  position: fixed;
+  z-index: 93;
+  top: 56%;
+
   font-size: 0.781vw;
   font-weight: 400;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 0.5;
+  transform-origin: 0 100%;
 }
 .list-last{
   /* background-color: rgba(255, 74, 74, 0.241); */

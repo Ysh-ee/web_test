@@ -138,6 +138,8 @@ gsap.fromTo(".left-bar",
     },
     y:"-45vh",
     opacity:0.5,
+    transformOrigin: '0 50%',
+    scale:0.7,
     duration: 50,
     
   });
@@ -164,8 +166,9 @@ gsap.fromTo(".left-bar",
       id:"t2-up"
     },
     y:"-35vh",
-    x:"1vw",
+    // x:"1vw",
     opacity:1,
+    transformOrigin: '0 50%',
     scale:1.5,
     duration: 50,
   });
