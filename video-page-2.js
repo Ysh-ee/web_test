@@ -240,3 +240,9 @@ let tl2 = gsap.timeline({
   //       }
   //     })
   // });
+
+  window.onload = function(){
+    setTimeout(function(){
+      scrollTo(0,0);
+    },100);
+  }

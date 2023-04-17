@@ -361,7 +361,7 @@ padding-left: 1vw;
   opacity: 0.5;
   transform-origin: 0 100%;
 }
-.list-last{
+.list-rest{
   /* background-color: rgba(255, 74, 74, 0.241); */
 
   position: fixed;
@@ -373,5 +373,17 @@ padding-left: 1vw;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 0.5; */
+}
+.list-rest.n2{
+  top: 82% !important;
+}
+.list-rest.n3{
+  top: 86% !important;
+}
+.list-rest.n4{
+  top: 90% !important;
+}
+.list-rest.n5{
+  top: 94% !important;
 }
 
