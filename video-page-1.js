@@ -74,6 +74,21 @@ gsap.fromTo(".left-bar",
   },
   opacity:1
 });
+gsap.fromTo(".anim-header",
+{opacity:0},
+{
+  scrollTrigger:{
+    trigger:".video-box-1",
+    toggleActions: "play none resume none",
+    start:"0% top",
+    end:"20% top",
+    scrub: true,
+
+    // markers:true,    //@@@
+    id:"show"
+  },
+  opacity:1
+});
 
   gsap.fromTo(".group-1",
   {y:"50vh", opacity:0},
@@ -433,6 +448,7 @@ gsap.fromTo(".n4",
   duration: 50,
   // color:"black",
 });
+
 //turn black
 gsap.to(".list-text",{
   scrollTrigger:{
@@ -462,6 +478,48 @@ gsap.to(".toblack",{
   },
   borderColor:"#000",
 });
+//header text color
+gsap.to(".color-white",{
+  scrollTrigger:{
+    trigger:".black-box",
+    toggleActions: "play none resume none",
+    start:"500% top",
+    end:"520% top",
+    scrub: true,
+    ease: true,
+
+    // markers:true,    //@@@
+    id:"mid-up4 black"
+  },
+  color:"black",
+});
+//header img color
+gsap.to(".logo .img-switch", {
+  scrollTrigger:{
+    trigger:".black-box",
+    toggleActions: "play none resume none",
+    start:"500% top",
+    end:"520% top",
+    scrub: true,
+    ease: true,
+    // markers:true,    //@@@
+    id:"mid-up4 black"
+  },
+   attr: { src: "img/logo_Smartcube.png" } 
+  });
+gsap.to(".header-icon .img-switch", {
+  scrollTrigger:{
+    trigger:".black-box",
+    toggleActions: "play none resume none",
+    start:"500% top",
+    end:"520% top",
+    scrub: true,
+    ease: true,
+    // markers:true,    //@@@
+    id:"mid-up4 black"
+  },
+    attr: { src: "img/logo_language.png" } 
+  });
 
 
 
@@ -634,3 +692,27 @@ let tl5 = gsap.timeline({
       scrollTo(0,0);
     },100);
   }
+
+  let navbar = document.querySelector(".anim-main-header");
+
+  let toBlack_1 = gsap.to(".header-navbar", {
+    paused: true,
+    color:"black",
+  });
+
+  let toBlack_2 = gsap.to(".logo .img-switch", {
+    paused: true,
+    attr: { src: "img/logo_Smartcube.png" },
+  });
+  let toBlack_3 = gsap.to(".header-icon .img-switch", {
+    paused: true,
+    attr: { src: "img/logo_language.png" } 
+  });
+  
+  navbar.addEventListener("mouseenter", () => toBlack_1.play());
+  navbar.addEventListener("mouseenter", () => toBlack_2.play());
+  navbar.addEventListener("mouseenter", () => toBlack_3.play());
+
+  navbar.addEventListener("mouseleave", () => toBlack_1.reverse());
+  navbar.addEventListener("mouseleave", () => toBlack_2.reverse());
+  navbar.addEventListener("mouseleave", () => toBlack_3.reverse());
