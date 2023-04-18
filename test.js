@@ -19,8 +19,23 @@ gsap.fromTo(".video-box",
     opacity:1
   });
 
-  //첫 left
+  //left & header show up
 gsap.fromTo(".left-bar",
+{opacity:0},
+{
+  scrollTrigger:{
+    trigger:".video-box",
+    toggleActions: "play none resume none",
+    start:"0% top",
+    end:"20% top",
+    scrub: true,
+
+    // markers:true,    //@@@
+    id:"show"
+  },
+  opacity:1
+});
+gsap.fromTo(".anim-header",
 {opacity:0},
 {
   scrollTrigger:{
@@ -101,25 +116,9 @@ gsap.fromTo(".left-bar",
     duration: 50,
   });
 
-  // gsap.to(".group-1",{
-  //   scrollTrigger:{
-  //     // trigger:".video-box",
-  //     toggleActions: "play none resume none",
-  //     start:"60% top",
-  //     // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-  //     end:"80% top",
-  //     scrub: true,
-
-  //     markers:true    //@@@
-  //   },
-  //   y:"-10vh",
-  //   duration: 50,
-  // });
 
 //------------------------------------black-box------------------------------------
-  // $("group-1").on("mouseenter", function() {
-  //   TweenMax.to(this, 0.2, {scale:1, delay:0.4})
-  // })
+  
 
   // left swich
   gsap.to(".list-first",
@@ -143,9 +142,7 @@ gsap.fromTo(".left-bar",
     duration: 50,
     
   });
-
-
-  gsap.to(".list-last",
+  gsap.to(".list-rest",
   {
     scrollTrigger:{
       trigger:".black-box",
@@ -192,8 +189,6 @@ gsap.fromTo(".left-bar",
     },
     opacity:1
   });
-
-  
   gsap.fromTo(".group-2",
   {y:"50vh", opacity:0},
   {
@@ -233,23 +228,19 @@ let tl2 = gsap.timeline({
     tl2.to(video_2, { currentTime: video_2.duration });
   };
 
- 
-  // const textOn = gsap.utils.toArray(".list-g .list-text");
+  let navbar = document.querySelector(".anim-main-header");
 
-  // textOn.forEach((txt, i) =>{
-  //   gsap.to(txt, { 
-  //       scrollTrigger: {
-  //         trigger: txt,
-  //         // containerAnimation: tl1,
-  //         // containerAnimation: scrollPics,
-  //         scrub: true,
-  //         //51% 64%
-  //         start: "20000% 51%",
-  //         end: "20100% 64%",
-  //         toggleClass: "active",
-  //         markers:true,    //@@@
-        
-  //       id: i
-  //       }
-  //     })
-  // });
+  let toBlack_2 = gsap.to(".logo .img-switch", {
+    paused: true,
+    attr: { src: "img/logo_Smartcube.png" },
+  });
+  let toBlack_3 = gsap.to(".header-icon .img-switch", {
+    paused: true,
+    attr: { src: "img/logo_language.png" } 
+  });
+
+  navbar.addEventListener("mouseenter", () => toBlack_2.play());
+  navbar.addEventListener("mouseenter", () => toBlack_3.play());
+
+  navbar.addEventListener("mouseleave", () => toBlack_2.reverse());
+  navbar.addEventListener("mouseleave", () => toBlack_3.reverse());

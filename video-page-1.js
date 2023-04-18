@@ -58,7 +58,7 @@ gsap.to(".n5",
   opacity:0.5,
   transformOrigin: '0 50%',
 });
-//left show up
+//left & header show up
 gsap.fromTo(".left-bar",
 {opacity:0},
 {
@@ -301,7 +301,6 @@ let tl2 = gsap.timeline({
       id:"bot-mid3"
     },
     y:"-29vh",
-    // x:"1vw",
     opacity:1,
     transformOrigin: '0 50%',
     scale:1.5,
@@ -330,7 +329,6 @@ let tl2 = gsap.timeline({
     transformOrigin: '0 50%',
     scale:1,
     duration: 50,
-    
   });
 //left 4 bot-mid
 gsap.fromTo(".n4",
@@ -349,7 +347,6 @@ gsap.fromTo(".n4",
       id:"bot-mid4"
     },
     y:"-33vh",
-    // x:"1vw",
     opacity:1,
     transformOrigin: '0 50%',
     scale:1.5,
@@ -567,7 +564,6 @@ gsap.fromTo(".n5",
     opacity:1
   });
 
-  
   gsap.fromTo(".group-4",
   {y:"50vh", opacity:0},
   {
@@ -716,3 +712,23 @@ let tl5 = gsap.timeline({
   navbar.addEventListener("mouseleave", () => toBlack_1.reverse());
   navbar.addEventListener("mouseleave", () => toBlack_2.reverse());
   navbar.addEventListener("mouseleave", () => toBlack_3.reverse());
+
+  // let to2 = gsap.to("n2", {
+  //   duration: 2, 
+  //   scrollTo: {
+  //     y: 400, autoKill: true
+  //   }, 
+  //   ease: "power2"});
+  
+  //   to2.addEventListener("click", click2);
+
+  //   function click2(){
+
+  //   }
+
+    document.querySelectorAll(".to1").forEach((btn, index) => {
+      btn.addEventListener("click", () => {
+        gsap.to(window, {duration: 1, scrollTo:{y:"#box" + (index + 1), offsetY:"-10vh"}});
+      });
+    });
+

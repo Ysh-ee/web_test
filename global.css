@@ -43,14 +43,13 @@ header:hover .sub-header{
 .anim-main-header{
   width: 100%;
   height: 8.657vh;
-  backdrop-filter: blur(3px);
-
+  /* opacity:1; */
   padding-left: 5.13vw;
   padding-right: 4.313vw;
-
+  
   position: relative;
   z-index: 71;
-
+  
   display: flex;
   justify-content: space-between;
 }
@@ -116,11 +115,12 @@ header:hover .sub-header{
   /* display: none; */
       /* background-color: rgba(255, 74, 74, 0.241); */
   width: 100%;
-  height: 16.657vh;
+  /* height: 16.657vh; */
   position:fixed;
   top: 0%;
   left: 0;
   z-index: 60;
+  backdrop-filter: blur(3px);
   /* transition: all 1s; */
   /* padding-bottom: 4vh; */
 

@@ -58,7 +58,7 @@ gsap.to(".n5",
   opacity:0.5,
   transformOrigin: '0 50%',
 });
-//left show up
+//left & header show up
 gsap.fromTo(".left-bar",
 {opacity:0},
 {
@@ -73,6 +73,22 @@ gsap.fromTo(".left-bar",
     id:"show"
   },
   opacity:1
+});
+gsap.fromTo(".anim-header",
+{opacity:0},
+{
+  scrollTrigger:{
+    trigger:".video-box-1",
+    toggleActions: "play none resume none",
+    start:"0% top",
+    end:"20% top",
+    scrub: true,
+
+    // markers:true,    //@@@
+    id:"show"
+  },
+  opacity:1,
+  // attr: { filter: "blur(3px)" }
 });
 
 gsap.fromTo(".video-box-1",
@@ -305,7 +321,6 @@ let tl2 = gsap.timeline({
       id:"bot-mid3"
     },
     y:"-29vh",
-    // x:"1vw",
     opacity:1,
     transformOrigin: '0 50%',
     scale:1.5,
@@ -333,7 +348,6 @@ let tl2 = gsap.timeline({
     transformOrigin: '0 50%',
     scale:1,
     duration: 50,
-    
   });
 //left 4 bot-mid
 gsap.fromTo(".n4",
@@ -352,7 +366,6 @@ gsap.fromTo(".n4",
       id:"bot-mid4"
     },
     y:"-33vh",
-    // x:"1vw",
     opacity:1,
     transformOrigin: '0 50%',
     scale:1.5,
@@ -452,6 +465,7 @@ gsap.fromTo(".n4",
   duration: 50,
   // color:"black",
 });
+
 //turn black
 gsap.to(".list-text",{
   scrollTrigger:{
@@ -481,6 +495,48 @@ gsap.to(".toblack",{
   },
   borderColor:"#000",
 });
+//header text color
+gsap.to(".color-white",{
+  scrollTrigger:{
+    trigger:".video-box-4",
+    toggleActions: "play none resume none",
+    start:"350% top",
+      end:"370% top",
+    scrub: true,
+    ease: true,
+
+    // markers:true,    //@@@
+    id:"mid-up4 black"
+  },
+  color:"black",
+});
+//header img color
+gsap.to(".logo .img-switch", {
+  scrollTrigger:{
+    trigger:".video-box-4",
+    toggleActions: "play none resume none",
+    start:"350% top",
+      end:"370% top",
+    scrub: true,
+    ease: true,
+    // markers:true,    //@@@
+    id:"mid-up4 black"
+  },
+   attr: { src: "img/logo_Smartcube.png" } 
+  });
+gsap.to(".header-icon .img-switch", {
+  scrollTrigger:{
+    trigger:".video-box-4",
+    toggleActions: "play none resume none",
+    start:"350% top",
+      end:"370% top",
+    scrub: true,
+    ease: true,
+    // markers:true,    //@@@
+    id:"mid-up4 black"
+  },
+    attr: { src: "img/logo_language.png" } 
+  });
 //-----------------------------------444-video-box-4------------------------------------
   
 //left 5 bot-mid
@@ -526,7 +582,6 @@ gsap.fromTo(".n5",
     opacity:1
   });
 
-  
   gsap.fromTo(".group-4",
   {y:"50vh", opacity:0},
   {
@@ -653,3 +708,27 @@ let tl5 = gsap.timeline({
       scrollTo(0,0);
     },100);
   }
+
+  let navbar = document.querySelector(".anim-main-header");
+
+  let toBlack_1 = gsap.to(".header-navbar", {
+    paused: true,
+    color:"black",
+  });
+
+  let toBlack_2 = gsap.to(".logo .img-switch", {
+    paused: true,
+    attr: { src: "img/logo_Smartcube.png" },
+  });
+  let toBlack_3 = gsap.to(".header-icon .img-switch", {
+    paused: true,
+    attr: { src: "img/logo_language.png" } 
+  });
+  
+  navbar.addEventListener("mouseenter", () => toBlack_1.play());
+  navbar.addEventListener("mouseenter", () => toBlack_2.play());
+  navbar.addEventListener("mouseenter", () => toBlack_3.play());
+
+  navbar.addEventListener("mouseleave", () => toBlack_1.reverse());
+  navbar.addEventListener("mouseleave", () => toBlack_2.reverse());
+  navbar.addEventListener("mouseleave", () => toBlack_3.reverse());

@@ -150,7 +150,7 @@ blocks.forEach((block, i) => {
 
     // when a new section activates (from either direction), set the section accordinglyl.
     // pin: true,
-    markers:true,    //@@@
+    // markers:true,    //@@@
     onToggle: self => self.isActive && setSection(block)
   });
 });
