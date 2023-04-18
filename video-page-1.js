@@ -1,3 +1,4 @@
+gsap.registerPlugin(ScrollToPlugin);
 const p1_1 = document.querySelector("#p1-1");
 const p1_2 = document.querySelector("#p1-2");
 const p1_3 = document.querySelector("#p1-3");
@@ -726,9 +727,25 @@ let tl5 = gsap.timeline({
 
   //   }
 
-    document.querySelectorAll(".to1").forEach((btn, index) => {
-      btn.addEventListener("click", () => {
-        gsap.to(window, {duration: 1, scrollTo:{y:"#box" + (index + 1), offsetY:"-10vh"}});
-      });
+    // document.querySelectorAll(".n1").forEach((btn, index) => {
+    //   btn.addEventListener("click", () => {
+    //     gsap.to(window, {duration: 1, scrollTo:{y:"#box" + (index + 1), offsetY:"-10vh"}});
+    //     console.log("aaadddd");
+    //   });
+    // });
+    
+    document.querySelector(".n1").addEventListener("click", function() {
+      gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*2-(innerHeight*0.1)}});//2-6
     });
-
+    document.querySelector(".n2").addEventListener("click", function() {
+      gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*6-(innerHeight*0.3)}});//2-6
+    });
+    document.querySelector(".n3").addEventListener("click", function() {
+      gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*10-(innerHeight*0.5)}});//2-6
+    });
+    document.querySelector(".n4").addEventListener("click", function() {
+      gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*14-(innerHeight*0.6)}});//2-6
+    });
+    document.querySelector(".n5").addEventListener("click", function() {
+      gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*19-(innerHeight*0.3)}});//2-6
+    });

@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollToPlugin);
+
 const videoPage_1 = document.querySelector("#video-page-1");
 const video_2 = document.querySelector("#video-2");
 
@@ -244,3 +246,10 @@ let tl2 = gsap.timeline({
 
   navbar.addEventListener("mouseleave", () => toBlack_2.reverse());
   navbar.addEventListener("mouseleave", () => toBlack_3.reverse());
+
+  document.querySelector(".list-first").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*2-(innerHeight*0.1)}});
+  });
+  document.querySelector(".list-rest").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*8-(innerHeight*0.3)}});
+  });

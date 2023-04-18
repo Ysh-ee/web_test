@@ -363,6 +363,7 @@ padding-left: 1vw;
   color: #FFFFFF;
   opacity: 0.5;
   transform-origin: 0 100%;
+  cursor: pointer;
 }
 .list-rest{
   /* background-color: rgba(255, 74, 74, 0.241); */

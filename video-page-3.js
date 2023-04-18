@@ -1,8 +1,10 @@
+gsap.registerPlugin(ScrollToPlugin);
 const p1_1 = document.querySelector("#p1-1");
 const p1_2 = document.querySelector("#p1-2");
 const p1_3 = document.querySelector("#p1-3");
 const p1_4 = document.querySelector("#p1-4");
 const p1_5 = document.querySelector("#p1-5");
+
 
 //left set pos
 gsap.to(".n2",
@@ -732,3 +734,20 @@ let tl5 = gsap.timeline({
   navbar.addEventListener("mouseleave", () => toBlack_1.reverse());
   navbar.addEventListener("mouseleave", () => toBlack_2.reverse());
   navbar.addEventListener("mouseleave", () => toBlack_3.reverse());
+
+
+  document.querySelector(".n1").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*2-(innerHeight*0.1)}});
+  });
+  document.querySelector(".n2").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*7-(innerHeight*0.7)}});
+  });
+  document.querySelector(".n3").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*10-(innerHeight*0.7)}});
+  });
+  document.querySelector(".n4").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*14-(innerHeight*0.8)}});
+  });
+  document.querySelector(".n5").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*17-(innerHeight*0.1)}});
+  });

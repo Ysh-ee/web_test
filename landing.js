@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-let scrollBlocks = gsap.to(".block", {
+let scrollBlocks = gsap.to(".block-scroll", {
   xPercent: -101.5 * 5 +0.33,
   // xPercent: -45 * (sections.length - 1),
   ease: "none",
