@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollToPlugin);
+
 const videoPage_1 = document.querySelector("#video-page-1");
 const video_2 = document.querySelector("#video-2");
 
@@ -19,8 +21,23 @@ gsap.fromTo(".video-box",
     opacity:1
   });
 
-  //첫 left
+  //left & header show up
 gsap.fromTo(".left-bar",
+{opacity:0},
+{
+  scrollTrigger:{
+    trigger:".video-box",
+    toggleActions: "play none resume none",
+    start:"0% top",
+    end:"20% top",
+    scrub: true,
+
+    // markers:true,    //@@@
+    id:"show"
+  },
+  opacity:1
+});
+gsap.fromTo(".anim-header",
 {opacity:0},
 {
   scrollTrigger:{
@@ -101,64 +118,59 @@ gsap.fromTo(".left-bar",
     duration: 50,
   });
 
-  // gsap.to(".group-1",{
-  //   scrollTrigger:{
-  //     // trigger:".video-box",
-  //     toggleActions: "play none resume none",
-  //     start:"60% top",
-  //     // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
-  //     end:"80% top",
-  //     scrub: true,
-
-  //     markers:true    //@@@
-  //   },
-  //   y:"-10vh",
-  //   duration: 50,
-  // });
 
 //------------------------------------black-box------------------------------------
-  // $("group-1").on("mouseenter", function() {
-  //   TweenMax.to(this, 0.2, {scale:1, delay:0.4})
-  // })
+  
 
-  //left swich
-  // gsap.to(".list-first",
-  // {
-  //   scrollTrigger:{
-  //     trigger:".black-box",
-  //     toggleActions: "play none resume none",
-  //     start:"0 top",
-  //     end:"10% top",
-  //     scrub: true,
-  //     ease: true,
-  //     toggleClass: "off",
+  // left swich
+  gsap.to(".list-first",
+  {
+    scrollTrigger:{
+      trigger:".black-box",
+      toggleActions: "play none resume none",
+      start:"0 top",
+      end:"20% top",
+      scrub: true,
+      ease: true,
+      toggleClass: "off",
 
-  //     // markers:true,    //@@@
-  //     id:"t-up"
-  //   },
-  //   y:"-45vh",
-  //   duration: 50,
+      // markers:true,    //@@@
+      id:"t-up"
+    },
+    y:"-45vh",
+    opacity:0.5,
+    transformOrigin: '0 50%',
+    scale:0.7,
+    duration: 50,
     
-  // });
-  // gsap.to(".list-last",
-  // {
-  //   scrollTrigger:{
-  //     trigger:".list-last",
-  //     toggleActions: "play none resume none",
-  //     // start:"0 top",
-  //     // end:"10% top",
-  //     scrub: true,
-  //     ease: true,
+  });
+  gsap.to(".list-rest",
+  {
+    scrollTrigger:{
+      trigger:".black-box",
+      toggleActions: "play none resume none",
+      // start:"0 top",
+      // end:"10% top",
+      scrub: true,
+      ease: true,
 
-  //     start: "top 53%",
-  //     end: "bottom 62%",
-  //     toggleClass: "on",
+      start: "top top",
+      end: "20% top",
+      // start: "top 53%",
+      // end: "bottom 62%",
+      
+      toggleClass: "on",
 
-  //     // markers:true,    //@@@
-  //   },
-  //   y:"-40vh",
-  //   duration: 50,
-  // });
+      // markers:true,    //@@@
+      id:"t2-up"
+    },
+    y:"-35vh",
+    // x:"1vw",
+    opacity:1,
+    transformOrigin: '0 50%',
+    scale:1.5,
+    duration: 50,
+  });
 
 
   gsap.fromTo(".black-box",
@@ -179,8 +191,6 @@ gsap.fromTo(".left-bar",
     },
     opacity:1
   });
-
-  
   gsap.fromTo(".group-2",
   {y:"50vh", opacity:0},
   {
@@ -220,29 +230,26 @@ let tl2 = gsap.timeline({
     tl2.to(video_2, { currentTime: video_2.duration });
   };
 
- 
-  // const textOn = gsap.utils.toArray(".list-g .list-text");
+  let navbar = document.querySelector(".anim-main-header");
 
-  // textOn.forEach((txt, i) =>{
-  //   gsap.to(txt, { 
-  //       scrollTrigger: {
-  //         trigger: txt,
-  //         // containerAnimation: tl1,
-  //         // containerAnimation: scrollPics,
-  //         scrub: true,
-  //         //51% 64%
-  //         start: "top 51%",
-  //         end: "bottom 64%",
-  //         toggleClass: "on",
-  //         markers:true,    //@@@
-        
-  //       id: i
-  //       }
-  //     })
-  // });
+  let toBlack_2 = gsap.to(".logo .img-switch", {
+    paused: true,
+    attr: { src: "img/logo_Smartcube.png" },
+  });
+  let toBlack_3 = gsap.to(".header-icon .img-switch", {
+    paused: true,
+    attr: { src: "img/logo_language.png" } 
+  });
 
-  window.onload = function(){
-    setTimeout(function(){
-      scrollTo(0,0);
-    },100);
-  }
+  navbar.addEventListener("mouseenter", () => toBlack_2.play());
+  navbar.addEventListener("mouseenter", () => toBlack_3.play());
+
+  navbar.addEventListener("mouseleave", () => toBlack_2.reverse());
+  navbar.addEventListener("mouseleave", () => toBlack_3.reverse());
+
+  document.querySelector(".list-first").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*2-(innerHeight*0.1)}});
+  });
+  document.querySelector(".list-rest").addEventListener("click", function() {
+    gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*8-(innerHeight*0.3)}});
+  });
