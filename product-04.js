@@ -36,7 +36,6 @@ gsap.from(".wrapper",{
       snap: 150 / (".wrapper".length - 150),
         trigger:".wrapper",
         start:"top top",
-        // end:"15% bottom",
         scrub:2,
         pinSpacing: false,
         pin: true, 
@@ -55,7 +54,6 @@ let scrollTween = gsap.to(".hori-item-group", {
       trigger: ".hori-scroll",
       pin: true,
       scrub: 0.1,
-      //snap: directionalSnap(1 / (sections.length - 1)),
       end: "+=2000",
     //   markers:true    //@@@
 

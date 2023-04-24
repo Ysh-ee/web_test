@@ -10,7 +10,6 @@ let scrollPics = gsap.to(".his-scroll-pics", {
       scrub: 1,
       end: "+=300%",
     start: "bottom bottom",
-    // end: "bottom center",
     //   markers:true    //@@@
     }
     
@@ -297,7 +296,6 @@ gsap.from(".line-16", {
           scrub: true,
           toggleClass: "active",
           start: "left center",
-          //end: "300% left",
           // markers:true,    //@@@
         // id: i
         }

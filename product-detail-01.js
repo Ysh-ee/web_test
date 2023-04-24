@@ -24,8 +24,6 @@ const spacing = 0.190,    // spacing of the cards (stagger)
 		},
 				
 		pin: ".card-scroll",
-		// pin: ".gallery",
-		//end: "+=500",
 		end:"500% top",
         // markers:true    //@@@
 
@@ -76,10 +74,8 @@ function buildSeamlessLoop(items, spacing) {
 		time = 0,
 		i, index, item;
 
-	// set initial state of items
 	gsap.set(items, {xPercent: 400, opacity: 0,	scale: 0.53});
 
-	// now loop through and create all the animations in a staggered fashion. Remember, we must create EXTRA animations at the end to accommodate the seamless looping.
 	for (i = 0; i < l; i++) {
 		index = i % items.length;
 		item = items[index];
@@ -92,10 +88,8 @@ function buildSeamlessLoop(items, spacing) {
 							{xPercent: 320}, 
 							{xPercent: -320, duration: 1, ease: "none", immediateRender: false}, 
 							time);
-		// i <= items.length && seamlessLoop.add("label" + i, time); // we don't really need these, but if you wanted to jump to key spots using labels, here ya go.
 	}
 	
-	//here's where we set up the scrubbing of the playhead to make it appear seamless. 
 	rawSequence.time(startTime);
 	seamlessLoop.to(rawSequence, {
 		time: loopTime,
@@ -115,56 +109,23 @@ function buildSeamlessLoop(items, spacing) {
 let blocks = gsap.utils.toArray("block"),
     currentBlock = blocks[0];
 
-// gsap.defaults({overwrite: 'auto', duration: 0.3});
-
-// stretch out the body height according to however many sections there are. 
-// gsap.set("scroll-change-group", {height: (blocks.length * 100) + "%"});
-// create a ScrollTrigger for each section
 blocks.forEach((block, i) => {
   ScrollTrigger.create({
-    // use dynamic scroll positions based on the window height (offset by half to make it feel natural)
     trigger:".scroll-change-group",
-    // start:"top top",
-    // start: () => 3 * innerHeight + ((i+2)*250) +150,
-    // end: () => 3 *innerHeight + ((i+2)*250) +300,
-
-	//보류
-    //2
-	// start: () => (i+4) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
-    // end: () => (i+4) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
 
 	start: () => (i+6) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
     end: () => (i+6) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
-
-
-    //3
-	// start: () => (i+5) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
-    // end: () => (i+5) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
-
-    //4
-	// start: () => (i+7) * innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.1),
-    // end: () => (i+7) *innerHeight + ((i+2)*(innerHeight*0.4)) +(innerHeight*0.8),
-
-    // start: () => 7 * innerHeight + ((i+2)*250) +150,
-    // end: () => 7 *innerHeight + ((i+2)*250) +300,
-
-    // when a new section activates (from either direction), set the section accordinglyl.
-    // pin: true,
     // markers:true,    //@@@
     onToggle: self => self.isActive && setSection(block)
   });
 });
-// console.log(innerHeight);
 
 gsap.from(".scroll-change-group",{
     scrollTrigger:{
         trigger:".scroll-change-group",
         start:"top top",
         end:"200% top",
-        // end:"200% top",
-        // end:"400% top",
         scrub:20,
-        // pinSpacing: false,
         pin: true, 
         // markers:true    //@@@
     },

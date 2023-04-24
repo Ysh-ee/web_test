@@ -13,14 +13,11 @@ body {
 }
 /* ------------header-------------------------------------- */
 header{
-  /* max-height: 8.657vh; */
   width: 100%;
   height: 8.657vh;
-  /* background-color: rgba(255, 74, 74, 0.241); */
 }
 .main-header{
   background-color: #fff;
-  /* max-height: 8.657vh; */
   width: 100%;
   height: 8.657vh;
 
@@ -77,20 +74,9 @@ header:hover .sub-header{
 }
 .hidden-sub-header{
   display: none;
-  /* background-color: rgb(255, 255, 255);
-  width: 100vw;
-  height: 39.343vh;
-  opacity: 0.97;
 
-  margin-top: 8.657vh;
-  padding-left: 15.9vw;
-    
-  position: fixed;
-  z-index: 20; */
 }
 .hidden-header{
-  /* display: none; */
-      /* background-color: rgba(255, 74, 74, 0.241); */
   width: 100%;
   height: 16.657vh;
   position:fixed;
@@ -99,30 +85,22 @@ header:hover .sub-header{
   z-index: 60;
   transition: all 1s;
 
-  /* padding-bottom: 4vh; */
-
 }
 .hidden-header:hover::before{
   transform: translateY(0);
 
 }
 .hidden-header:hover{
-  /* background-color: rgba(74, 110, 255, 0.241); */
   transform: translateY(59%);
 }
 
 .anim-header{
-  /* display: none; */
-      /* background-color: rgba(255, 74, 74, 0.241); */
   width: 100%;
-  /* height: 16.657vh; */
   position:fixed;
   top: 0%;
   left: 0;
   z-index: 60;
   backdrop-filter: blur(3px);
-  /* transition: all 1s; */
-  /* padding-bottom: 4vh; */
 
 }
 
@@ -143,17 +121,9 @@ header:hover .sub-header{
 }
 .logo img{
 width: 8.250vw;
-/* width: 11.25vw; */
 }
-/* .logo .img-switch{
-background-image: url('img/logo/logo_Smartcube_w.png');
-} */
 
-/* .img-switch{
-  transition: all 1s;
-} */
 .header-icon{
-  /* background-color: rgba(255, 197, 197, 0.474); */
   
   margin-left: 1.714vw;
   display: flex;
@@ -176,7 +146,6 @@ background-image: url('img/logo/logo_Smartcube_w.png');
   
 }
 .header-navbar{
-  /* background-color: rgba(255, 160, 160, 0.815); */
   
   width: 8.93vw;
   height: 100%;
@@ -200,9 +169,7 @@ background-image: url('img/logo/logo_Smartcube_w.png');
   }
 
   .sub-navbar{
-      /* background-color: rgba(255, 160, 160, 0.815); */
       
-      /* width: 8.93vw; */
       height: 100%;
       float: right;
       
@@ -213,16 +180,13 @@ background-image: url('img/logo/logo_Smartcube_w.png');
       
       text-align: left;
       display: flex;
-      /* justify-content: center; */
       align-items: left; 
       color: #2a2a2a;
   
       flex-direction: column;
       }
       .sub-navbar-black{
-        /* background-color: rgba(255, 160, 160, 0.815); */
         
-        /* width: 8.93vw; */
         height: 100%;
         float: right;
         
@@ -233,7 +197,6 @@ background-image: url('img/logo/logo_Smartcube_w.png');
         
         text-align: left;
         display: flex;
-        /* justify-content: center; */
         align-items: left; 
         color: #ffffff;
     
@@ -257,9 +220,7 @@ background-image: url('img/logo/logo_Smartcube_w.png');
 
 
   /* ----sub---- */
-/* a{
-  all: unset;
-} */
+
   .sub-header{
       display: none;
       background-color: rgb(255, 255, 255);
@@ -267,7 +228,6 @@ background-image: url('img/logo/logo_Smartcube_w.png');
       height: 35vh;
       opacity: 0.97;
 
-      /* margin-top: 8.657vh; */
       padding-left: 15.9vw;
         
       position: absolute;
@@ -281,10 +241,7 @@ background-image: url('img/logo/logo_Smartcube_w.png');
     .sub-navbar-black a{
       text-decoration: inherit;
       
-      /* testtest */
       font-size: 1.296vh;
-      /* font-size: 0.677vw; */
-      /* font-size: 0.885vw; */
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
@@ -292,17 +249,13 @@ background-image: url('img/logo/logo_Smartcube_w.png');
       display: flex;
 
       margin-top: 2.037vh;
-      /* justify-content: center; */
       align-items: center; 
       color: #ffffff;
     }
     .sub-navbar a{
       text-decoration: inherit;
 
-      /* testtest */
       font-size: 1.296vh;
-      /* font-size: 0.677vw; */
-      /* font-size: 0.885vw;?????? */
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
@@ -310,7 +263,6 @@ background-image: url('img/logo/logo_Smartcube_w.png');
       display: flex;
 
       margin-top: 2.037vh;
-      /* justify-content: center; */
       align-items: center; 
       color: #2a2a2a;
     }
@@ -332,10 +284,7 @@ background-image: url('img/logo/logo_Smartcube_w.png');
 /* ----------------------------------footer-------------------------------------- */
 footer{
     width: 100vw;
-  /* height: 33.611vh; */
   height: 16.111vh;
-  /* 16.111vh */
-  /* padding: 3.542vw 5.604vw 3.906vw 7.240vw; */
   padding: 4.074vh 7.292vw 4.074vh 7.292vw;
   background-color: #2a2a2a;
   position: relative;
@@ -355,13 +304,10 @@ footer{
   }
   .footer2-line{
     width: 0vw;
-  /* height: 1.005vw; */
-  /* line-height: 0.1; */
 
   margin-left: 1.974vw;
   margin-right: 1.974vw;
   border: solid 0.052vw #8d8d8d;
-  /* float: left; */
   }
   .footer2-smartcube{
     margin: 2.760vw 4.167vw 0.833vw 0;
@@ -376,7 +322,6 @@ footer{
   }
   .footer2-smalltext{
     width: 39.896vw;
-  /* height: 10.093vh; */
   margin: 0.833vw 0 0 0;
   font-size: 0.521vw;
   font-weight: normal;
@@ -388,7 +333,6 @@ footer{
   color: #8e8e8e;
   }
   .footer2-logo{
-    /* 183 27.41 */
     width: 9.531vw;
     position: absolute;
     right: 7.292vw;
@@ -397,7 +341,6 @@ footer{
 
 
 
-/* bgs product-detail-01 */
 .bg-blue{
     background-color: #beeaf7;
 }
@@ -552,18 +495,13 @@ footer{
 
 
 .remote-nav-g{
-  /* background-color: rgba(4, 0, 255, 0.487); */
   padding-left: 2vw;
 }
 .remote-nav-g .remo{
   color: #888888;
   font-size: 1.759vh;
-  /* font-size: 0.990vw; */
   
   margin-bottom: 3.3vh;
-  /* text-decoration-line: none; */
-
-  /* opacity: 0.5; */
 }
 .remote-nav-g .remo a{
   color: #888888;
@@ -598,7 +536,6 @@ footer{
 .remote-nav-g .remo .remo-g .remo-sub{
   color: #888888;
   font-size: 1.389vh;
-  /* font-size: 0.781vw; */
   
   font-weight: 400;
 
@@ -613,13 +550,11 @@ footer{
 
 }
 .side-body{
-  background-color: rgba(4, 0, 255, 0.487);
   position: fixed;
   position: relative;
   z-index: 55;
 
   width: 25vh;
-  /* width: 13.229vw; */
   height: 100vh;
   clip-path: polygon(11% 16%, 
                      11% 0, 100% 0, 100% 100%, 
@@ -627,27 +562,22 @@ footer{
                      11% 29%, 0 27.5%, 0 16%);
 }
 .remote{
-  /* background-color: rgba(4, 0, 255, 0.487); */
 
   position: fixed;
   top:0%;
   right: -22.8vh;
   z-index: 50;
   filter: drop-shadow(-1px 1px 3px rgba(0,0,0,0.088));
-  /* clip-path: url("#"); */
-  /* pointer-events: none; */
 
 }
   /* -------2-----------------------리모컨----------------------2-------- */
 
   .remote-body{
-  /* background-color: rgba(0, 255, 149, 0.289); */
   background-color: #fff;
   position: fixed;
   position: relative;
 
   width: 25vh;
-  /* width: 20.229vh; */
   height: 100vh;
   
   clip-path: polygon(9% 16%, 
@@ -659,7 +589,6 @@ footer{
   transition: all 1s;
   }
   .remote-body-landing{
-    /* background-color: rgba(0, 255, 149, 0.289); */
     position: fixed;
     position: relative;
   
@@ -668,16 +597,10 @@ footer{
     
     transition: all 1s;
     }
-  /* .remote-top-pos:hover{
-  background-color: rgb(255, 250, 92);
 
-  } */
-  /* asdf */
   .remote-top-pos{
-    /* background-color: rgba(0, 255, 149, 0.289); */
     position: fixed;
-    /* width: 20.229vh;
-    height: 100vh; */
+
     top:0%;
 
   }
@@ -687,16 +610,13 @@ footer{
     position: fixed;
     position: relative;
 
-    /* width: 6.229vw; */
     width: 25vh;
     height: 100vh;
     z-index: 51;
 
-    /* clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 100%); */
     clip-path: polygon(0 27.5%, 
                      9% 29%, 9% 35%, 0 35%);
     
-    /* clip-path: polygon(0 0, 100% 24%, 100% 100%, 0% 100%); */
   }
   .side-top-landing{
     background-color: #2A2A2A;
@@ -713,9 +633,6 @@ footer{
   }
   .side-top-landing .top-button,
   .side-top .top-button{
-    /* background-color: #2A2A2A; */
-    /* background-color: #ff3b3b7b; */
-
     z-index: 59;
     position: absolute;
     top: 30.1%;
@@ -732,7 +649,6 @@ footer{
     display: grid;
     place-items: center;
     margin: 0;
-    /* pointer-events: auto; */
 
   }
   .side-top-landing .top-button span,
@@ -756,37 +672,30 @@ footer{
     border-top: 1px solid #ffffff; /* 선 두께 */
     border-right: 1px solid #ffffff; /* 선 두께 */
     transform: rotate(45deg); /* 각도 */
-  /* transform: matrix(0, -1, 1, 0, 0, 0); */
   }
 #control{
   transition: all 1s;
 
 }
   .side-content{
-    /* background-color: #ff3b3b7b; */
     
     position: fixed;
     position: absolute;
     z-index: 50;
 
-    /* width: 6.229vw; */
     top: 21%;
     left: -20.5%;
-    /* width: 8vw; */
     width: 12.5vh;
     height: 2.2vh;
     
     font-size: 0.869vh;
-    /* transform: matrix(0, -1, 1, 0, 0, 0); */
     transform: rotate(-90deg);
-    /* transform: translate(-0%, -0%); */
 
 
     display: grid;
     place-items: center;
     margin: 0;
 
-    /* pointer-events: auto; */
   transition: all 1s;
 
   }
@@ -806,29 +715,18 @@ footer{
     border-top: 1px solid #000000; /* 선 두께 */
     border-right: 1px solid #000000; /* 선 두께 */
     transform: rotate(135deg); /* 각도 */
-  /* transform: matrix(0, -1, 1, 0, 0, 0); */
   }
 
-  /* .side-content:hover ~ .side-top{
-    background-color: #3e3bff7b;
-  } */
   #control:hover ~ #target
   {
-    /* background-color: #3e3bff7b; */
     transform: translateX(-91%);
   }
   #control:hover{
-    /* transform: rotate(-90deg); */
-    /* background-color: #3e3bff7b; */
     transform: translateX(-91%);
-    /* width: 12.5vh; */
-    /* height: 100vh; */
   }
 
   .side-top-hidden{
-    /* background-color: rgba(255, 37, 219, 0.5); */
   position: fixed;
-  /* position: relative; */
   z-index: 60;
 
   top: 27.2%;
@@ -839,9 +737,7 @@ footer{
 
   }
   .side-none{
-    /* background-color: rgba(255, 37, 219, 0.5); */
     position: fixed;
-    /* position: relative; */
     z-index: 49;
   
     top: 0%;
@@ -852,7 +748,6 @@ footer{
 
 
   .content-g{
-    /* background-color: rgba(37, 255, 37, 0.5); */
     position: absolute;
 
     top: 0%;
@@ -862,15 +757,10 @@ footer{
   }
 
   .content-main{
-    /* background-color: rgba(37, 255, 37, 0.5); */
-    /* width: 18.4vh; */
     height: 19vh;
 
   font-size: 2.315vh;
-  /* font-size: 1.302vw; */
   font-weight: 500;
-  /* margin-top: 13.148vw;
-  margin-left: 1.823vw; */
   margin-bottom: 4.667vh;
   padding-left: 2vw;
   padding-top: 14.5vh;

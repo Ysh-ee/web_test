@@ -217,7 +217,6 @@ gsap.fromTo(".video-box-2",
       toggleActions: "play none resume none",
       start:"0 top",
       end:"40% top",
-      // end:"20% top",
       scrub: true,
 
       // markers:true,    //@@@
@@ -233,7 +232,6 @@ let tl2 = gsap.timeline({
       trigger: ".video-box-2",
       start: "top top",
       end: "350% top",
-      // end: "200% top",
       scrub: true,
       pin: ".video-box-2",
       // markers: true,    //@@@
@@ -249,8 +247,6 @@ let tl2 = gsap.timeline({
       toggleActions: "play none resume none",
       start:"320% top",
       end:"350% top",
-      // start:"180% top",
-      // end:"200% top",
       scrub: true,
 
       // markers:true,    //@@@
@@ -376,7 +372,7 @@ gsap.fromTo(".group-3",
     trigger:".video-box-3",
     toggleActions: "play none resume none",
     start:"0 top",
-    // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
+     
     end:"40% top",
     scrub: true,
     // ease: "back",

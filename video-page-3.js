@@ -90,7 +90,6 @@ gsap.fromTo(".anim-header",
     id:"show"
   },
   opacity:1,
-  // attr: { filter: "blur(3px)" }
 });
 
 gsap.fromTo(".video-box-1",
@@ -465,7 +464,6 @@ gsap.fromTo(".n4",
   transformOrigin: '0 50%',
   scale:1,
   duration: 50,
-  // color:"black",
 });
 
 //turn black
@@ -558,7 +556,6 @@ gsap.fromTo(".n5",
       id:"bot-mid5555555"
     },
     y:"-37vh",
-    // x:"1vw",
     opacity:1,
     transformOrigin: '0 50%',
     scale:1.5,

@@ -35,9 +35,6 @@
     width: 100vw;
     height: 48.981vh;
     margin-bottom: 0.741vh;
-
-    /* overflow: hidden; */
-    
 }
 
 .anim:hover img{
@@ -52,21 +49,14 @@
 /* ---------------------------a-------------------------- */
 
 .section-a img{
-    /* background-color: #cd45457a; */
-    /* 619px × 337px */
-    /* width: 32.240vw; */
     height: 31.204vh;
-    /* text-align: center; */
     margin: auto;
     display: block;
 }
 .text-g{
-    /* padding-top: 9vh; */
     padding-top: 6.019vh;
     width: 100%;
-    /* height: 16.481vh; */
     height: 36%;
-    /* text-align: center; */
     position: relative;
     z-index: 1;
 }
@@ -129,9 +119,7 @@ a{
 .section-b .text-g{
     padding-top: 6.019vh;
     width: 100%;
-    /* height: 16.481vh; */
     height: 32%;
-    /* text-align: center; */
     position: relative;
     z-index: 1;
 }
@@ -148,22 +136,13 @@ a{
 }
 
 .section-b img{
-    /* 619px × 337px */
-    /* width: 32.240vw; */
-    /* height: 30.185vh; */
     height: 61%;
-    /* text-align: center; */
     margin: auto;
     display: block;
     margin-top: 4.5%;
-    /* margin-top: 1.537vh; */
 
 }
-/* .test{
-    position: relative;
-    width: 10%;
-    height: 10%;
-} */
+
 .bgimg{
     background-image: url("/img/landing/landing-4-2.png");
     height: 42.130vh;
@@ -171,8 +150,6 @@ a{
     right: 50%;
     bottom: 50%;
     transform: translate(-50%, -50%);
-    /* margin: auto;
-    display: block; */
 }
 
 /* ---------------------------c-------------------------- */
@@ -186,17 +163,15 @@ a{
     top: 0; 
     transform: translate(-50%, -50%);
     content: '';
-    width: 0.443vw; /* 사이즈 */
-    height: 0.443vw; /* 사이즈 */
-    border-top: 1px solid #d61f26; /* 선 두께 */
-    border-right: 1px solid #d61f26; /* 선 두께 */
-    transform: rotate(45deg); /* 각도 */
+    width: 0.443vw; 
+    height: 0.443vw; 
+    border-top: 1px solid #d61f26; 
+    border-right: 1px solid #d61f26; 
+    transform: rotate(45deg); 
 }
 .product-list{
-    /* background-color: #4565cd67; */
     width: 15vw;
     height: 100%;
-    /* padding-top: 13%; */
     padding-left: 3.438vw;
 
     display: flex;
@@ -204,12 +179,10 @@ a{
     flex-shrink: 0;
     list-style: none;
 
-    /* align-items: center; */
   justify-content: center;
 
 }
 .product-list li{
-    /* flex-direction: column; */
     margin-bottom: 3.611vh;
     font-size: 1.042vw;
     font-weight: normal;
@@ -217,11 +190,9 @@ a{
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    /* text-align: center; */
     color: #fff;
     cursor: pointer;
 }
-/* .product-list .name:active */
 .product-list .active{
     margin-bottom: 3.611vh;
 
@@ -231,7 +202,6 @@ a{
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    /* text-align: center; */
     color: #d61f26;
     position: relative;
 
@@ -241,16 +211,14 @@ a{
     left: -1.5em;
     top: 0.25em;
     content: '';
-    width: 0.5vw; /* 사이즈 */
-    height: 0.5vw; /* 사이즈 */
-    border-top: 0.14vw solid #d61f26; /* 선 두께 */
-    border-right: 0.14vw solid #d61f26; /* 선 두께 */
-    transform: rotate(45deg); /* 각도 */
+    width: 0.5vw;
+    height: 0.5vw;
+    border-top: 0.14vw solid #d61f26;
+    border-right: 0.14vw solid #d61f26;
+    transform: rotate(45deg);
 }
 
 section {
-    /* background: #7f7f7f; */
-    
     height: 100%;
     width: 89.4%;
     position: absolute;
@@ -266,12 +234,10 @@ section:first-of-type {
 }
 
 .product-g{
-    /* background-color: #cd454531; */
     width: 100%;
     height: 100%;
 }
 .product-pics{
-    /* background-color: #4592cd67; */
     height: 71%;
     padding-right: 2.557vw;
 
@@ -282,8 +248,6 @@ section:first-of-type {
 .h39{height: 39%;}
 .h32{height: 32%;}
 .product-pics2{
-    /* background-color: #4592cd67; */
-    /* height: 35.5%; */
     padding-right: 2.557vw;
 
     display: flex;
@@ -293,8 +257,6 @@ section:first-of-type {
 .product-pics img{
     background-color: #323232;
     height: 23.722vw;
-    /* height: 21.722vw; */
-    /* height: 44.722vh; */
     margin-left: 1.224vw;
     margin-right: 1.224vw;
     filter: grayscale(1);
@@ -302,9 +264,6 @@ section:first-of-type {
 .product-pics2 img{
     background-color: #323232;
     height: 25.056vh;
-    /* height: 15.781vw; */
-    /* height: 21.722vw; */
-    /* height: 44.722vh; */
     margin-left: 0.6vw;
     margin-right: 0.6vw;
     filter: grayscale(1);
@@ -314,7 +273,6 @@ section:first-of-type {
     filter: grayscale(0);
 }
 .product-info{
-    /* background-color: #4592cd33; */
     height: 29%;
     padding-right: 16vw;
 
@@ -365,10 +323,6 @@ section:first-of-type {
     text-align: center;
     color: #161616;
 
-    /* align-items: center;
-    display: flex;
-    justify-content: center; */
-    
     cursor:pointer;
 
 }
@@ -378,7 +332,6 @@ section:first-of-type {
 
 }
 
-/* 26 */
 
 /* ---------------------------scroll-------------------------- */
 .pin-g{
@@ -386,10 +339,7 @@ section:first-of-type {
 }
 .section-scroll .hori-scroll{
     width: 267.762vw;
-    /* width: 267.762vw; */
     height: 100%;
-    /* display: flex;
-    justify-content: space-between; */
     flex-wrap: nowrap;
     overflow: hidden;
 
@@ -398,9 +348,6 @@ section:first-of-type {
     background-color: #1f1f1f;
     float: left;
     margin-right: 0.5vw;
-    /* width: 32.135vw; */
-    /* width: 33.802vw; */
-    /* width: 32.635vw; */
     width: 32.881vw;
     height: 100%;
 }
@@ -420,10 +367,6 @@ section:first-of-type {
     filter: grayscale(0);
 }
 
-/* .section-scroll .hori-scroll .block .block-text-g .block-text-1{
-    width: 100%;
-    height: 43%;
-} */
 .block-text-g .text-2{
     font-size: 0.625vw;
     font-weight: normal;

@@ -12,7 +12,6 @@ gsap.fromTo(".video-box",
       toggleActions: "play none resume none",
       start:"0% top",
       end:"20% top",
-      // end:"10% top",
       scrub: true,
 
       // markers:true,    //@@@
@@ -59,23 +58,15 @@ gsap.fromTo(".anim-header",
     scrollTrigger:{
       trigger:".video-page-1",
       toggleActions: "play none resume none",
-      // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
+       
       start:"0 top",
       end:"50% top",
-      //start:"0 top",
-      // end:"30% top",
       scrub: true,
-      // ease: "back",
-
       // markers:true,    //@@@
       id:"t-up"
     },
     y:0,
     opacity:1,
-    // ease: true,
-    // ease: "bounce({strength:0.5, endAtStart:true})",
-    // ease: "back.out(1.4)",//---//
-    // bounds: true,
     duration: 50,
   });
 
@@ -85,8 +76,6 @@ gsap.fromTo(".anim-header",
       trigger:".video-page-1",
       start: "top top",
       end: "380% top",
-      // start: "top top",
-      // end: "220% top",
       scrub: true,
       pin: ".video-box",
       // markers: true,    //@@@
@@ -103,9 +92,6 @@ gsap.fromTo(".anim-header",
       toggleActions: "play none resume none",
       start:"330% top",
       end:"360% top",
-      // start:"180% top",
-      // end:"200% top",
-      
       scrub: true,
 
       // markers:true,    //@@@
@@ -149,15 +135,11 @@ gsap.fromTo(".anim-header",
     scrollTrigger:{
       trigger:".black-box",
       toggleActions: "play none resume none",
-      // start:"0 top",
-      // end:"10% top",
       scrub: true,
       ease: true,
 
       start: "top top",
       end: "20% top",
-      // start: "top 53%",
-      // end: "bottom 62%",
       
       toggleClass: "on",
 
@@ -165,7 +147,6 @@ gsap.fromTo(".anim-header",
       id:"t2-up"
     },
     y:"-35vh",
-    // x:"1vw",
     opacity:1,
     transformOrigin: '0 50%',
     scale:1.5,
@@ -184,8 +165,6 @@ gsap.fromTo(".anim-header",
       start:"0% top",
       end:"-1% top",
       scrub: true,
-      // ease: "back",
-
       // markers:true,    //@@@
       id:"show"
     },
@@ -197,12 +176,10 @@ gsap.fromTo(".anim-header",
     scrollTrigger:{
       trigger:".black-box",
       toggleActions: "play none resume none",
-      // end: () => "+=" + document.querySelector(".artic-img").offsetWidth + " center",
+       
       start:"5% top",
       end:"40% top",
       scrub: true,
-      // ease: "back",
-
       // markers:true,    //@@@
       // id:"t-up"
     },
