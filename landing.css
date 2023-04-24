@@ -386,8 +386,7 @@ section:first-of-type {
 }
 .section-scroll .hori-scroll{
     width: 267.762vw;
-    /* width: 265.762vw; */
-    /* width: 265.762vw; */
+    /* width: 267.762vw; */
     height: 100%;
     /* display: flex;
     justify-content: space-between; */
@@ -406,7 +405,7 @@ section:first-of-type {
     height: 100%;
 }
 .section-scroll .hori-scroll .block .block-text-g{
-    padding-top: 16%;
+    padding-top: 9%;
     width: 100%;
     height: 43%;
 }

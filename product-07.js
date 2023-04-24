@@ -98,7 +98,7 @@ gsap.from(".wrapper",{
 //------------------------function-hori-------
 let scrollTween = gsap.to(".hori-item-group", {
     xPercent: -30,
-    ease: "none", // <-- IMPORTANT!
+    ease: "none",  
     scrollTrigger: {
       trigger: ".hori-scroll",
       pin: true,
@@ -147,7 +147,7 @@ function setSection(newSection) {
 //hardware, software
 let scrollTween2 = gsap.to(".hori-item-group-2", {
     xPercent: -40,
-    ease: "none", // <-- IMPORTANT!
+    ease: "none",  
     scrollTrigger: {
       trigger: ".hori-scroll-hard",
       pin: true,

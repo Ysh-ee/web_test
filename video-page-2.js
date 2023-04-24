@@ -234,11 +234,11 @@ let tl2 = gsap.timeline({
 
   let toBlack_2 = gsap.to(".logo .img-switch", {
     paused: true,
-    attr: { src: "img/logo_Smartcube.png" },
+    attr: { src: "img/logo/logo_Smartcube.png" },
   });
   let toBlack_3 = gsap.to(".header-icon .img-switch", {
     paused: true,
-    attr: { src: "img/logo_language.png" } 
+    attr: { src: "img/logo/logo_language.png" } 
   });
 
   navbar.addEventListener("mouseenter", () => toBlack_2.play());

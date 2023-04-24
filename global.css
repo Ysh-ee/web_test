@@ -146,7 +146,7 @@ width: 8.250vw;
 /* width: 11.25vw; */
 }
 /* .logo .img-switch{
-background-image: url('img/logo_Smartcube_w.png');
+background-image: url('img/logo/logo_Smartcube_w.png');
 } */
 
 /* .img-switch{
@@ -740,6 +740,9 @@ footer{
     position: relative;
     margin-right: 1.2vw;
     padding-right: 0.2vw;
+  }
+  .top-mid{
+    margin-right: 0.6vw !important;
   }
   .side-top-landing .top-button span::after,
   .side-top .top-button span::after{

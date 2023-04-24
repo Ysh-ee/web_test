@@ -524,7 +524,7 @@ gsap.to(".logo .img-switch", {
     // markers:true,    //@@@
     id:"mid-up4 black"
   },
-   attr: { src: "img/logo_Smartcube.png" } 
+   attr: { src: "img/logo/logo_Smartcube.png" } 
   });
 gsap.to(".header-icon .img-switch", {
   scrollTrigger:{
@@ -537,7 +537,7 @@ gsap.to(".header-icon .img-switch", {
     // markers:true,    //@@@
     id:"mid-up4 black"
   },
-    attr: { src: "img/logo_language.png" } 
+    attr: { src: "img/logo/logo_language.png" } 
   });
 //-----------------------------------444-video-box-4------------------------------------
   
@@ -720,11 +720,11 @@ let tl5 = gsap.timeline({
 
   let toBlack_2 = gsap.to(".logo .img-switch", {
     paused: true,
-    attr: { src: "img/logo_Smartcube.png" },
+    attr: { src: "img/logo/logo_Smartcube.png" },
   });
   let toBlack_3 = gsap.to(".header-icon .img-switch", {
     paused: true,
-    attr: { src: "img/logo_language.png" } 
+    attr: { src: "img/logo/logo_language.png" } 
   });
   
   navbar.addEventListener("mouseenter", () => toBlack_1.play());

@@ -503,7 +503,7 @@ gsap.to(".logo .img-switch", {
     // markers:true,    //@@@
     id:"mid-up4 black"
   },
-   attr: { src: "img/logo_Smartcube.png" } 
+   attr: { src: "img/logo/logo_Smartcube.png" } 
   });
 gsap.to(".header-icon .img-switch", {
   scrollTrigger:{
@@ -516,7 +516,7 @@ gsap.to(".header-icon .img-switch", {
     // markers:true,    //@@@
     id:"mid-up4 black"
   },
-    attr: { src: "img/logo_language.png" } 
+    attr: { src: "img/logo/logo_language.png" } 
   });
 
 
@@ -540,7 +540,6 @@ gsap.fromTo(".n5",
       id:"bot-mid5555555"
     },
     y:"-37vh",
-    // x:"1vw",
     opacity:1,
     transformOrigin: '0 50%',
     scale:1.5,
@@ -699,11 +698,11 @@ let tl5 = gsap.timeline({
 
   let toBlack_2 = gsap.to(".logo .img-switch", {
     paused: true,
-    attr: { src: "img/logo_Smartcube.png" },
+    attr: { src: "img/logo/logo_Smartcube.png" },
   });
   let toBlack_3 = gsap.to(".header-icon .img-switch", {
     paused: true,
-    attr: { src: "img/logo_language.png" } 
+    attr: { src: "img/logo/logo_language.png" } 
   });
   
   navbar.addEventListener("mouseenter", () => toBlack_1.play());
@@ -713,26 +712,6 @@ let tl5 = gsap.timeline({
   navbar.addEventListener("mouseleave", () => toBlack_1.reverse());
   navbar.addEventListener("mouseleave", () => toBlack_2.reverse());
   navbar.addEventListener("mouseleave", () => toBlack_3.reverse());
-
-  // let to2 = gsap.to("n2", {
-  //   duration: 2, 
-  //   scrollTo: {
-  //     y: 400, autoKill: true
-  //   }, 
-  //   ease: "power2"});
-  
-  //   to2.addEventListener("click", click2);
-
-  //   function click2(){
-
-  //   }
-
-    // document.querySelectorAll(".n1").forEach((btn, index) => {
-    //   btn.addEventListener("click", () => {
-    //     gsap.to(window, {duration: 1, scrollTo:{y:"#box" + (index + 1), offsetY:"-10vh"}});
-    //     console.log("aaadddd");
-    //   });
-    // });
     
     document.querySelector(".n1").addEventListener("click", function() {
       gsap.to(window, { duration: 0.75, scrollTo: {y:innerHeight*2-(innerHeight*0.1)}});//2-6
