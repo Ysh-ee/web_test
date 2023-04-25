@@ -5,6 +5,22 @@ const p1_3 = document.querySelector("#p1-3");
 const p1_scan = document.querySelector("#p1_scan");
 const p1_5 = document.querySelector("#p1-5");
 
+p1_1.onloadedmetadata = function () {
+  tl1.to(p1_1, { currentTime: p1_1.duration });
+};
+p1_2.onloadedmetadata = function () {
+  tl2.to(p1_2, { currentTime: p1_2.duration });
+};
+p1_3.onloadedmetadata = function () {
+  tl3.to(p1_3, { currentTime: p1_3.duration });
+};
+p1_scan.onloadedmetadata = function () {
+  tl4.to(p1_scan, { currentTime: p1_scan.duration });
+};
+p1_5.onloadedmetadata = function () {
+  tl5.to(p1_5, { currentTime: p1_5.duration });
+};
+
 //left set pos
 gsap.to(".n2",
 {
@@ -663,21 +679,21 @@ let tl5 = gsap.timeline({
   }
 });
 
-  p1_1.onloadedmetadata = function () {
-    tl1.to(p1_1, { currentTime: p1_1.duration });
-  };
-  p1_2.onloadedmetadata = function () {
-    tl2.to(p1_2, { currentTime: p1_2.duration });
-  };
-  p1_3.onloadedmetadata = function () {
-    tl3.to(p1_3, { currentTime: p1_3.duration });
-  };
-  p1_scan.onloadedmetadata = function () {
-    tl4.to(p1_scan, { currentTime: p1_scan.duration });
-  };
-  p1_5.onloadedmetadata = function () {
-    tl5.to(p1_5, { currentTime: p1_5.duration });
-  };
+  // p1_1.onloadedmetadata = function () {
+  //   tl1.to(p1_1, { currentTime: p1_1.duration });
+  // };
+  // p1_2.onloadedmetadata = function () {
+  //   tl2.to(p1_2, { currentTime: p1_2.duration });
+  // };
+  // p1_3.onloadedmetadata = function () {
+  //   tl3.to(p1_3, { currentTime: p1_3.duration });
+  // };
+  // p1_scan.onloadedmetadata = function () {
+  //   tl4.to(p1_scan, { currentTime: p1_scan.duration });
+  // };
+  // p1_5.onloadedmetadata = function () {
+  //   tl5.to(p1_5, { currentTime: p1_5.duration });
+  // };
 
   window.onload = function(){
     setTimeout(function(){
